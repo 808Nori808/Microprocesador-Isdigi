@@ -1,21 +1,15 @@
 module ALU (X, Y, RESULTADO, ZERO, CONTROL);
 
-input logic signed [31:0] X, Y;
+input [31:0] X, Y;
 
-input logic [3:0] CONTROL;
+input [4:0] CONTROL;
 
-output logic [31:0] RESULTADO;
+output [31:0] RESULTADO;
 
-output logic ZERO;
+output ZERO;
 
-logic [3:0] Xu, Yu;
-
-assign Xu = X;
-assign Yu = Y;
-
-always_comb
+always_comb(.*)
 begin
-
 case (CONTROL)
 	4'b0000: RESULTADO = X + Y;  // ADD ADDI
 	4'b0111: RESULTADO = X - Y;  // SUB BEQ BNE
@@ -29,10 +23,10 @@ case (CONTROL)
 	4'b1000: RESULTADO = Xu << Yu; // SLL SLLI
 	4'b1010: RESULTADO = Xu >> Yu; // SRL SRLI
 	4'b1110: RESULTADO = X >>> Y;
+	5'b10000: RESULTADO = X + Y;  // ADD O ADDI
+	5'b11000: RESULTADO = X < Y; // STL O STLI
+	5'b11100: RESULTADO = X > Y; 
 	default: RESULTADO = 0; // Caso por defecto
 endcase
 end
-
-assign ZERO = (RESULTADO == 0) ? 1 : 0;  
-
 endmodule 
