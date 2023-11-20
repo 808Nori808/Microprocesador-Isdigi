@@ -26,6 +26,9 @@ case (CONTROL)
 	4'b1001: RESULTADO = (X ^ Y); // XOR XORI
 	4'b0110: RESULTADO = {Y[31:12],12'd0}; // LUI
 	4'b0101: RESULTADO = {Y[31:12],12'd0} + X; // AUIPC
+	4'b1000: RESULTADO = Xu << Yu; // SLL SLLI
+	4'b1010: RESULTADO = Xu >> Yu; // SRL SRLI
+	4'b1110: RESULTADO = X >>> Y;
 	default: RESULTADO = 0; // Caso por defecto
 endcase
 end
