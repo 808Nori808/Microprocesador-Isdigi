@@ -28,7 +28,7 @@
 # Modifying modelsim.ini
 # vlog -vlog01compat -work altera_ver {c:/intelfpga_lite/17.1/quartus/eda/sim_lib/altera_primitives.v}
 # QuestaSim-64 vlog 2020.2 Compiler 2020.04 Apr 19 2020
-# Start time: 18:06:36 on Nov 21,2023
+# Start time: 18:17:42 on Nov 21,2023
 # vlog -reportprogress 300 -vlog01compat -work altera_ver c:/intelfpga_lite/17.1/quartus/eda/sim_lib/altera_primitives.v 
 # -- Compiling module global
 # -- Compiling module carry
@@ -110,7 +110,7 @@
 # 	alt_iobuf_diff
 # 	alt_bidir_diff
 # 	alt_bidir_buf
-# End time: 18:06:36 on Nov 21,2023, Elapsed time: 0:00:00
+# End time: 18:17:42 on Nov 21,2023, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # 
 # vlib verilog_libs/lpm_ver
@@ -122,7 +122,7 @@
 # Modifying modelsim.ini
 # vlog -vlog01compat -work lpm_ver {c:/intelfpga_lite/17.1/quartus/eda/sim_lib/220model.v}
 # QuestaSim-64 vlog 2020.2 Compiler 2020.04 Apr 19 2020
-# Start time: 18:06:36 on Nov 21,2023
+# Start time: 18:17:42 on Nov 21,2023
 # vlog -reportprogress 300 -vlog01compat -work lpm_ver c:/intelfpga_lite/17.1/quartus/eda/sim_lib/220model.v 
 # -- Compiling module LPM_MEMORY_INITIALIZATION
 # -- Compiling module LPM_HINT_EVALUATION
@@ -186,7 +186,7 @@
 # 	lpm_inpad
 # 	lpm_outpad
 # 	lpm_bipad
-# End time: 18:06:36 on Nov 21,2023, Elapsed time: 0:00:00
+# End time: 18:17:42 on Nov 21,2023, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # 
 # vlib verilog_libs/sgate_ver
@@ -198,7 +198,7 @@
 # Modifying modelsim.ini
 # vlog -vlog01compat -work sgate_ver {c:/intelfpga_lite/17.1/quartus/eda/sim_lib/sgate.v}
 # QuestaSim-64 vlog 2020.2 Compiler 2020.04 Apr 19 2020
-# Start time: 18:06:37 on Nov 21,2023
+# Start time: 18:17:43 on Nov 21,2023
 # vlog -reportprogress 300 -vlog01compat -work sgate_ver c:/intelfpga_lite/17.1/quartus/eda/sim_lib/sgate.v 
 # -- Compiling module oper_add
 # -- Compiling module oper_addsub
@@ -240,7 +240,7 @@
 # 	oper_decoder
 # 	oper_bus_mux
 # 	oper_latch
-# End time: 18:06:37 on Nov 21,2023, Elapsed time: 0:00:00
+# End time: 18:17:43 on Nov 21,2023, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # 
 # vlib verilog_libs/altera_mf_ver
@@ -252,7 +252,7 @@
 # Modifying modelsim.ini
 # vlog -vlog01compat -work altera_mf_ver {c:/intelfpga_lite/17.1/quartus/eda/sim_lib/altera_mf.v}
 # QuestaSim-64 vlog 2020.2 Compiler 2020.04 Apr 19 2020
-# Start time: 18:06:37 on Nov 21,2023
+# Start time: 18:17:43 on Nov 21,2023
 # vlog -reportprogress 300 -vlog01compat -work altera_mf_ver c:/intelfpga_lite/17.1/quartus/eda/sim_lib/altera_mf.v 
 # -- Compiling module lcell
 # -- Compiling module ALTERA_MF_MEMORY_INITIALIZATION
@@ -382,7 +382,7 @@
 # 	alt_fault_injection
 # 	sld_virtual_jtag_basic
 # 	altsource_probe
-# End time: 18:06:37 on Nov 21,2023, Elapsed time: 0:00:00
+# End time: 18:17:43 on Nov 21,2023, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # 
 # vlib verilog_libs/altera_lnsim_ver
@@ -394,7 +394,7 @@
 # Modifying modelsim.ini
 # vlog -sv -work altera_lnsim_ver {c:/intelfpga_lite/17.1/quartus/eda/sim_lib/altera_lnsim.sv}
 # QuestaSim-64 vlog 2020.2 Compiler 2020.04 Apr 19 2020
-# Start time: 18:06:38 on Nov 21,2023
+# Start time: 18:17:43 on Nov 21,2023
 # vlog -reportprogress 300 -sv -work altera_lnsim_ver c:/intelfpga_lite/17.1/quartus/eda/sim_lib/altera_lnsim.sv 
 # -- Compiling package altera_lnsim_functions
 # -- Compiling package altera_generic_pll_functions
@@ -477,7 +477,7 @@
 # 	altera_iopll
 # 	fourteennm_altera_iopll
 # 	fourteennm_simple_iopll
-# End time: 18:06:38 on Nov 21,2023, Elapsed time: 0:00:00
+# End time: 18:17:44 on Nov 21,2023, Elapsed time: 0:00:01
 # Errors: 0, Warnings: 0
 # 
 # vlib verilog_libs/cycloneive_ver
@@ -489,7 +489,7 @@
 # Modifying modelsim.ini
 # vlog -vlog01compat -work cycloneive_ver {c:/intelfpga_lite/17.1/quartus/eda/sim_lib/cycloneive_atoms.v}
 # QuestaSim-64 vlog 2020.2 Compiler 2020.04 Apr 19 2020
-# Start time: 18:06:38 on Nov 21,2023
+# Start time: 18:17:44 on Nov 21,2023
 # vlog -reportprogress 300 -vlog01compat -work cycloneive_ver c:/intelfpga_lite/17.1/quartus/eda/sim_lib/cycloneive_atoms.v 
 # -- Compiling UDP CYCLONEIVE_PRIM_DFFE
 # -- Compiling UDP CYCLONEIVE_PRIM_DFFEAS
@@ -567,7 +567,7 @@
 # 	cycloneive_jtag
 # 	cycloneive_crcblock
 # 	cycloneive_oscillator
-# End time: 18:06:38 on Nov 21,2023, Elapsed time: 0:00:00
+# End time: 18:17:44 on Nov 21,2023, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # 
 # if {[file exists rtl_work]} {
@@ -581,39 +581,33 @@
 # 
 # vlog -sv -work work +incdir+C:/Users/itsep/OneDrive/Documentos/GitHub/Microprocesador-ISDIGI {C:/Users/itsep/OneDrive/Documentos/GitHub/Microprocesador-ISDIGI/ALU.sv}
 # QuestaSim-64 vlog 2020.2 Compiler 2020.04 Apr 19 2020
-# Start time: 18:06:38 on Nov 21,2023
+# Start time: 18:17:44 on Nov 21,2023
 # vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/itsep/OneDrive/Documentos/GitHub/Microprocesador-ISDIGI" C:/Users/itsep/OneDrive/Documentos/GitHub/Microprocesador-ISDIGI/ALU.sv 
 # -- Compiling module ALU
 # 
 # Top level modules:
 # 	ALU
-# End time: 18:06:39 on Nov 21,2023, Elapsed time: 0:00:01
+# End time: 18:17:44 on Nov 21,2023, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # 
 # vlog -sv -work work +incdir+C:/Users/itsep/OneDrive/Documentos/GitHub/Microprocesador-ISDIGI {C:/Users/itsep/OneDrive/Documentos/GitHub/Microprocesador-ISDIGI/tb_ALU.sv}
 # QuestaSim-64 vlog 2020.2 Compiler 2020.04 Apr 19 2020
-# Start time: 18:06:39 on Nov 21,2023
+# Start time: 18:17:44 on Nov 21,2023
 # vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/itsep/OneDrive/Documentos/GitHub/Microprocesador-ISDIGI" C:/Users/itsep/OneDrive/Documentos/GitHub/Microprocesador-ISDIGI/tb_ALU.sv 
 # -- Compiling module tb_ALU
 # 
 # Top level modules:
 # 	tb_ALU
-# End time: 18:06:39 on Nov 21,2023, Elapsed time: 0:00:00
+# End time: 18:17:44 on Nov 21,2023, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # 
 # vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cycloneive_ver -L rtl_work -L work -voptargs="+acc"  tb_ALU
 # vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cycloneive_ver -L rtl_work -L work -voptargs=""+acc"" tb_ALU 
-# Start time: 18:06:39 on Nov 21,2023
+# Start time: 18:17:44 on Nov 21,2023
 # ** Note: (vsim-3812) Design is being optimized...
 # Loading sv_std.std
 # Loading work.tb_ALU(fast)
 # Loading work.ALU(fast)
-# ** Warning: (vsim-3015) [PCDPC] - Port size (32) does not match connection size (31) for port 'X'. The port definition is at: C:/Users/itsep/OneDrive/Documentos/GitHub/Microprocesador-ISDIGI/ALU.sv(1).
-#    Time: 0 ps  Iteration: 0  Instance: /tb_ALU/duv File: C:/Users/itsep/OneDrive/Documentos/GitHub/Microprocesador-ISDIGI/tb_ALU.sv Line: 14
-# ** Warning: (vsim-3015) [PCDPC] - Port size (32) does not match connection size (31) for port 'Y'. The port definition is at: C:/Users/itsep/OneDrive/Documentos/GitHub/Microprocesador-ISDIGI/ALU.sv(1).
-#    Time: 0 ps  Iteration: 0  Instance: /tb_ALU/duv File: C:/Users/itsep/OneDrive/Documentos/GitHub/Microprocesador-ISDIGI/tb_ALU.sv Line: 14
-# ** Warning: (vsim-3015) [PCDPC] - Port size (32) does not match connection size (31) for port 'RESULTADO'. The port definition is at: C:/Users/itsep/OneDrive/Documentos/GitHub/Microprocesador-ISDIGI/ALU.sv(1).
-#    Time: 0 ps  Iteration: 0  Instance: /tb_ALU/duv File: C:/Users/itsep/OneDrive/Documentos/GitHub/Microprocesador-ISDIGI/tb_ALU.sv Line: 14
 # 
 # add wave *
 # view structure
@@ -624,5 +618,5 @@
 # ** Note: $stop    : C:/Users/itsep/OneDrive/Documentos/GitHub/Microprocesador-ISDIGI/tb_ALU.sv(23)
 #    Time: 40 ns  Iteration: 0  Instance: /tb_ALU
 # Break in Module tb_ALU at C:/Users/itsep/OneDrive/Documentos/GitHub/Microprocesador-ISDIGI/tb_ALU.sv line 23
-# End time: 18:07:31 on Nov 21,2023, Elapsed time: 0:00:52
-# Errors: 0, Warnings: 3
+# End time: 18:18:44 on Nov 21,2023, Elapsed time: 0:01:00
+# Errors: 0, Warnings: 0

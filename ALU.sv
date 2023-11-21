@@ -16,15 +16,14 @@ assign Yu = Y;
 always_comb
 begin
 case (CONTROL)
-	4'b0000: RESULTADO = X + Y;  // ADD ADDI
+	4'b0000: RESULTADO = X + Y;  // ADD ADDI AUIPC // Se supone que viene ya preparado para la ALU
 	4'b0111: RESULTADO = X - Y;  // SUB BEQ
 	4'b0100: RESULTADO = (X < Y) ? 1 : 0; // SLT SLTI 
 	4'b1100: RESULTADO = (Xu < Yu) ? 1 : 0; // STLU STLIU
 	4'b0010: RESULTADO = (X & Y); // AND ANDI
 	4'b0001: RESULTADO = (X | Y); // OR ORI
 	4'b1001: RESULTADO = (X ^ Y); // XOR XORI
-	4'b0110: RESULTADO = {Y[31:12],12'd0}; // LUI
-	4'b0101: RESULTADO = {Y[31:12],12'd0} + X; // AUIPC
+	4'b0110: RESULTADO = Y; // LUI // Se supone que viene ya preparado para la ALU
 	4'b1000: RESULTADO = Xu << Yu; // SLL SLLI
 	4'b1010: RESULTADO = Xu >> Yu; // SRL SRLI
 	4'b1110: RESULTADO = X >>> Y; // SRA 

@@ -3,7 +3,7 @@
 module tb_ALU();
 
 	localparam T = 20;
-	parameter size=31;
+	parameter size=32;
 	
 	// INSTANCIA DUV 
 	logic signed [size-1:0] X, Y;
@@ -16,7 +16,7 @@ module tb_ALU();
 	initial
 	begin
 		#(T)
-		CONTROL = 4'b1100;
+		CONTROL = 4'b1110;
 		X = -19;
 		Y = 2;
 		#(T)
