@@ -1,0 +1,74 @@
+m255
+K4
+z2
+!s11f vlog 2020.2 2020.04, Apr 19 2020
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/Users/itsep/OneDrive/Documentos/GitHub/Microprocesador-ISDIGI/simulation/modelsim
+T_opt
+!s110 1700586400
+V>O81zO]RG[6fWiG3URbJZ3
+04 6 4 work tb_ALU fast 0
+=1-18c04d8bec51-655ce39f-3d4-4a94
+o-quiet -auto_acc_if_foreign -work work -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cycloneive_ver -L rtl_work -L work +acc
+Z1 tCvgOpt 0
+n@_opt
+OL;O;2020.2;71
+vALU
+Z2 DXx6 sv_std 3 std 0 22 9oUSJO;AeEaW`l:M@^WG92
+Z3 !s110 1700586399
+!i10b 1
+!s100 TIgnEn0eVaPRoMRdafa3j3
+Z4 !s11b Dg1SIo80bB@j0V0VzS_@n1
+I;<QWjAoU>6InYKnY^1O`c2
+Z5 VDg1SIo80bB@j0V0VzS_@n1
+S1
+R0
+w1700582940
+8C:/Users/itsep/OneDrive/Documentos/GitHub/Microprocesador-ISDIGI/ALU.sv
+FC:/Users/itsep/OneDrive/Documentos/GitHub/Microprocesador-ISDIGI/ALU.sv
+!i122 0
+L0 1 34
+Z6 OL;L;2020.2;71
+r1
+!s85 0
+31
+!s108 1700586398.000000
+!s107 C:/Users/itsep/OneDrive/Documentos/GitHub/Microprocesador-ISDIGI/ALU.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/itsep/OneDrive/Documentos/GitHub/Microprocesador-ISDIGI|C:/Users/itsep/OneDrive/Documentos/GitHub/Microprocesador-ISDIGI/ALU.sv|
+!i113 0
+Z7 o-sv -work work -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+Z8 !s92 -sv -work work +incdir+C:/Users/itsep/OneDrive/Documentos/GitHub/Microprocesador-ISDIGI -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+R1
+n@a@l@u
+vtb_ALU
+R2
+R3
+!i10b 1
+!s100 g6D3iF>4_RkPRad;U^T6d1
+R4
+Ib=Y96`PO^XIk@G>g:Ek9B2
+R5
+S1
+R0
+w1700586373
+8C:/Users/itsep/OneDrive/Documentos/GitHub/Microprocesador-ISDIGI/tb_ALU.sv
+FC:/Users/itsep/OneDrive/Documentos/GitHub/Microprocesador-ISDIGI/tb_ALU.sv
+!i122 1
+L0 3 24
+R6
+r1
+!s85 0
+31
+!s108 1700586399.000000
+!s107 C:/Users/itsep/OneDrive/Documentos/GitHub/Microprocesador-ISDIGI/tb_ALU.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/itsep/OneDrive/Documentos/GitHub/Microprocesador-ISDIGI|C:/Users/itsep/OneDrive/Documentos/GitHub/Microprocesador-ISDIGI/tb_ALU.sv|
+!i113 0
+R7
+R8
+R1
+ntb_@a@l@u

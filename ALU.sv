@@ -2,7 +2,7 @@ module ALU (X, Y, RESULTADO, ZERO, CONTROL);
 
 input logic signed [31:0] X, Y;
 
-input logic [4:0] CONTROL;
+input logic [3:0] CONTROL;
 
 output logic [31:0] RESULTADO;
 
@@ -17,8 +17,8 @@ always_comb
 begin
 case (CONTROL)
 	4'b0000: RESULTADO = X + Y;  // ADD ADDI
-	4'b0111: RESULTADO = X - Y;  // SUB BEQ BNE
-	4'b0100: RESULTADO = (X < Y) ? 1 : 0; // STL STLI 
+	4'b0111: RESULTADO = X - Y;  // SUB BEQ
+	4'b0100: RESULTADO = (X < Y) ? 1 : 0; // SLT SLTI 
 	4'b1100: RESULTADO = (Xu < Yu) ? 1 : 0; // STLU STLIU
 	4'b0010: RESULTADO = (X & Y); // AND ANDI
 	4'b0001: RESULTADO = (X | Y); // OR ORI
