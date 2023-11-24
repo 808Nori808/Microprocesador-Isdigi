@@ -30,4 +30,7 @@ case (CONTROL)
 	default: RESULTADO = 0; // Caso por defecto
 endcase
 end
+
+assign ZERO = (RESULTADO == 0) ? 1 : 0;
+
 endmodule 
