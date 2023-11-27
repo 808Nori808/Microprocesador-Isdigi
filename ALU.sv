@@ -18,6 +18,7 @@ begin
 case (CONTROL)
 	4'b0000: RESULTADO = X + Y;  // ADD ADDI AUIPC // Se supone que viene ya preparado para la ALU
 	4'b0111: RESULTADO = X - Y;  // SUB BEQ
+	4'b1111: RESULTADO = X == Y; // BNE
 	4'b0100: RESULTADO = (X < Y) ? 1 : 0; // SLT SLTI 
 	4'b1100: RESULTADO = (Xu < Yu) ? 1 : 0; // STLU STLIU
 	4'b0010: RESULTADO = (X & Y); // AND ANDI
