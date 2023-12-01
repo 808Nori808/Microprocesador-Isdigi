@@ -34,6 +34,7 @@ initial
  CLK = 0;
  forever #(T/2) CLK=!CLK;
  end     
- 
+
+$stop; 
  
 endmodule 
