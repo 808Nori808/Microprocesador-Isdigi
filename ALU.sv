@@ -28,7 +28,7 @@ case (CONTROL)
 	4'b1010: RESULTADO = Xu >> Yu; // SRL SRLI
 	4'b1110: RESULTADO = X >>> Y; // SRA 
 	4'b1011: RESULTADO = (X >= Y) ? 1 : 0; //BGE
-	4'b1111: RESULTADO = (X-Y==0)? 1:0;		   //BNE	
+	4'b1111: RESULTADO = (X-Y==0)? 1:0; //BNE	
 	default: RESULTADO = 0; // Caso por defecto
 endcase
 end	
