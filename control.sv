@@ -60,7 +60,7 @@ case (instruccion[6:0])
 					ALUSrc= 1'b0; 
 					RegWrite= 1'b0;
 					AuipcLui= 2'b10; 
-					
+					end
 		default: begin
 					Branch= 1'b0;   
 					MemRead= 1'b0;
