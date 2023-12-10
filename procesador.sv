@@ -19,15 +19,15 @@ module procesador
     output d_rw,
 );
 
-    logic [size-1:0] instruction;
+    logic [size-1:0] idata;
 
-    logic [size-1:0] read_data1, read_data2, write_data_reg;
+    logic [size-1:0] read_data1, write_data_reg;
 
     logic [size-1:0] imm;
 
     logic [3:0] ALUOp, ALU_control;
 
-    logic [size-1:0] ALU_x, ALU_y, ALU_result, read_data;
+    logic [size-1:0] ALU_x, ALU_y;
 
 	logic  Branch, MemRead, MemtoReg, MemWrite, RegWrite, ALUSrc;
     logic [3:0] ALUOp;
@@ -39,8 +39,8 @@ module procesador
 
 aROM aROM_inst
 (
-	.address(iddr) ,	
-	.dsalida(instruction) 	
+	.address(iaddr) ,	
+	.dsalida(idata) 	
 );   
 
 REGBANK REGBANK_inst
@@ -48,24 +48,24 @@ REGBANK REGBANK_inst
 	.CLK(CLK) ,	
 	.aRSTn(RESET_N) ,	
 	.ENA_WRITE(RegWrite) ,	
-	.READREG_1(instruction[19:15]) ,	
-	.READREG_2(instruction[24:20]) ,	
-	.WRITE_REG(instruction[11:7]) ,	
+	.READREG_1(idata[19:15]) ,	
+	.READREG_2(idata[24:20]) ,	
+	.WRITE_REG(idata[11:7]) ,	
 	.WRITE_DATA(write_data_reg) ,	
 	.read_data1(read_data1) ,	
-	.read_data2(read_data2) 	
+	.read_data2(ddata_w) 	
 );
 
 Imm_Gen Imm_Gen_inst
 (
-	.instruccion(instruction) ,	
+	.instruccion(idata) ,	
 	.imm(imm) 	 
 );
 
 mux_2to1 mux_2to1_inst1
 (
 	.select(ALUSrc) ,	
-	.dato1(read_data2) ,	
+	.dato1(ddata_w) ,	
 	.dato2(imm) ,	
 	.salida(ALU_y) 	
 );
@@ -73,7 +73,7 @@ mux_2to1 mux_2to1_inst1
 mux_4to1 mux_4to1_inst1
 (
 	.select(AuipcLui) ,	
-	.dato1(iddr) , // PC????	
+	.dato1(iaddr) , 	
 	.dato2(32'd0) ,	
 	.dato3(read_data1) ,	
 	.salida(ALU_x) 	
@@ -82,7 +82,7 @@ mux_4to1 mux_4to1_inst1
 ALUcontrol ALUcontrol_inst
 (
 	.ALUop(ALUOp) ,	
-	.bits({instruction[30] , instruction[14:12]}) ,	// ???? 
+	.bits({idata[30] , idata[14:12]}) ,	// ???? 
 	.salida_ALUcontrol(ALU_control) 	
 );
 
@@ -90,32 +90,32 @@ ALU ALU_inst
 (
 	.X(ALU_x) ,	
 	.Y(ALU_y) ,	
-	.RESULTADO(ALU_result) ,	
+	.RESULTADO(daddr) ,	
 	.ZERO(zero) ,	
 	.CONTROL(ALU_control) 	
 );
 
 RAM RAM_inst
 (
-	.data(read_data2) ,	
+	.data(ddata_w) ,	
 	.wren(MemWrite) ,	
     .wread(MemRead) ,
 	.clock(CLK) ,	
-	.address(ALU_result) ,	
-	.salida(read_data) 
+	.address(daddr) ,	
+	.salida(ddata_r) 
 );
 
 mux_2to1 mux_2to1_inst2
 (
 	.select(MemtoReg) ,	
-	.dato1(read_data) ,	
-	.dato2(ALU_result) ,	
+	.dato1(ddata_r) ,	
+	.dato2(daddr) ,	
 	.salida(write_data_reg) 	
 );
 
 control control_inst
 (
-	.instruccion(instruction[6:0]) ,	
+	.instruccion(idata[6:0]) ,	
 	.Branch(Branch) ,	
 	.MemRead(MemRead) ,	
 	.MemtoReg(MemtoReg) ,	
@@ -130,14 +130,14 @@ assign sel_mux = Branch & zero;
 
 sumador sumador_inst2
 (
-	.dataa(iddr) ,	
+	.dataa(iaddr) ,	
 	.datab(imm) ,	
 	.result(sum2) 	
 );
 
 sumador sumador_inst1
 (
-	.dataa(iddr) ,	
+	.dataa(iaddr) ,	
 	.datab(32'd4) ,	
 	.result(sum1) 	
 );
