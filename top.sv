@@ -5,8 +5,8 @@ module top
 );
     logic d_rw;
     logic [$clog2(data_size-1)-1:0] iaddr, daddr;
-    logic [size-1:0] ddata_w;
-    logic  [size-1:0] idata, ddata_r;
+    logic [address_size-1:0] ddata_w;
+    logic  [address_size-1:0] idata, ddata_r;
 
 aROM aROM_inst
 (

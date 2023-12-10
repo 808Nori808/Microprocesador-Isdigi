@@ -14,18 +14,15 @@ module procesador
 (
     input CLK,RESET_N,
     input [size-1:0] idata, ddata_r,
-    output [$clog2(data_size-1)-1:0] iaddr, daddr
+    output [$clog2(data_size-1)-1:0] iaddr, daddr,
     output [size-1:0] ddata_w, 
     output d_rw
 );
-
-    logic [size-1:0] idata;
-
     logic [size-1:0] read_data1, write_data_reg;
 
     logic [size-1:0] imm;
 
-    logic [3:0] ALUOp, ALU_control;
+    logic [3:0] ALU_control;
 
     logic [size-1:0] ALU_x, ALU_y;
 

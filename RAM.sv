@@ -2,7 +2,7 @@ module RAM #(parameter mem_depth=1024, parameter size=32)
 (
 input [size-1:0] data,
 input wren, wread, clock,
-input [$clog2(mem_depth-1)-1:0] address
+input [$clog2(mem_depth-1)-1:0] address,
 output logic [size-1:0] salida
 );	
  

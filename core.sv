@@ -13,33 +13,32 @@ module core
 #(parameter data_size = 1024, parameter address_size = 32)
 (
     input CLK, RESET_N,
-    input [size-1:0] idata, ddata_r,
-    output [$clog2(data_size-1)-1:0] iaddr, daddr
-    output [size-1:0] ddata_w, 
+    input [address_size-1:0] idata, ddata_r,
+    output [$clog2(data_size-1)-1:0] iaddr, daddr,
+    output [address_size-1:0] ddata_w, 
     output d_rw
 );
 
-    logic [size-1:0] idata;
+    logic [address_size-1:0] read_data1, write_data_reg;
 
-    logic [size-1:0] read_data1, write_data_reg;
+    logic [address_size-1:0] imm;
 
-    logic [size-1:0] imm;
+    logic [3:0] ALU_control;
 
-    logic [3:0] ALUOp, ALU_control;
+    logic [address_size-1:0] ALU_x, ALU_y;
 
-    logic [size-1:0] ALU_x, ALU_y;
-
-	logic  Branch, MemRead, MemtoReg, MemWrite, RegWrite, ALUSrc;
-    logic [3:0] ALUOp;
-	logic [1:0] AuipcLui;
+	 logic  Branch, MemRead, MemtoReg, MemWrite, RegWrite, ALUSrc;
+	 logic [3:0] ALUOp;
+	 logic [1:0] AuipcLui;
 
     logic zero;
 
-    logic [size-1:0] sum1, sum2;
+    logic [address_size-1:0] sum1, sum2;
 
-    logic [size-1:0] out_mux;
+    logic [address_size-1:0] out_mux;
 
-
+	logic d_rw_reg;
+	 
 REGBANK REGBANK_inst
 (
 	.CLK(CLK) ,	
@@ -78,7 +77,7 @@ mux_4to1 mux_4to1_inst1
 
 ALUcontrol ALUcontrol_inst
 (
-	.ALUop(ALUOp) ,	
+	.ALUOp(ALUOp) ,	
 	.bits({idata[30] , idata[14:12]}) ,	 
 	.salida_ALUcontrol(ALU_control) 	
 );
@@ -146,11 +145,17 @@ PC PC_inst
     .PC(iaddr) 
 );
 
-always_comb @(posedge CLK) begin
-    if((MemRead)&&(~MemWrite))
-        d_rw = 1'b1;
-    else if((~MemRead)&&(MemWrite))
-        d_rw = 1'b0;
-end
 
+
+always_ff @(posedge CLK)
+	if(MemRead)
+		if(~MemWrite)
+			d_rw_reg <= 1'b1;
+	else if(~MemRead)
+		if(MemWrite)
+			d_rw_reg <= 1'b0;
+
+assign d_rw = d_rw_reg;
+
+			
 endmodule
