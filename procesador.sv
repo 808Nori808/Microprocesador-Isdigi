@@ -37,6 +37,8 @@ module procesador
 
     logic [size-1:0] sum1, sum2;
 
+    logic [size-1:0] out_mux;
+
 aROM aROM_inst
 (
 	.address(iaddr) ,	
@@ -82,7 +84,7 @@ mux_4to1 mux_4to1_inst1
 ALUcontrol ALUcontrol_inst
 (
 	.ALUop(ALUOp) ,	
-	.bits({idata[30] , idata[14:12]}) ,	// ???? 
+	.bits({idata[30] , idata[14:12]}) ,	 
 	.salida_ALUcontrol(ALU_control) 	
 );
 
@@ -147,7 +149,15 @@ mux_2to1 mux_2to1_inst3
 	.select(sel_mux) ,	
 	.dato1(sum1) ,	
 	.dato2(sum2) ,	
-	.salida() 	// entrada del pc ????
+	.salida(out_mux) 	
+);
+
+PC PC_inst
+(
+    .CLK(CLK) ,
+    .RESET_N(RESET_N) ,
+    .PC_in(out_mux) ,
+    .PC(iaddr) 
 );
 
 endmodule
