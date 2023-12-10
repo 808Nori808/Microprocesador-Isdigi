@@ -3,7 +3,7 @@ module top
 (
     input CLK, RESET_N  
 );
-    logic d_rw;
+    logic d_rw, MemRead, MemWrite;
     logic [$clog2(data_size-1)-1:0] iaddr, daddr;
     logic [address_size-1:0] ddata_w;
     logic  [address_size-1:0] idata, ddata_r;
@@ -33,7 +33,9 @@ core core_inst
     .iaddr(iaddr) ,
     .daddr(daddr) ,
     .ddata_w(ddata_w) ,
-    .d_rw(d_rw)
+    .d_rw(d_rw),
+    .MemRead(MemRead) ,
+    .MemWrite(MemWrite) 
 );
 
 endmodule

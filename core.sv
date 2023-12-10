@@ -16,7 +16,7 @@ module core
     input [address_size-1:0] idata, ddata_r,
     output [$clog2(data_size-1)-1:0] iaddr, daddr,
     output [address_size-1:0] ddata_w, 
-    output d_rw
+    output d_rw, MemRead, MemWrite
 );
 
     logic [address_size-1:0] read_data1, write_data_reg;
@@ -27,9 +27,9 @@ module core
 
     logic [address_size-1:0] ALU_x, ALU_y;
 
-	 logic  Branch, MemRead, MemtoReg, MemWrite, RegWrite, ALUSrc;
-	 logic [3:0] ALUOp;
-	 logic [1:0] AuipcLui;
+	logic  Branch, MemtoReg, RegWrite, ALUSrc;
+	logic [3:0] ALUOp;
+	logic [1:0] AuipcLui;
 
     logic zero;
 
@@ -37,7 +37,6 @@ module core
 
     logic [address_size-1:0] out_mux;
 
-	logic d_rw_reg;
 	 
 REGBANK REGBANK_inst
 (
@@ -145,17 +144,6 @@ PC PC_inst
     .PC(iaddr) 
 );
 
-
-
-always_ff @(posedge CLK)
-	if(MemRead)
-		if(~MemWrite)
-			d_rw_reg <= 1'b1;
-	else if(~MemRead)
-		if(MemWrite)
-			d_rw_reg <= 1'b0;
-
-assign d_rw = d_rw_reg;
 
 			
 endmodule
