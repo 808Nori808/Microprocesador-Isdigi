@@ -9,10 +9,10 @@
 // Bus de datos de escritura DMEM: ddata_w
 // ------------------------------------------------
 
-module procesador 
+module core 
 #(parameter data_size = 1024, parameter address_size = 32)
 (
-    input CLK,RESET_N,
+    input CLK, RESET_N,
     input [size-1:0] idata, ddata_r,
     output [$clog2(data_size-1)-1:0] iaddr, daddr
     output [size-1:0] ddata_w, 
@@ -39,11 +39,6 @@ module procesador
 
     logic [size-1:0] out_mux;
 
-aROM aROM_inst
-(
-	.address(iaddr) ,	
-	.dsalida(idata) 	
-);   
 
 REGBANK REGBANK_inst
 (
@@ -97,15 +92,6 @@ ALU ALU_inst
 	.CONTROL(ALU_control) 	
 );
 
-RAM RAM_inst
-(
-	.data(ddata_w) ,	
-	.wren(MemWrite) ,	
-    .wread(MemRead) ,
-	.clock(CLK) ,	
-	.address(daddr) ,	
-	.salida(ddata_r) 
-);
 
 mux_2to1 mux_2to1_inst2
 (
@@ -159,5 +145,12 @@ PC PC_inst
     .PC_in(out_mux) ,
     .PC(iaddr) 
 );
+
+always_comb @(posedge CLK) begin
+    if((MemRead)&&(~MemWrite))
+        d_rw = 1'b1;
+    else if((~MemRead)&&(MemWrite))
+        d_rw = 1'b0;
+end
 
 endmodule
