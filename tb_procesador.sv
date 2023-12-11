@@ -20,8 +20,8 @@ aROM aROM_inst
 RAM RAM_inst
 (
 	.data(ddata_w) ,	
-	.wren(~d_rw) ,	
-    .wread(d_rw) ,
+	.wren(MemWrite) ,	
+    .wread(MemRead) ,
 	.clock(CLK) ,	
 	.address(daddr) ,	
 	.salida(ddata_r) 
