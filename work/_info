@@ -316,6 +316,31 @@ r1
 !i113 0
 R6
 R7
+vtb_procesador
+R1
+!s110 1702300834
+!i10b 1
+!s100 >WXQ<ZOT6cNhiH;=G8<fc2
+R2
+ISXVaGCbA>Y=C?R?WoIMPb3
+R3
+S1
+dC:/Users/itsep/OneDrive/Documentos/GitHub/Microprocesador-ISDIGI
+w1702300711
+8tb_procesador.sv
+Ftb_procesador.sv
+!i122 17
+L0 3 54
+R5
+r1
+!s85 0
+31
+!s108 1702300834.000000
+!s107 tb_procesador.sv|
+!s90 -reportprogress|300|tb_procesador.sv|
+!i113 0
+o-L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+R7
 vtop
 R1
 !s110 1702242720
