@@ -63,28 +63,28 @@ R7
 n@a@l@ucontrol
 vaROM
 R1
-!s110 1702242147
+Z8 !s110 1702301236
 !i10b 1
 !s100 9R7K2o6=^HbgHDb:79EZ83
 R2
-IGzbYgZTlP[Kd82M=7Yj_T0
+IFbeh2>W4P1UUEGJRCBzBQ1
 R3
 S1
-R0
-w1701419736
-8C:/Users/beltr/OneDrive/Documentos/ISDIGI LOCAL/Proyecto 3 GitHub/Microprocesador-Isdigi/aROM.sv
-FC:/Users/beltr/OneDrive/Documentos/ISDIGI LOCAL/Proyecto 3 GitHub/Microprocesador-Isdigi/aROM.sv
-!i122 2
-Z8 L0 1 16
+Z9 dC:/Users/itsep/OneDrive/Documentos/GitHub/Microprocesador-ISDIGI
+w1702290622
+8aROM.sv
+FaROM.sv
+!i122 20
+Z10 L0 1 16
 R5
 r1
 !s85 0
 31
-!s108 1702242147.000000
-!s107 C:/Users/beltr/OneDrive/Documentos/ISDIGI LOCAL/Proyecto 3 GitHub/Microprocesador-Isdigi/aROM.sv|
-!s90 -reportprogress|300|-work|work|C:/Users/beltr/OneDrive/Documentos/ISDIGI LOCAL/Proyecto 3 GitHub/Microprocesador-Isdigi/aROM.sv|
+Z11 !s108 1702301236.000000
+!s107 tb_procesador.sv|aROM.sv|core.sv|RAM.sv|
+Z12 !s90 -reportprogress|300|RAM.sv|core.sv|aROM.sv|tb_procesador.sv|
 !i113 0
-R6
+Z13 o-L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
 R7
 na@r@o@m
 vcontrol
@@ -114,28 +114,28 @@ R6
 R7
 vcore
 R1
-!s110 1702242713
+R8
 !i10b 1
 !s100 W38jV3nmXONf1TiaD4db?2
 R2
-ICc^d;@<j0aU@7A<c9PWXP1
+IWEbiU;@0ZjZ?VE0BVzf4E2
 R3
 S1
-R0
-w1702242710
-8C:/Users/beltr/OneDrive/Documentos/ISDIGI LOCAL/Proyecto 3 GitHub/Microprocesador-Isdigi/core.sv
-FC:/Users/beltr/OneDrive/Documentos/ISDIGI LOCAL/Proyecto 3 GitHub/Microprocesador-Isdigi/core.sv
-!i122 14
+R9
+Z14 w1702290653
+8core.sv
+Fcore.sv
+!i122 20
 L0 12 138
 R5
 r1
 !s85 0
 31
-!s108 1702242713.000000
-!s107 C:/Users/beltr/OneDrive/Documentos/ISDIGI LOCAL/Proyecto 3 GitHub/Microprocesador-Isdigi/core.sv|
-!s90 -reportprogress|300|-work|work|C:/Users/beltr/OneDrive/Documentos/ISDIGI LOCAL/Proyecto 3 GitHub/Microprocesador-Isdigi/core.sv|
+R11
+Z15 !s107 tb_procesador.sv|aROM.sv|core.sv|RAM.sv|
+R12
 !i113 0
-R6
+R13
 R7
 vImm_Gen
 R1
@@ -173,7 +173,7 @@ IE@aLHamne`16=@H<Yh69o1
 R3
 S1
 R0
-Z9 w1702047329
+Z16 w1702047329
 8C:/Users/beltr/OneDrive/Documentos/ISDIGI LOCAL/Proyecto 3 GitHub/Microprocesador-Isdigi/mux_2to1.sv
 FC:/Users/beltr/OneDrive/Documentos/ISDIGI LOCAL/Proyecto 3 GitHub/Microprocesador-Isdigi/mux_2to1.sv
 !i122 6
@@ -198,11 +198,11 @@ IXFT?cAgEDJY56O?BidT3z2
 R3
 S1
 R0
-R9
+R16
 8C:/Users/beltr/OneDrive/Documentos/ISDIGI LOCAL/Proyecto 3 GitHub/Microprocesador-Isdigi/mux_4to1.sv
 FC:/Users/beltr/OneDrive/Documentos/ISDIGI LOCAL/Proyecto 3 GitHub/Microprocesador-Isdigi/mux_4to1.sv
 !i122 7
-R8
+R10
 R5
 r1
 !s85 0
@@ -241,28 +241,28 @@ R7
 n@p@c
 vRAM
 R1
-!s110 1702242164
+R8
 !i10b 1
 !s100 Y[^W0db[Uj:J>cnz2fHOV0
 R2
-II95<S_ON^PBD6MjK6Foj[0
+IX;cn?Q?Ob>g<^=e9LcgDe1
 R3
 S1
-R0
-w1702239748
-8C:/Users/beltr/OneDrive/Documentos/ISDIGI LOCAL/Proyecto 3 GitHub/Microprocesador-Isdigi/RAM.sv
-FC:/Users/beltr/OneDrive/Documentos/ISDIGI LOCAL/Proyecto 3 GitHub/Microprocesador-Isdigi/RAM.sv
-!i122 9
+R9
+R14
+8RAM.sv
+FRAM.sv
+!i122 20
 L0 1 18
 R5
 r1
 !s85 0
 31
-!s108 1702242163.000000
-!s107 C:/Users/beltr/OneDrive/Documentos/ISDIGI LOCAL/Proyecto 3 GitHub/Microprocesador-Isdigi/RAM.sv|
-!s90 -reportprogress|300|-work|work|C:/Users/beltr/OneDrive/Documentos/ISDIGI LOCAL/Proyecto 3 GitHub/Microprocesador-Isdigi/RAM.sv|
+R11
+R15
+R12
 !i113 0
-R6
+R13
 R7
 n@r@a@m
 vREGBANK
@@ -301,7 +301,7 @@ IlHI:zefmTD1oaAA6zLnT70
 R3
 S1
 R0
-R9
+R16
 8C:/Users/beltr/OneDrive/Documentos/ISDIGI LOCAL/Proyecto 3 GitHub/Microprocesador-Isdigi/sumador.sv
 FC:/Users/beltr/OneDrive/Documentos/ISDIGI LOCAL/Proyecto 3 GitHub/Microprocesador-Isdigi/sumador.sv
 !i122 11
@@ -318,28 +318,28 @@ R6
 R7
 vtb_procesador
 R1
-!s110 1702300834
+R8
 !i10b 1
 !s100 >WXQ<ZOT6cNhiH;=G8<fc2
 R2
 ISXVaGCbA>Y=C?R?WoIMPb3
 R3
 S1
-dC:/Users/itsep/OneDrive/Documentos/GitHub/Microprocesador-ISDIGI
+R9
 w1702300711
 8tb_procesador.sv
 Ftb_procesador.sv
-!i122 17
+!i122 20
 L0 3 54
 R5
 r1
 !s85 0
 31
-!s108 1702300834.000000
-!s107 tb_procesador.sv|
-!s90 -reportprogress|300|tb_procesador.sv|
+R11
+R15
+R12
 !i113 0
-o-L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+R13
 R7
 vtop
 R1

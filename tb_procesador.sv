@@ -13,7 +13,7 @@ logic  [address_size-1:0] idata, ddata_r;
 
 aROM aROM_inst
 (
-	.address(iaddr[11:2]) ,	
+	.address(iaddr), // PC
 	.dsalida(idata) 	
 ); 
 
@@ -23,7 +23,7 @@ RAM RAM_inst
 	.wren(~d_rw) ,	
     .wread(d_rw) ,
 	.clock(CLK) ,	
-	.address(daddr[11:2]) ,	
+	.address(daddr) ,	
 	.salida(ddata_r) 
 );
 
@@ -49,8 +49,10 @@ end
 initial 
 begin
 	CLK = 0;
-	RESET_N = 0;
+	RESET_N = 0;	
 	#(T) RESET_N = 1;
+	#(T*1000)
+	$stop;
 
 end
 endmodule 

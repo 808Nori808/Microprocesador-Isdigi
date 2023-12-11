@@ -1,0 +1,193 @@
+{
+	"partitions" : [
+		{
+			"name" : "Top",
+			"pins" : [
+				{
+					"name" : "iaddr[0]",
+					"strict" : false
+				},
+				{
+					"name" : "iaddr[1]",
+					"strict" : false
+				},
+				{
+					"name" : "daddr[0]",
+					"strict" : false
+				},
+				{
+					"name" : "daddr[1]",
+					"strict" : false
+				},
+				{
+					"name" : "daddr[2]",
+					"strict" : false
+				},
+				{
+					"name" : "daddr[3]",
+					"strict" : false
+				},
+				{
+					"name" : "daddr[4]",
+					"strict" : false
+				},
+				{
+					"name" : "daddr[5]",
+					"strict" : false
+				},
+				{
+					"name" : "daddr[6]",
+					"strict" : false
+				},
+				{
+					"name" : "daddr[7]",
+					"strict" : false
+				},
+				{
+					"name" : "daddr[8]",
+					"strict" : false
+				},
+				{
+					"name" : "daddr[9]",
+					"strict" : false
+				},
+				{
+					"name" : "ddata_w[0]",
+					"strict" : false
+				},
+				{
+					"name" : "ddata_w[1]",
+					"strict" : false
+				},
+				{
+					"name" : "MemRead",
+					"strict" : false
+				},
+				{
+					"name" : "MemWrite",
+					"strict" : false
+				},
+				{
+					"name" : "idata[0]",
+					"strict" : false
+				},
+				{
+					"name" : "idata[1]",
+					"strict" : false
+				},
+				{
+					"name" : "idata[2]",
+					"strict" : false
+				},
+				{
+					"name" : "idata[3]",
+					"strict" : false
+				},
+				{
+					"name" : "idata[7]",
+					"strict" : false
+				},
+				{
+					"name" : "idata[20]",
+					"strict" : false
+				},
+				{
+					"name" : "idata[4]",
+					"strict" : false
+				},
+				{
+					"name" : "idata[5]",
+					"strict" : false
+				},
+				{
+					"name" : "idata[6]",
+					"strict" : false
+				},
+				{
+					"name" : "idata[21]",
+					"strict" : false
+				},
+				{
+					"name" : "idata[23]",
+					"strict" : false
+				},
+				{
+					"name" : "idata[22]",
+					"strict" : false
+				},
+				{
+					"name" : "idata[24]",
+					"strict" : false
+				},
+				{
+					"name" : "idata[19]",
+					"strict" : false
+				},
+				{
+					"name" : "idata[17]",
+					"strict" : false
+				},
+				{
+					"name" : "idata[18]",
+					"strict" : false
+				},
+				{
+					"name" : "idata[16]",
+					"strict" : false
+				},
+				{
+					"name" : "idata[15]",
+					"strict" : false
+				},
+				{
+					"name" : "idata[12]",
+					"strict" : false
+				},
+				{
+					"name" : "idata[13]",
+					"strict" : false
+				},
+				{
+					"name" : "idata[14]",
+					"strict" : false
+				},
+				{
+					"name" : "idata[30]",
+					"strict" : false
+				},
+				{
+					"name" : "idata[8]",
+					"strict" : false
+				},
+				{
+					"name" : "CLK",
+					"strict" : false
+				},
+				{
+					"name" : "RESET_N",
+					"strict" : false
+				},
+				{
+					"name" : "ddata_r[0]",
+					"strict" : false
+				},
+				{
+					"name" : "idata[9]",
+					"strict" : false
+				},
+				{
+					"name" : "idata[10]",
+					"strict" : false
+				},
+				{
+					"name" : "idata[11]",
+					"strict" : false
+				},
+				{
+					"name" : "ddata_r[1]",
+					"strict" : false
+				}
+			]
+		}
+	]
+}
