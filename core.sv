@@ -13,13 +13,14 @@ module core
 #(parameter data_size = 1024, parameter address_size = 32)
 (
     input CLK, RESET_N,
-    input [address_size-1:0] ddata_r,
-	 input [address_size-1:0] idata,
-    output [$clog2(data_size-1)-1:0] iaddr,//daddr,
-    output [address_size-1:0] ddata_w, 
-    output d_rw, MemRead, MemWrite,
-	output [31:0] cableALUmux
+	input [address_size-1:0] idata, ddata_r,
+
+    output [$clog2(data_size-1)-1:0] iaddr,
+    output [address_size-1:0] ddata_w, daddr,
+	output MemRead, MemWrite, d_rw
+
 );
+
     logic [address_size-1:0] read_data1, write_data_reg;
 
     logic [address_size-1:0] imm;
@@ -37,8 +38,8 @@ module core
     logic [address_size-1:0] sum1, sum2;
 
     logic [address_size-1:0] out_mux;
-	 
 
+	logic [address_size-1:0] iaddr_32;
 	 
 REGBANK REGBANK_inst
 (
@@ -70,7 +71,7 @@ mux_2to1 mux_2to1_inst1
 mux_4to1 mux_4to1_inst1
 (
 	.select(AuipcLui) ,	
-	.dato1(iaddr) , 	
+	.dato1(iaddr_32) , 	
 	.dato2(32'd0) ,	
 	.dato3(read_data1) ,	
 	.salida(ALU_x) 	
@@ -87,7 +88,7 @@ ALU ALU_inst
 (
 	.X(ALU_x) ,	
 	.Y(ALU_y) ,	
-	.RESULTADO(cableALUmux) ,	
+	.RESULTADO(daddr) ,	
 	.ZERO(zero) ,	
 	.CONTROL(ALU_control) 	
 );
@@ -97,7 +98,7 @@ mux_2to1 mux_2to1_inst2
 (
 	.select(MemtoReg) ,	
 	.dato1(ddata_r) ,	
-	.dato2(cableALUmux) ,	
+	.dato2(daddr) ,	
 	.salida(write_data_reg) 	
 );
 
@@ -118,14 +119,14 @@ assign sel_mux = Branch & zero;
 
 sumador sumador_inst2
 (
-	.dataa(iaddr) ,	
+	.dataa(iaddr_32) ,	
 	.datab(imm) ,	
 	.result(sum2) 	
 );
 
 sumador sumador_inst1
 (
-	.dataa(iaddr) ,	
+	.dataa(iaddr_32) ,	
 	.datab(32'd4) ,	
 	.result(sum1) 	
 );
@@ -143,9 +144,9 @@ PC PC_inst
     .CLK(CLK) ,
     .RESET_N(RESET_N) ,
     .PC_in(out_mux) ,
-    .PC(iaddr) 
+    .PC(iaddr_32) 
 );
 
-
+assign iaddr = iaddr_32[11:2];
 			
 endmodule

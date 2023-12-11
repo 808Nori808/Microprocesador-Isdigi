@@ -6,11 +6,9 @@ parameter address_size = 32;
 parameter T = 50;
 
 logic CLK, RESET_N;
+logic [$clog2(data_size-1)-1:0] iaddr;
+logic [address_size-1:0] ddata_w, ddata_r, daddr, idata;
 logic d_rw, MemRead, MemWrite;
-logic [$clog2(data_size-1)-1:0] iaddr; // daddr;
-logic [31:0] cableALUmux;
-logic [address_size-1:0] ddata_w;
-logic  [address_size-1:0] idata, ddata_r;
 
 aROM aROM_inst
 (
@@ -24,7 +22,7 @@ RAM RAM_inst
 	.wren(MemWrite) ,	
     .wread(MemRead) ,
 	.clock(CLK) ,	
-	.address(cableALUmux) ,	
+	.address(daddr[11:2]) ,	
 	.salida(ddata_r) 
 );
 
@@ -35,11 +33,11 @@ core core_inst
     .idata(idata) ,
     .ddata_r(ddata_r) ,
     .iaddr(iaddr) ,
-    .cableALUmux(cableALUmux) ,
     .ddata_w(ddata_w) ,
-    .d_rw(d_rw),
+    .daddr(daddr) ,
     .MemRead(MemRead) ,
-    .MemWrite(MemWrite) 
+    .MemWrite(MemWrite) ,
+    .d_rw(d_rw)
 );
 
 //GENERACIÓN DE RELOJ

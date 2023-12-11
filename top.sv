@@ -3,25 +3,24 @@ module top
 (
     input CLK, RESET_N  
 );
+
+    logic [$clog2(data_size-1)-1:0] iaddr;
+    logic [address_size-1:0] ddata_w, ddata_r, daddr, idata;
     logic d_rw, MemRead, MemWrite;
-    logic [$clog2(data_size-1)-1:0] iaddr;// daddr;
-	 logic [31:0] cableALUmux;
-    logic [address_size-1:0] ddata_w;
-    logic  [address_size-1:0] idata, ddata_r;
 
 aROM aROM_inst
 (
-	.address(iaddr) ,	
+	.address(iaddr), // PC
 	.dsalida(idata) 	
 ); 
 
 RAM RAM_inst
 (
 	.data(ddata_w) ,	
-	.wren(~d_rw) ,	
-    .wread(d_rw) ,
+	.wren(MemWrite) ,	
+    .wread(MemRead) ,
 	.clock(CLK) ,	
-	.address(cableALUmux[9:0]) ,	
+	.address(daddr[11:2]) ,	
 	.salida(ddata_r) 
 );
 
@@ -32,11 +31,12 @@ core core_inst
     .idata(idata) ,
     .ddata_r(ddata_r) ,
     .iaddr(iaddr) ,
-    .cableALUmux(cableALUmux) ,
     .ddata_w(ddata_w) ,
-    .d_rw(d_rw),
+    .daddr(daddr) ,
     .MemRead(MemRead) ,
-    .MemWrite(MemWrite) 
+    .MemWrite(MemWrite) ,
+    .d_rw(d_rw)
 );
+
 
 endmodule 

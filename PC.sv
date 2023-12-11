@@ -10,7 +10,7 @@ module PC
 	
     always_ff@(posedge CLK or negedge RESET_N)
     if(~RESET_N)
-            PC_reg <= '0;
+            PC_reg <= 32'b0;
     else
             PC_reg <= PC_in;
 				

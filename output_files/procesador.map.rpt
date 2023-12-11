@@ -1,6 +1,6 @@
 Analysis & Synthesis report for procesador
-Mon Dec 11 20:42:49 2023
-Quartus Prime Version 17.1.0 Build 590 10/25/2017 SJ Lite Edition
+Tue Dec 12 00:23:21 2023
+Quartus Prime Version 17.1.1 Internal Build 593 12/11/2017 SJ Lite Edition
 
 
 ---------------------
@@ -14,23 +14,24 @@ Quartus Prime Version 17.1.0 Build 590 10/25/2017 SJ Lite Edition
   6. Analysis & Synthesis Resource Usage Summary
   7. Analysis & Synthesis Resource Utilization by Entity
   8. General Register Statistics
-  9. Multiplexer Restructuring Statistics (Restructuring Performed)
- 10. Parameter Settings for User Entity Instance: Top-level Entity: |core
- 11. Parameter Settings for User Entity Instance: REGBANK:REGBANK_inst
- 12. Parameter Settings for User Entity Instance: mux_2to1:mux_2to1_inst1
- 13. Parameter Settings for User Entity Instance: mux_4to1:mux_4to1_inst1
- 14. Parameter Settings for User Entity Instance: mux_2to1:mux_2to1_inst2
- 15. Parameter Settings for User Entity Instance: sumador:sumador_inst2
- 16. Parameter Settings for User Entity Instance: sumador:sumador_inst1
- 17. Parameter Settings for User Entity Instance: mux_2to1:mux_2to1_inst3
- 18. Parameter Settings for User Entity Instance: PC:PC_inst
- 19. Port Connectivity Checks: "PC:PC_inst"
- 20. Port Connectivity Checks: "sumador:sumador_inst1"
- 21. Port Connectivity Checks: "sumador:sumador_inst2"
- 22. Port Connectivity Checks: "mux_4to1:mux_4to1_inst1"
- 23. Post-Synthesis Netlist Statistics for Top Partition
- 24. Elapsed Time Per Partition
- 25. Analysis & Synthesis Messages
+  9. Parameter Settings for User Entity Instance: Top-level Entity: |top
+ 10. Parameter Settings for User Entity Instance: aROM:aROM_inst
+ 11. Parameter Settings for User Entity Instance: RAM:RAM_inst
+ 12. Parameter Settings for User Entity Instance: core:core_inst
+ 13. Parameter Settings for User Entity Instance: core:core_inst|REGBANK:REGBANK_inst
+ 14. Parameter Settings for User Entity Instance: core:core_inst|mux_2to1:mux_2to1_inst1
+ 15. Parameter Settings for User Entity Instance: core:core_inst|mux_4to1:mux_4to1_inst1
+ 16. Parameter Settings for User Entity Instance: core:core_inst|mux_2to1:mux_2to1_inst2
+ 17. Parameter Settings for User Entity Instance: core:core_inst|sumador:sumador_inst2
+ 18. Parameter Settings for User Entity Instance: core:core_inst|sumador:sumador_inst1
+ 19. Parameter Settings for User Entity Instance: core:core_inst|mux_2to1:mux_2to1_inst3
+ 20. Parameter Settings for User Entity Instance: core:core_inst|PC:PC_inst
+ 21. Port Connectivity Checks: "core:core_inst|sumador:sumador_inst1"
+ 22. Port Connectivity Checks: "core:core_inst|mux_4to1:mux_4to1_inst1"
+ 23. Port Connectivity Checks: "core:core_inst"
+ 24. Post-Synthesis Netlist Statistics for Top Partition
+ 25. Elapsed Time Per Partition
+ 26. Analysis & Synthesis Messages
 
 
 
@@ -53,24 +54,24 @@ refer to the applicable agreement for further details.
 
 
 
-+----------------------------------------------------------------------------------+
-; Analysis & Synthesis Summary                                                     ;
-+------------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Mon Dec 11 20:42:49 2023       ;
-; Quartus Prime Version              ; 17.1.0 Build 590 10/25/2017 SJ Lite Edition ;
-; Revision Name                      ; procesador                                  ;
-; Top-level Entity Name              ; core                                        ;
-; Family                             ; Cyclone IV E                                ;
-; Total logic elements               ; 3,385                                       ;
-;     Total combinational functions  ; 2,393                                       ;
-;     Dedicated logic registers      ; 1,034                                       ;
-; Total registers                    ; 1034                                        ;
-; Total pins                         ; 143                                         ;
-; Total virtual pins                 ; 0                                           ;
-; Total memory bits                  ; 0                                           ;
-; Embedded Multiplier 9-bit elements ; 0                                           ;
-; Total PLLs                         ; 0                                           ;
-+------------------------------------+---------------------------------------------+
++-------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Summary                                                              ;
++------------------------------------+------------------------------------------------------+
+; Analysis & Synthesis Status        ; Successful - Tue Dec 12 00:23:21 2023                ;
+; Quartus Prime Version              ; 17.1.1 Internal Build 593 12/11/2017 SJ Lite Edition ;
+; Revision Name                      ; procesador                                           ;
+; Top-level Entity Name              ; top                                                  ;
+; Family                             ; Cyclone IV E                                         ;
+; Total logic elements               ; 0                                                    ;
+;     Total combinational functions  ; 0                                                    ;
+;     Dedicated logic registers      ; 0                                                    ;
+; Total registers                    ; 0                                                    ;
+; Total pins                         ; 2                                                    ;
+; Total virtual pins                 ; 0                                                    ;
+; Total memory bits                  ; 0                                                    ;
+; Embedded Multiplier 9-bit elements ; 0                                                    ;
+; Total PLLs                         ; 0                                                    ;
++------------------------------------+------------------------------------------------------+
 
 
 +----------------------------------------------------------------------------------------------------------------------+
@@ -79,7 +80,7 @@ refer to the applicable agreement for further details.
 ; Option                                                                     ; Setting            ; Default Value      ;
 +----------------------------------------------------------------------------+--------------------+--------------------+
 ; Device                                                                     ; EP4CE115F29C7      ;                    ;
-; Top-level entity name                                                      ; core               ; procesador         ;
+; Top-level entity name                                                      ; top                ; procesador         ;
 ; Family name                                                                ; Cyclone IV E       ; Cyclone V          ;
 ; Use smart compilation                                                      ; Off                ; Off                ;
 ; Enable parallel Assembler and TimeQuest Timing Analyzer during compilation ; On                 ; On                 ;
@@ -164,91 +165,77 @@ refer to the applicable agreement for further details.
 +----------------------------+-------------+
 ; Processors                 ; Number      ;
 +----------------------------+-------------+
-; Number detected on machine ; 16          ;
-; Maximum allowed            ; 8           ;
+; Number detected on machine ; 8           ;
+; Maximum allowed            ; 4           ;
 ;                            ;             ;
 ; Average used               ; 1.00        ;
-; Maximum used               ; 8           ;
+; Maximum used               ; 1           ;
 ;                            ;             ;
 ; Usage by Processor         ; % Time Used ;
 ;     Processor 1            ; 100.0%      ;
-;     Processor 2            ;   0.1%      ;
-;     Processor 3            ;   0.1%      ;
-;     Processor 4            ;   0.1%      ;
-;     Processor 5            ;   0.1%      ;
-;     Processor 6            ;   0.1%      ;
-;     Processor 7            ;   0.1%      ;
-;     Processor 8            ;   0.1%      ;
 +----------------------------+-------------+
 
 
-+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Source Files Read                                                                                                                                       ;
-+----------------------------------+-----------------+------------------------------+--------------------------------------------------------------------------------+---------+
-; File Name with User-Entered Path ; Used in Netlist ; File Type                    ; File Name with Absolute Path                                                   ; Library ;
-+----------------------------------+-----------------+------------------------------+--------------------------------------------------------------------------------+---------+
-; sumador.sv                       ; yes             ; User SystemVerilog HDL File  ; C:/Users/itsep/OneDrive/Documentos/GitHub/Microprocesador-ISDIGI/sumador.sv    ;         ;
-; REGBANK.sv                       ; yes             ; User SystemVerilog HDL File  ; C:/Users/itsep/OneDrive/Documentos/GitHub/Microprocesador-ISDIGI/REGBANK.sv    ;         ;
-; PC.sv                            ; yes             ; User SystemVerilog HDL File  ; C:/Users/itsep/OneDrive/Documentos/GitHub/Microprocesador-ISDIGI/PC.sv         ;         ;
-; mux_4to1.sv                      ; yes             ; User SystemVerilog HDL File  ; C:/Users/itsep/OneDrive/Documentos/GitHub/Microprocesador-ISDIGI/mux_4to1.sv   ;         ;
-; mux_2to1.sv                      ; yes             ; User SystemVerilog HDL File  ; C:/Users/itsep/OneDrive/Documentos/GitHub/Microprocesador-ISDIGI/mux_2to1.sv   ;         ;
-; Imm_Gen.sv                       ; yes             ; User SystemVerilog HDL File  ; C:/Users/itsep/OneDrive/Documentos/GitHub/Microprocesador-ISDIGI/Imm_Gen.sv    ;         ;
-; core.sv                          ; yes             ; User SystemVerilog HDL File  ; C:/Users/itsep/OneDrive/Documentos/GitHub/Microprocesador-ISDIGI/core.sv       ;         ;
-; control.sv                       ; yes             ; User SystemVerilog HDL File  ; C:/Users/itsep/OneDrive/Documentos/GitHub/Microprocesador-ISDIGI/control.sv    ;         ;
-; ALUcontrol.sv                    ; yes             ; User SystemVerilog HDL File  ; C:/Users/itsep/OneDrive/Documentos/GitHub/Microprocesador-ISDIGI/ALUcontrol.sv ;         ;
-; ALU.sv                           ; yes             ; User SystemVerilog HDL File  ; C:/Users/itsep/OneDrive/Documentos/GitHub/Microprocesador-ISDIGI/ALU.sv        ;         ;
-+----------------------------------+-----------------+------------------------------+--------------------------------------------------------------------------------+---------+
++---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                                                                                        ;
++----------------------------------+-----------------+---------------------------------------+--------------------------------------------------------------------------------------------------------+---------+
+; File Name with User-Entered Path ; Used in Netlist ; File Type                             ; File Name with Absolute Path                                                                           ; Library ;
++----------------------------------+-----------------+---------------------------------------+--------------------------------------------------------------------------------------------------------+---------+
+; myFibo.hex                       ; yes             ; User Hexadecimal (Intel-Format) File  ; C:/Users/beltr/OneDrive/Documentos/ISDIGI LOCAL/Proyecto 3 GitHub/Microprocesador-Isdigi/myFibo.hex    ;         ;
+; top.sv                           ; yes             ; User SystemVerilog HDL File           ; C:/Users/beltr/OneDrive/Documentos/ISDIGI LOCAL/Proyecto 3 GitHub/Microprocesador-Isdigi/top.sv        ;         ;
+; sumador.sv                       ; yes             ; User SystemVerilog HDL File           ; C:/Users/beltr/OneDrive/Documentos/ISDIGI LOCAL/Proyecto 3 GitHub/Microprocesador-Isdigi/sumador.sv    ;         ;
+; REGBANK.sv                       ; yes             ; User SystemVerilog HDL File           ; C:/Users/beltr/OneDrive/Documentos/ISDIGI LOCAL/Proyecto 3 GitHub/Microprocesador-Isdigi/REGBANK.sv    ;         ;
+; RAM.sv                           ; yes             ; User SystemVerilog HDL File           ; C:/Users/beltr/OneDrive/Documentos/ISDIGI LOCAL/Proyecto 3 GitHub/Microprocesador-Isdigi/RAM.sv        ;         ;
+; PC.sv                            ; yes             ; User SystemVerilog HDL File           ; C:/Users/beltr/OneDrive/Documentos/ISDIGI LOCAL/Proyecto 3 GitHub/Microprocesador-Isdigi/PC.sv         ;         ;
+; mux_4to1.sv                      ; yes             ; User SystemVerilog HDL File           ; C:/Users/beltr/OneDrive/Documentos/ISDIGI LOCAL/Proyecto 3 GitHub/Microprocesador-Isdigi/mux_4to1.sv   ;         ;
+; mux_2to1.sv                      ; yes             ; User SystemVerilog HDL File           ; C:/Users/beltr/OneDrive/Documentos/ISDIGI LOCAL/Proyecto 3 GitHub/Microprocesador-Isdigi/mux_2to1.sv   ;         ;
+; Imm_Gen.sv                       ; yes             ; User SystemVerilog HDL File           ; C:/Users/beltr/OneDrive/Documentos/ISDIGI LOCAL/Proyecto 3 GitHub/Microprocesador-Isdigi/Imm_Gen.sv    ;         ;
+; core.sv                          ; yes             ; User SystemVerilog HDL File           ; C:/Users/beltr/OneDrive/Documentos/ISDIGI LOCAL/Proyecto 3 GitHub/Microprocesador-Isdigi/core.sv       ;         ;
+; control.sv                       ; yes             ; User SystemVerilog HDL File           ; C:/Users/beltr/OneDrive/Documentos/ISDIGI LOCAL/Proyecto 3 GitHub/Microprocesador-Isdigi/control.sv    ;         ;
+; aROM.sv                          ; yes             ; User SystemVerilog HDL File           ; C:/Users/beltr/OneDrive/Documentos/ISDIGI LOCAL/Proyecto 3 GitHub/Microprocesador-Isdigi/aROM.sv       ;         ;
+; ALUcontrol.sv                    ; yes             ; User SystemVerilog HDL File           ; C:/Users/beltr/OneDrive/Documentos/ISDIGI LOCAL/Proyecto 3 GitHub/Microprocesador-Isdigi/ALUcontrol.sv ;         ;
+; ALU.sv                           ; yes             ; User SystemVerilog HDL File           ; C:/Users/beltr/OneDrive/Documentos/ISDIGI LOCAL/Proyecto 3 GitHub/Microprocesador-Isdigi/ALU.sv        ;         ;
++----------------------------------+-----------------+---------------------------------------+--------------------------------------------------------------------------------------------------------+---------+
 
 
-+---------------------------------------------------------+
-; Analysis & Synthesis Resource Usage Summary             ;
-+---------------------------------------------+-----------+
-; Resource                                    ; Usage     ;
-+---------------------------------------------+-----------+
-; Estimated Total logic elements              ; 3,385     ;
-;                                             ;           ;
-; Total combinational functions               ; 2393      ;
-; Logic element usage by number of LUT inputs ;           ;
-;     -- 4 input functions                    ; 1943      ;
-;     -- 3 input functions                    ; 359       ;
-;     -- <=2 input functions                  ; 91        ;
-;                                             ;           ;
-; Logic elements by mode                      ;           ;
-;     -- normal mode                          ; 2253      ;
-;     -- arithmetic mode                      ; 140       ;
-;                                             ;           ;
-; Total registers                             ; 1034      ;
-;     -- Dedicated logic registers            ; 1034      ;
-;     -- I/O registers                        ; 0         ;
-;                                             ;           ;
-; I/O pins                                    ; 143       ;
-;                                             ;           ;
-; Embedded Multiplier 9-bit elements          ; 0         ;
-;                                             ;           ;
-; Maximum fan-out node                        ; CLK~input ;
-; Maximum fan-out                             ; 1034      ;
-; Total fan-out                               ; 13361     ;
-; Average fan-out                             ; 3.60      ;
-+---------------------------------------------+-----------+
++-----------------------------------------------------+
+; Analysis & Synthesis Resource Usage Summary         ;
++---------------------------------------------+-------+
+; Resource                                    ; Usage ;
++---------------------------------------------+-------+
+;                                             ;       ;
+; Total combinational functions               ; 0     ;
+; Logic element usage by number of LUT inputs ;       ;
+;     -- 4 input functions                    ; 0     ;
+;     -- 3 input functions                    ; 0     ;
+;     -- <=2 input functions                  ; 0     ;
+;                                             ;       ;
+; Logic elements by mode                      ;       ;
+;     -- normal mode                          ; 0     ;
+;     -- arithmetic mode                      ; 0     ;
+;                                             ;       ;
+; Total registers                             ; 0     ;
+;     -- Dedicated logic registers            ; 0     ;
+;     -- I/O registers                        ; 0     ;
+;                                             ;       ;
+; I/O pins                                    ; 2     ;
+;                                             ;       ;
+; Embedded Multiplier 9-bit elements          ; 0     ;
+;                                             ;       ;
+; Maximum fan-out node                        ; CLK   ;
+; Maximum fan-out                             ; 1     ;
+; Total fan-out                               ; 2     ;
+; Average fan-out                             ; 0.50  ;
++---------------------------------------------+-------+
 
 
-+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                                        ;
-+---------------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+----------------------------------+-------------+--------------+
-; Compilation Hierarchy Node      ; Combinational ALUTs ; Dedicated Logic Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name              ; Entity Name ; Library Name ;
-+---------------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+----------------------------------+-------------+--------------+
-; |core                           ; 2393 (13)           ; 1034 (0)                  ; 0           ; 0            ; 0       ; 0         ; 143  ; 0            ; |core                            ; core        ; work         ;
-;    |ALU:ALU_inst|               ; 819 (819)           ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |core|ALU:ALU_inst               ; ALU         ; work         ;
-;    |ALUcontrol:ALUcontrol_inst| ; 16 (16)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |core|ALUcontrol:ALUcontrol_inst ; ALUcontrol  ; work         ;
-;    |Imm_Gen:Imm_Gen_inst|       ; 14 (14)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |core|Imm_Gen:Imm_Gen_inst       ; Imm_Gen     ; work         ;
-;    |PC:PC_inst|                 ; 8 (8)               ; 10 (10)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |core|PC:PC_inst                 ; PC          ; work         ;
-;    |REGBANK:REGBANK_inst|       ; 1190 (1190)         ; 1024 (1024)               ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |core|REGBANK:REGBANK_inst       ; REGBANK     ; work         ;
-;    |control:control_inst|       ; 14 (14)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |core|control:control_inst       ; control     ; work         ;
-;    |mux_2to1:mux_2to1_inst1|    ; 35 (35)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |core|mux_2to1:mux_2to1_inst1    ; mux_2to1    ; work         ;
-;    |mux_2to1:mux_2to1_inst2|    ; 32 (32)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |core|mux_2to1:mux_2to1_inst2    ; mux_2to1    ; work         ;
-;    |mux_4to1:mux_4to1_inst1|    ; 242 (242)           ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |core|mux_4to1:mux_4to1_inst1    ; mux_4to1    ; work         ;
-;    |sumador:sumador_inst2|      ; 10 (10)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |core|sumador:sumador_inst2      ; sumador     ; work         ;
-+---------------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+----------------------------------+-------------+--------------+
++----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                      ;
++----------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+---------------------+-------------+--------------+
+; Compilation Hierarchy Node ; Combinational ALUTs ; Dedicated Logic Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name ; Entity Name ; Library Name ;
++----------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+---------------------+-------------+--------------+
+; |top                       ; 0 (0)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 2    ; 0            ; |top                ; top         ; work         ;
++----------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+---------------------+-------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
 
 
@@ -257,192 +244,182 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +----------------------------------------------+-------+
 ; Statistic                                    ; Value ;
 +----------------------------------------------+-------+
-; Total registers                              ; 1034  ;
+; Total registers                              ; 0     ;
 ; Number of registers using Synchronous Clear  ; 0     ;
-; Number of registers using Synchronous Load   ; 8     ;
-; Number of registers using Asynchronous Clear ; 1002  ;
+; Number of registers using Synchronous Load   ; 0     ;
+; Number of registers using Asynchronous Clear ; 0     ;
 ; Number of registers using Asynchronous Load  ; 0     ;
-; Number of registers using Clock Enable       ; 1026  ;
+; Number of registers using Clock Enable       ; 0     ;
 ; Number of registers using Preset             ; 0     ;
 +----------------------------------------------+-------+
 
 
-+---------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Multiplexer Restructuring Statistics (Restructuring Performed)                                                                                          ;
-+--------------------+-----------+---------------+----------------------+------------------------+------------+-------------------------------------------+
-; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output                ;
-+--------------------+-----------+---------------+----------------------+------------------------+------------+-------------------------------------------+
-; 3:1                ; 2 bits    ; 4 LEs         ; 4 LEs                ; 0 LEs                  ; No         ; |core|ALU:ALU_inst|ShiftLeft0             ;
-; 4:1                ; 2 bits    ; 4 LEs         ; 4 LEs                ; 0 LEs                  ; No         ; |core|ALU:ALU_inst|ShiftLeft0             ;
-; 4:1                ; 3 bits    ; 6 LEs         ; 6 LEs                ; 0 LEs                  ; No         ; |core|ALUcontrol:ALUcontrol_inst|Mux3     ;
-; 33:1               ; 32 bits   ; 704 LEs       ; 704 LEs              ; 0 LEs                  ; No         ; |core|REGBANK:REGBANK_inst|read_data2[3]  ;
-; 33:1               ; 22 bits   ; 484 LEs       ; 484 LEs              ; 0 LEs                  ; No         ; |core|REGBANK:REGBANK_inst|read_data1[31] ;
-; 128:1              ; 4 bits    ; 340 LEs       ; 12 LEs               ; 328 LEs                ; No         ; |core|Imm_Gen:Imm_Gen_inst|Selector2      ;
-; 34:1               ; 10 bits   ; 220 LEs       ; 220 LEs              ; 0 LEs                  ; No         ; |core|mux_4to1:mux_4to1_inst1|Mux27       ;
-; 22:1               ; 3 bits    ; 42 LEs        ; 24 LEs               ; 18 LEs                 ; No         ; |core|ALU:ALU_inst|Mux17                  ;
-; 22:1               ; 4 bits    ; 56 LEs        ; 36 LEs               ; 20 LEs                 ; No         ; |core|ALU:ALU_inst|Mux19                  ;
-; 23:1               ; 13 bits   ; 195 LEs       ; 117 LEs              ; 78 LEs                 ; No         ; |core|ALU:ALU_inst|Mux3                   ;
-; 23:1               ; 4 bits    ; 60 LEs        ; 36 LEs               ; 24 LEs                 ; No         ; |core|ALU:ALU_inst|Mux27                  ;
-; 24:1               ; 2 bits    ; 32 LEs        ; 20 LEs               ; 12 LEs                 ; No         ; |core|ALU:ALU_inst|Mux29                  ;
-+--------------------+-----------+---------------+----------------------+------------------------+------------+-------------------------------------------+
-
-
-+----------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: Top-level Entity: |core ;
-+----------------+-------+---------------------------------------------+
-; Parameter Name ; Value ; Type                                        ;
-+----------------+-------+---------------------------------------------+
-; data_size      ; 1024  ; Signed Integer                              ;
-; address_size   ; 32    ; Signed Integer                              ;
-+----------------+-------+---------------------------------------------+
++---------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: Top-level Entity: |top ;
++----------------+-------+--------------------------------------------+
+; Parameter Name ; Value ; Type                                       ;
++----------------+-------+--------------------------------------------+
+; data_size      ; 1024  ; Signed Integer                             ;
+; address_size   ; 32    ; Signed Integer                             ;
++----------------+-------+--------------------------------------------+
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
 
-+-------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: REGBANK:REGBANK_inst ;
-+----------------+-------+------------------------------------------+
-; Parameter Name ; Value ; Type                                     ;
-+----------------+-------+------------------------------------------+
-; mem_depth      ; 32    ; Signed Integer                           ;
-; size           ; 32    ; Signed Integer                           ;
-+----------------+-------+------------------------------------------+
++-------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: aROM:aROM_inst ;
++----------------+-------+------------------------------------+
+; Parameter Name ; Value ; Type                               ;
++----------------+-------+------------------------------------+
+; tam_entrada    ; 1024  ; Signed Integer                     ;
+; tam_salida     ; 32    ; Signed Integer                     ;
++----------------+-------+------------------------------------+
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
 
-+----------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: mux_2to1:mux_2to1_inst1 ;
-+----------------+-------+---------------------------------------------+
-; Parameter Name ; Value ; Type                                        ;
-+----------------+-------+---------------------------------------------+
-; size           ; 32    ; Signed Integer                              ;
-+----------------+-------+---------------------------------------------+
++-----------------------------------------------------------+
+; Parameter Settings for User Entity Instance: RAM:RAM_inst ;
++----------------+-------+----------------------------------+
+; Parameter Name ; Value ; Type                             ;
++----------------+-------+----------------------------------+
+; mem_depth      ; 1024  ; Signed Integer                   ;
+; size           ; 32    ; Signed Integer                   ;
++----------------+-------+----------------------------------+
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
 
-+----------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: mux_4to1:mux_4to1_inst1 ;
-+----------------+-------+---------------------------------------------+
-; Parameter Name ; Value ; Type                                        ;
-+----------------+-------+---------------------------------------------+
-; size           ; 32    ; Signed Integer                              ;
-+----------------+-------+---------------------------------------------+
++-------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: core:core_inst ;
++----------------+-------+------------------------------------+
+; Parameter Name ; Value ; Type                               ;
++----------------+-------+------------------------------------+
+; data_size      ; 1024  ; Signed Integer                     ;
+; address_size   ; 32    ; Signed Integer                     ;
++----------------+-------+------------------------------------+
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
 
-+----------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: mux_2to1:mux_2to1_inst2 ;
-+----------------+-------+---------------------------------------------+
-; Parameter Name ; Value ; Type                                        ;
-+----------------+-------+---------------------------------------------+
-; size           ; 32    ; Signed Integer                              ;
-+----------------+-------+---------------------------------------------+
++----------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: core:core_inst|REGBANK:REGBANK_inst ;
++----------------+-------+---------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                    ;
++----------------+-------+---------------------------------------------------------+
+; mem_depth      ; 32    ; Signed Integer                                          ;
+; size           ; 32    ; Signed Integer                                          ;
++----------------+-------+---------------------------------------------------------+
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: core:core_inst|mux_2to1:mux_2to1_inst1 ;
++----------------+-------+------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                       ;
++----------------+-------+------------------------------------------------------------+
+; size           ; 32    ; Signed Integer                                             ;
++----------------+-------+------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: core:core_inst|mux_4to1:mux_4to1_inst1 ;
++----------------+-------+------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                       ;
++----------------+-------+------------------------------------------------------------+
+; size           ; 32    ; Signed Integer                                             ;
++----------------+-------+------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: core:core_inst|mux_2to1:mux_2to1_inst2 ;
++----------------+-------+------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                       ;
++----------------+-------+------------------------------------------------------------+
+; size           ; 32    ; Signed Integer                                             ;
++----------------+-------+------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-----------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: core:core_inst|sumador:sumador_inst2 ;
++----------------+-------+----------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                     ;
++----------------+-------+----------------------------------------------------------+
+; WIDTH          ; 32    ; Signed Integer                                           ;
++----------------+-------+----------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-----------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: core:core_inst|sumador:sumador_inst1 ;
++----------------+-------+----------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                     ;
++----------------+-------+----------------------------------------------------------+
+; WIDTH          ; 32    ; Signed Integer                                           ;
++----------------+-------+----------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: core:core_inst|mux_2to1:mux_2to1_inst3 ;
++----------------+-------+------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                       ;
++----------------+-------+------------------------------------------------------------+
+; size           ; 32    ; Signed Integer                                             ;
++----------------+-------+------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: core:core_inst|PC:PC_inst ;
++----------------+-------+-----------------------------------------------+
+; Parameter Name ; Value ; Type                                          ;
++----------------+-------+-----------------------------------------------+
+; size           ; 32    ; Signed Integer                                ;
++----------------+-------+-----------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++------------------------------------------------------------------+
+; Port Connectivity Checks: "core:core_inst|sumador:sumador_inst1" ;
++--------------+-------+----------+--------------------------------+
+; Port         ; Type  ; Severity ; Details                        ;
++--------------+-------+----------+--------------------------------+
+; datab[31..3] ; Input ; Info     ; Stuck at GND                   ;
+; datab[1..0]  ; Input ; Info     ; Stuck at GND                   ;
+; datab[2]     ; Input ; Info     ; Stuck at VCC                   ;
++--------------+-------+----------+--------------------------------+
 
 
 +--------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: sumador:sumador_inst2 ;
-+----------------+-------+-------------------------------------------+
-; Parameter Name ; Value ; Type                                      ;
-+----------------+-------+-------------------------------------------+
-; WIDTH          ; 32    ; Signed Integer                            ;
-+----------------+-------+-------------------------------------------+
-Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+; Port Connectivity Checks: "core:core_inst|mux_4to1:mux_4to1_inst1" ;
++-------+-------+----------+-----------------------------------------+
+; Port  ; Type  ; Severity ; Details                                 ;
++-------+-------+----------+-----------------------------------------+
+; dato2 ; Input ; Info     ; Stuck at GND                            ;
++-------+-------+----------+-----------------------------------------+
 
 
-+--------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: sumador:sumador_inst1 ;
-+----------------+-------+-------------------------------------------+
-; Parameter Name ; Value ; Type                                      ;
-+----------------+-------+-------------------------------------------+
-; WIDTH          ; 32    ; Signed Integer                            ;
-+----------------+-------+-------------------------------------------+
-Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
-
-
-+----------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: mux_2to1:mux_2to1_inst3 ;
-+----------------+-------+---------------------------------------------+
-; Parameter Name ; Value ; Type                                        ;
-+----------------+-------+---------------------------------------------+
-; size           ; 32    ; Signed Integer                              ;
-+----------------+-------+---------------------------------------------+
-Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
-
-
-+---------------------------------------------------------+
-; Parameter Settings for User Entity Instance: PC:PC_inst ;
-+----------------+-------+--------------------------------+
-; Parameter Name ; Value ; Type                           ;
-+----------------+-------+--------------------------------+
-; size           ; 32    ; Signed Integer                 ;
-+----------------+-------+--------------------------------+
-Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
-
-
-+------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Port Connectivity Checks: "PC:PC_inst"                                                                                                               ;
-+------+--------+----------+---------------------------------------------------------------------------------------------------------------------------+
-; Port ; Type   ; Severity ; Details                                                                                                                   ;
-+------+--------+----------+---------------------------------------------------------------------------------------------------------------------------+
-; PC   ; Output ; Warning  ; Output or bidir port (32 bits) is wider than the port expression (10 bits) it drives; bit(s) "PC[31..10]" have no fanouts ;
-+------+--------+----------+---------------------------------------------------------------------------------------------------------------------------+
-
-
-+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Port Connectivity Checks: "sumador:sumador_inst1"                                                                                                                                   ;
-+--------------+-------+----------+---------------------------------------------------------------------------------------------------------------------------------------------------+
-; Port         ; Type  ; Severity ; Details                                                                                                                                           ;
-+--------------+-------+----------+---------------------------------------------------------------------------------------------------------------------------------------------------+
-; dataa        ; Input ; Warning  ; Input port expression (10 bits) is smaller than the input port (32 bits) it drives.  Extra input bit(s) "dataa[31..10]" will be connected to GND. ;
-; datab[31..3] ; Input ; Info     ; Stuck at GND                                                                                                                                      ;
-; datab[1..0]  ; Input ; Info     ; Stuck at GND                                                                                                                                      ;
-; datab[2]     ; Input ; Info     ; Stuck at VCC                                                                                                                                      ;
-+--------------+-------+----------+---------------------------------------------------------------------------------------------------------------------------------------------------+
-
-
-+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Port Connectivity Checks: "sumador:sumador_inst2"                                                                                                                            ;
-+-------+-------+----------+---------------------------------------------------------------------------------------------------------------------------------------------------+
-; Port  ; Type  ; Severity ; Details                                                                                                                                           ;
-+-------+-------+----------+---------------------------------------------------------------------------------------------------------------------------------------------------+
-; dataa ; Input ; Warning  ; Input port expression (10 bits) is smaller than the input port (32 bits) it drives.  Extra input bit(s) "dataa[31..10]" will be connected to GND. ;
-+-------+-------+----------+---------------------------------------------------------------------------------------------------------------------------------------------------+
-
-
-+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Port Connectivity Checks: "mux_4to1:mux_4to1_inst1"                                                                                                                          ;
-+-------+-------+----------+---------------------------------------------------------------------------------------------------------------------------------------------------+
-; Port  ; Type  ; Severity ; Details                                                                                                                                           ;
-+-------+-------+----------+---------------------------------------------------------------------------------------------------------------------------------------------------+
-; dato1 ; Input ; Warning  ; Input port expression (10 bits) is smaller than the input port (32 bits) it drives.  Extra input bit(s) "dato1[31..10]" will be connected to GND. ;
-; dato2 ; Input ; Info     ; Stuck at GND                                                                                                                                      ;
-+-------+-------+----------+---------------------------------------------------------------------------------------------------------------------------------------------------+
++-------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "core:core_inst"                                                                              ;
++---------------+--------+----------+-------------------------------------------------------------------------------------+
+; Port          ; Type   ; Severity ; Details                                                                             ;
++---------------+--------+----------+-------------------------------------------------------------------------------------+
+; daddr[31..12] ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
+; daddr[1..0]   ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
+; d_rw          ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++---------------+--------+----------+-------------------------------------------------------------------------------------+
 
 
 +-----------------------------------------------------+
 ; Post-Synthesis Netlist Statistics for Top Partition ;
-+-----------------------+-----------------------------+
-; Type                  ; Count                       ;
-+-----------------------+-----------------------------+
-; boundary_port         ; 143                         ;
-; cycloneiii_ff         ; 1034                        ;
-;     CLR SLD           ; 8                           ;
-;     ENA               ; 32                          ;
-;     ENA CLR           ; 994                         ;
-; cycloneiii_lcell_comb ; 2394                        ;
-;     arith             ; 140                         ;
-;         2 data inputs ; 7                           ;
-;         3 data inputs ; 133                         ;
-;     normal            ; 2254                        ;
-;         0 data inputs ; 1                           ;
-;         1 data inputs ; 1                           ;
-;         2 data inputs ; 83                          ;
-;         3 data inputs ; 226                         ;
-;         4 data inputs ; 1943                        ;
-;                       ;                             ;
-; Max LUT depth         ; 24.00                       ;
-; Average LUT depth     ; 20.27                       ;
-+-----------------------+-----------------------------+
++-------------------+---------------------------------+
+; Type              ; Count                           ;
++-------------------+---------------------------------+
+; boundary_port     ; 2                               ;
+;                   ;                                 ;
+; Max LUT depth     ; 0.00                            ;
+; Average LUT depth ; 0.00                            ;
++-------------------+---------------------------------+
 
 
 +-------------------------------+
@@ -450,7 +427,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 +----------------+--------------+
 ; Partition Name ; Elapsed Time ;
 +----------------+--------------+
-; Top            ; 00:00:09     ;
+; Top            ; 00:00:00     ;
 +----------------+--------------+
 
 
@@ -459,67 +436,72 @@ Note: In order to hide this table in the UI and the text report file, please set
 +-------------------------------+
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
-    Info: Version 17.1.0 Build 590 10/25/2017 SJ Lite Edition
-    Info: Processing started: Mon Dec 11 20:42:26 2023
+    Info: Version 17.1.1 Internal Build 593 12/11/2017 SJ Lite Edition
+    Info: Processing started: Tue Dec 12 00:23:06 2023
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off procesador -c procesador
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
-Info (20030): Parallel compilation is enabled and will use 8 of the 8 processors detected
+Info (20030): Parallel compilation is enabled and will use 4 of the 4 processors detected
 Info (12021): Found 1 design units, including 1 entities, in source file top.sv
-    Info (12023): Found entity 1: top File: C:/Users/itsep/OneDrive/Documentos/GitHub/Microprocesador-ISDIGI/top.sv Line: 1
+    Info (12023): Found entity 1: top File: C:/Users/beltr/OneDrive/Documentos/ISDIGI LOCAL/Proyecto 3 GitHub/Microprocesador-Isdigi/top.sv Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file tb_alu.sv
-    Info (12023): Found entity 1: tb_ALU File: C:/Users/itsep/OneDrive/Documentos/GitHub/Microprocesador-ISDIGI/tb_ALU.sv Line: 3
+    Info (12023): Found entity 1: tb_ALU File: C:/Users/beltr/OneDrive/Documentos/ISDIGI LOCAL/Proyecto 3 GitHub/Microprocesador-Isdigi/tb_ALU.sv Line: 3
 Info (12021): Found 1 design units, including 1 entities, in source file sumador.sv
-    Info (12023): Found entity 1: sumador File: C:/Users/itsep/OneDrive/Documentos/GitHub/Microprocesador-ISDIGI/sumador.sv Line: 1
+    Info (12023): Found entity 1: sumador File: C:/Users/beltr/OneDrive/Documentos/ISDIGI LOCAL/Proyecto 3 GitHub/Microprocesador-Isdigi/sumador.sv Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file regbank.sv
-    Info (12023): Found entity 1: REGBANK File: C:/Users/itsep/OneDrive/Documentos/GitHub/Microprocesador-ISDIGI/REGBANK.sv Line: 1
+    Info (12023): Found entity 1: REGBANK File: C:/Users/beltr/OneDrive/Documentos/ISDIGI LOCAL/Proyecto 3 GitHub/Microprocesador-Isdigi/REGBANK.sv Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file ram.sv
-    Info (12023): Found entity 1: RAM File: C:/Users/itsep/OneDrive/Documentos/GitHub/Microprocesador-ISDIGI/RAM.sv Line: 1
+    Info (12023): Found entity 1: RAM File: C:/Users/beltr/OneDrive/Documentos/ISDIGI LOCAL/Proyecto 3 GitHub/Microprocesador-Isdigi/RAM.sv Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file pc.sv
-    Info (12023): Found entity 1: PC File: C:/Users/itsep/OneDrive/Documentos/GitHub/Microprocesador-ISDIGI/PC.sv Line: 1
+    Info (12023): Found entity 1: PC File: C:/Users/beltr/OneDrive/Documentos/ISDIGI LOCAL/Proyecto 3 GitHub/Microprocesador-Isdigi/PC.sv Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file mux_4to1.sv
-    Info (12023): Found entity 1: mux_4to1 File: C:/Users/itsep/OneDrive/Documentos/GitHub/Microprocesador-ISDIGI/mux_4to1.sv Line: 1
+    Info (12023): Found entity 1: mux_4to1 File: C:/Users/beltr/OneDrive/Documentos/ISDIGI LOCAL/Proyecto 3 GitHub/Microprocesador-Isdigi/mux_4to1.sv Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file mux_2to1.sv
-    Info (12023): Found entity 1: mux_2to1 File: C:/Users/itsep/OneDrive/Documentos/GitHub/Microprocesador-ISDIGI/mux_2to1.sv Line: 1
+    Info (12023): Found entity 1: mux_2to1 File: C:/Users/beltr/OneDrive/Documentos/ISDIGI LOCAL/Proyecto 3 GitHub/Microprocesador-Isdigi/mux_2to1.sv Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file imm_gen.sv
-    Info (12023): Found entity 1: Imm_Gen File: C:/Users/itsep/OneDrive/Documentos/GitHub/Microprocesador-ISDIGI/Imm_Gen.sv Line: 1
+    Info (12023): Found entity 1: Imm_Gen File: C:/Users/beltr/OneDrive/Documentos/ISDIGI LOCAL/Proyecto 3 GitHub/Microprocesador-Isdigi/Imm_Gen.sv Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file core.sv
-    Info (12023): Found entity 1: core File: C:/Users/itsep/OneDrive/Documentos/GitHub/Microprocesador-ISDIGI/core.sv Line: 12
+    Info (12023): Found entity 1: core File: C:/Users/beltr/OneDrive/Documentos/ISDIGI LOCAL/Proyecto 3 GitHub/Microprocesador-Isdigi/core.sv Line: 12
 Info (12021): Found 1 design units, including 1 entities, in source file control.sv
-    Info (12023): Found entity 1: control File: C:/Users/itsep/OneDrive/Documentos/GitHub/Microprocesador-ISDIGI/control.sv Line: 1
+    Info (12023): Found entity 1: control File: C:/Users/beltr/OneDrive/Documentos/ISDIGI LOCAL/Proyecto 3 GitHub/Microprocesador-Isdigi/control.sv Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file arom.sv
-    Info (12023): Found entity 1: aROM File: C:/Users/itsep/OneDrive/Documentos/GitHub/Microprocesador-ISDIGI/aROM.sv Line: 1
+    Info (12023): Found entity 1: aROM File: C:/Users/beltr/OneDrive/Documentos/ISDIGI LOCAL/Proyecto 3 GitHub/Microprocesador-Isdigi/aROM.sv Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file alucontrol.sv
-    Info (12023): Found entity 1: ALUcontrol File: C:/Users/itsep/OneDrive/Documentos/GitHub/Microprocesador-ISDIGI/ALUcontrol.sv Line: 1
+    Info (12023): Found entity 1: ALUcontrol File: C:/Users/beltr/OneDrive/Documentos/ISDIGI LOCAL/Proyecto 3 GitHub/Microprocesador-Isdigi/ALUcontrol.sv Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file alu.sv
-    Info (12023): Found entity 1: ALU File: C:/Users/itsep/OneDrive/Documentos/GitHub/Microprocesador-ISDIGI/ALU.sv Line: 1
-Warning (10236): Verilog HDL Implicit Net warning at core.sv(117): created implicit net for "sel_mux" File: C:/Users/itsep/OneDrive/Documentos/GitHub/Microprocesador-ISDIGI/core.sv Line: 117
-Info (12127): Elaborating entity "core" for the top level hierarchy
-Warning (10034): Output port "d_rw" at core.sv(20) has no driver File: C:/Users/itsep/OneDrive/Documentos/GitHub/Microprocesador-ISDIGI/core.sv Line: 20
-Info (12128): Elaborating entity "REGBANK" for hierarchy "REGBANK:REGBANK_inst" File: C:/Users/itsep/OneDrive/Documentos/GitHub/Microprocesador-ISDIGI/core.sv Line: 54
-Info (12128): Elaborating entity "Imm_Gen" for hierarchy "Imm_Gen:Imm_Gen_inst" File: C:/Users/itsep/OneDrive/Documentos/GitHub/Microprocesador-ISDIGI/core.sv Line: 60
-Info (12128): Elaborating entity "mux_2to1" for hierarchy "mux_2to1:mux_2to1_inst1" File: C:/Users/itsep/OneDrive/Documentos/GitHub/Microprocesador-ISDIGI/core.sv Line: 68
-Info (12128): Elaborating entity "mux_4to1" for hierarchy "mux_4to1:mux_4to1_inst1" File: C:/Users/itsep/OneDrive/Documentos/GitHub/Microprocesador-ISDIGI/core.sv Line: 77
-Info (12128): Elaborating entity "ALUcontrol" for hierarchy "ALUcontrol:ALUcontrol_inst" File: C:/Users/itsep/OneDrive/Documentos/GitHub/Microprocesador-ISDIGI/core.sv Line: 84
-Info (12128): Elaborating entity "ALU" for hierarchy "ALU:ALU_inst" File: C:/Users/itsep/OneDrive/Documentos/GitHub/Microprocesador-ISDIGI/core.sv Line: 93
-Warning (10764): Verilog HDL warning at ALU.sv(29): converting signed shift amount to unsigned File: C:/Users/itsep/OneDrive/Documentos/GitHub/Microprocesador-ISDIGI/ALU.sv Line: 29
-Warning (10230): Verilog HDL assignment warning at ALU.sv(36): truncated value with size 32 to match size of target (1) File: C:/Users/itsep/OneDrive/Documentos/GitHub/Microprocesador-ISDIGI/ALU.sv Line: 36
-Info (12128): Elaborating entity "control" for hierarchy "control:control_inst" File: C:/Users/itsep/OneDrive/Documentos/GitHub/Microprocesador-ISDIGI/core.sv Line: 115
-Info (12128): Elaborating entity "sumador" for hierarchy "sumador:sumador_inst2" File: C:/Users/itsep/OneDrive/Documentos/GitHub/Microprocesador-ISDIGI/core.sv Line: 124
-Info (12128): Elaborating entity "PC" for hierarchy "PC:PC_inst" File: C:/Users/itsep/OneDrive/Documentos/GitHub/Microprocesador-ISDIGI/core.sv Line: 147
-Warning (12241): 4 hierarchies have connectivity warnings - see the Connectivity Checks report folder
-Warning (13024): Output pins are stuck at VCC or GND
-    Warning (13410): Pin "d_rw" is stuck at GND File: C:/Users/itsep/OneDrive/Documentos/GitHub/Microprocesador-ISDIGI/core.sv Line: 20
-Info (286030): Timing-Driven Synthesis is running
+    Info (12023): Found entity 1: ALU File: C:/Users/beltr/OneDrive/Documentos/ISDIGI LOCAL/Proyecto 3 GitHub/Microprocesador-Isdigi/ALU.sv Line: 1
+Warning (10236): Verilog HDL Implicit Net warning at core.sv(118): created implicit net for "sel_mux" File: C:/Users/beltr/OneDrive/Documentos/ISDIGI LOCAL/Proyecto 3 GitHub/Microprocesador-Isdigi/core.sv Line: 118
+Info (12127): Elaborating entity "top" for the top level hierarchy
+Info (12128): Elaborating entity "aROM" for hierarchy "aROM:aROM_inst" File: C:/Users/beltr/OneDrive/Documentos/ISDIGI LOCAL/Proyecto 3 GitHub/Microprocesador-Isdigi/top.sv Line: 15
+Warning (10850): Verilog HDL warning at aROM.sv(12): number of words (28) in memory file does not match the number of elements in the address range [0:0] File: C:/Users/beltr/OneDrive/Documentos/ISDIGI LOCAL/Proyecto 3 GitHub/Microprocesador-Isdigi/aROM.sv Line: 12
+Warning (10030): Net "mem.data_a" at aROM.sv(9) has no driver or initial value, using a default initial value '0' File: C:/Users/beltr/OneDrive/Documentos/ISDIGI LOCAL/Proyecto 3 GitHub/Microprocesador-Isdigi/aROM.sv Line: 9
+Warning (10030): Net "mem.waddr_a[0]" at aROM.sv(9) has no driver or initial value, using a default initial value '0' File: C:/Users/beltr/OneDrive/Documentos/ISDIGI LOCAL/Proyecto 3 GitHub/Microprocesador-Isdigi/aROM.sv Line: 9
+Warning (10030): Net "mem.we_a" at aROM.sv(9) has no driver or initial value, using a default initial value '0' File: C:/Users/beltr/OneDrive/Documentos/ISDIGI LOCAL/Proyecto 3 GitHub/Microprocesador-Isdigi/aROM.sv Line: 9
+Info (12128): Elaborating entity "RAM" for hierarchy "RAM:RAM_inst" File: C:/Users/beltr/OneDrive/Documentos/ISDIGI LOCAL/Proyecto 3 GitHub/Microprocesador-Isdigi/top.sv Line: 25
+Info (12128): Elaborating entity "core" for hierarchy "core:core_inst" File: C:/Users/beltr/OneDrive/Documentos/ISDIGI LOCAL/Proyecto 3 GitHub/Microprocesador-Isdigi/top.sv Line: 39
+Warning (10034): Output port "d_rw" at core.sv(22) has no driver File: C:/Users/beltr/OneDrive/Documentos/ISDIGI LOCAL/Proyecto 3 GitHub/Microprocesador-Isdigi/core.sv Line: 22
+Info (12128): Elaborating entity "REGBANK" for hierarchy "core:core_inst|REGBANK:REGBANK_inst" File: C:/Users/beltr/OneDrive/Documentos/ISDIGI LOCAL/Proyecto 3 GitHub/Microprocesador-Isdigi/core.sv Line: 55
+Info (12128): Elaborating entity "Imm_Gen" for hierarchy "core:core_inst|Imm_Gen:Imm_Gen_inst" File: C:/Users/beltr/OneDrive/Documentos/ISDIGI LOCAL/Proyecto 3 GitHub/Microprocesador-Isdigi/core.sv Line: 61
+Info (12128): Elaborating entity "mux_2to1" for hierarchy "core:core_inst|mux_2to1:mux_2to1_inst1" File: C:/Users/beltr/OneDrive/Documentos/ISDIGI LOCAL/Proyecto 3 GitHub/Microprocesador-Isdigi/core.sv Line: 69
+Info (12128): Elaborating entity "mux_4to1" for hierarchy "core:core_inst|mux_4to1:mux_4to1_inst1" File: C:/Users/beltr/OneDrive/Documentos/ISDIGI LOCAL/Proyecto 3 GitHub/Microprocesador-Isdigi/core.sv Line: 78
+Info (12128): Elaborating entity "ALUcontrol" for hierarchy "core:core_inst|ALUcontrol:ALUcontrol_inst" File: C:/Users/beltr/OneDrive/Documentos/ISDIGI LOCAL/Proyecto 3 GitHub/Microprocesador-Isdigi/core.sv Line: 85
+Info (12128): Elaborating entity "ALU" for hierarchy "core:core_inst|ALU:ALU_inst" File: C:/Users/beltr/OneDrive/Documentos/ISDIGI LOCAL/Proyecto 3 GitHub/Microprocesador-Isdigi/core.sv Line: 94
+Warning (10764): Verilog HDL warning at ALU.sv(29): converting signed shift amount to unsigned File: C:/Users/beltr/OneDrive/Documentos/ISDIGI LOCAL/Proyecto 3 GitHub/Microprocesador-Isdigi/ALU.sv Line: 29
+Warning (10230): Verilog HDL assignment warning at ALU.sv(36): truncated value with size 32 to match size of target (1) File: C:/Users/beltr/OneDrive/Documentos/ISDIGI LOCAL/Proyecto 3 GitHub/Microprocesador-Isdigi/ALU.sv Line: 36
+Info (12128): Elaborating entity "control" for hierarchy "core:core_inst|control:control_inst" File: C:/Users/beltr/OneDrive/Documentos/ISDIGI LOCAL/Proyecto 3 GitHub/Microprocesador-Isdigi/core.sv Line: 116
+Info (12128): Elaborating entity "sumador" for hierarchy "core:core_inst|sumador:sumador_inst2" File: C:/Users/beltr/OneDrive/Documentos/ISDIGI LOCAL/Proyecto 3 GitHub/Microprocesador-Isdigi/core.sv Line: 125
+Info (12128): Elaborating entity "PC" for hierarchy "core:core_inst|PC:PC_inst" File: C:/Users/beltr/OneDrive/Documentos/ISDIGI LOCAL/Proyecto 3 GitHub/Microprocesador-Isdigi/core.sv Line: 148
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
-Info (21057): Implemented 3560 device resources after synthesis - the final resource count might be different
-    Info (21058): Implemented 66 input pins
-    Info (21059): Implemented 77 output pins
-    Info (21061): Implemented 3417 logic cells
-Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 8 warnings
-    Info: Peak virtual memory: 4836 megabytes
-    Info: Processing ended: Mon Dec 11 20:42:49 2023
-    Info: Elapsed time: 00:00:23
-    Info: Total CPU time (on all processors): 00:00:19
+Warning (21074): Design contains 2 input pin(s) that do not drive logic
+    Warning (15610): No output dependent on input pin "CLK" File: C:/Users/beltr/OneDrive/Documentos/ISDIGI LOCAL/Proyecto 3 GitHub/Microprocesador-Isdigi/top.sv Line: 4
+    Warning (15610): No output dependent on input pin "RESET_N" File: C:/Users/beltr/OneDrive/Documentos/ISDIGI LOCAL/Proyecto 3 GitHub/Microprocesador-Isdigi/top.sv Line: 5
+Info (21057): Implemented 2 device resources after synthesis - the final resource count might be different
+    Info (21058): Implemented 2 input pins
+    Info (21059): Implemented 0 output pins
+Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 12 warnings
+    Info: Peak virtual memory: 4740 megabytes
+    Info: Processing ended: Tue Dec 12 00:23:21 2023
+    Info: Elapsed time: 00:00:15
+    Info: Total CPU time (on all processors): 00:00:27
 
 
