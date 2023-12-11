@@ -10,7 +10,7 @@ module top
 
 aROM aROM_inst
 (
-	.address(iaddr) ,	
+	.address(iaddr[11:2]) ,	
 	.dsalida(idata) 	
 ); 
 
@@ -20,7 +20,7 @@ RAM RAM_inst
 	.wren(~d_rw) ,	
     .wread(d_rw) ,
 	.clock(CLK) ,	
-	.address(daddr) ,	
+	.address(daddr[11:2]) ,	
 	.salida(ddata_r) 
 );
 
