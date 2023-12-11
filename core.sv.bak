@@ -14,11 +14,11 @@ module core
 (
     input CLK, RESET_N,
     input [address_size-1:0] idata, ddata_r,
-    output [$clog2(data_size-1)-1:0] iaddr, //daddr,
+    output [$clog2(data_size-1)-1:0] iaddr, daddr,
     output [address_size-1:0] ddata_w, 
-    output d_rw, MemRead, MemWrite,
-	 output [31:0] cableALUmux	 
+    output d_rw, MemRead, MemWrite
 );
+
     logic [address_size-1:0] read_data1, write_data_reg;
 
     logic [address_size-1:0] imm;
@@ -85,7 +85,7 @@ ALU ALU_inst
 (
 	.X(ALU_x) ,	
 	.Y(ALU_y) ,	
-	.RESULTADO(cableALUmux) ,	
+	.RESULTADO(daddr) ,	
 	.ZERO(zero) ,	
 	.CONTROL(ALU_control) 	
 );
@@ -95,7 +95,7 @@ mux_2to1 mux_2to1_inst2
 (
 	.select(MemtoReg) ,	
 	.dato1(ddata_r) ,	
-	.dato2(cableALUmux) ,	
+	.dato2(daddr) ,	
 	.salida(write_data_reg) 	
 );
 
