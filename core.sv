@@ -9,39 +9,35 @@
 // Bus de datos de escritura DMEM: ddata_w
 // ------------------------------------------------
 
-module procesador 
+module core 
 #(parameter data_size = 1024, parameter address_size = 32)
 (
-    input CLK,RESET_N,
-    input [size-1:0] idata, ddata_r,
+    input CLK, RESET_N,
+    input [address_size-1:0] idata, ddata_r,
     output [$clog2(data_size-1)-1:0] iaddr, daddr,
-    output [size-1:0] ddata_w, 
-    output d_rw
+    output [address_size-1:0] ddata_w, 
+    output d_rw, MemRead, MemWrite
 );
-    logic [size-1:0] read_data1, write_data_reg;
 
-    logic [size-1:0] imm;
+    logic [address_size-1:0] read_data1, write_data_reg;
+
+    logic [address_size-1:0] imm;
 
     logic [3:0] ALU_control;
 
-    logic [size-1:0] ALU_x, ALU_y;
+    logic [address_size-1:0] ALU_x, ALU_y;
 
-	logic  Branch, MemRead, MemtoReg, MemWrite, RegWrite, ALUSrc;
-    logic [3:0] ALUOp;
+	logic  Branch, MemtoReg, RegWrite, ALUSrc;
+	logic [3:0] ALUOp;
 	logic [1:0] AuipcLui;
 
     logic zero;
 
-    logic [size-1:0] sum1, sum2;
+    logic [address_size-1:0] sum1, sum2;
 
-    logic [size-1:0] out_mux;
+    logic [address_size-1:0] out_mux;
 
-aROM aROM_inst
-(
-	.address(iaddr) ,	
-	.dsalida(idata) 	
-);   
-
+	 
 REGBANK REGBANK_inst
 (
 	.CLK(CLK) ,	
@@ -80,7 +76,7 @@ mux_4to1 mux_4to1_inst1
 
 ALUcontrol ALUcontrol_inst
 (
-	.ALUop(ALUOp) ,	
+	.ALUOp(ALUOp) ,	
 	.bits({idata[30] , idata[14:12]}) ,	 
 	.salida_ALUcontrol(ALU_control) 	
 );
@@ -94,15 +90,6 @@ ALU ALU_inst
 	.CONTROL(ALU_control) 	
 );
 
-RAM RAM_inst
-(
-	.data(ddata_w) ,	
-	.wren(MemWrite) ,	
-    .wread(MemRead) ,
-	.clock(CLK) ,	
-	.address(daddr) ,	
-	.salida(ddata_r) 
-);
 
 mux_2to1 mux_2to1_inst2
 (
@@ -157,4 +144,6 @@ PC PC_inst
     .PC(iaddr) 
 );
 
+
+			
 endmodule
