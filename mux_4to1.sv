@@ -1,7 +1,9 @@
-module mux_4to1(
+module mux_4to1
+#(parameter size = 32)
+(
     input [1:0] select, // auipLui
-    input [31:0] dato1, dato2, dato3, 
-    output logic [31:0] salida
+    input [size-1:0] dato1, dato2, dato3, 
+    output logic [size-1:0] salida
 );
 
 always @(select or dato1 or dato2 or dato3) begin

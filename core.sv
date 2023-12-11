@@ -68,7 +68,7 @@ mux_2to1 mux_2to1_inst1
 mux_4to1 mux_4to1_inst1
 (
 	.select(AuipcLui) ,	
-	.dato1(iaddr) , 	
+	.dato1(idata) , 	
 	.dato2(32'd0) ,	
 	.dato3(read_data1) ,	
 	.salida(ALU_x) 	
@@ -116,14 +116,14 @@ assign sel_mux = Branch & zero;
 
 sumador sumador_inst2
 (
-	.dataa(iaddr) ,	
+	.dataa(idata) ,	
 	.datab(imm) ,	
 	.result(sum2) 	
 );
 
 sumador sumador_inst1
 (
-	.dataa(iaddr) ,	
+	.dataa(idata) ,	
 	.datab(32'd4) ,	
 	.result(sum1) 	
 );
@@ -141,7 +141,7 @@ PC PC_inst
     .CLK(CLK) ,
     .RESET_N(RESET_N) ,
     .PC_in(out_mux) ,
-    .PC(iaddr) 
+    .PC(idata) 
 );
 
 
