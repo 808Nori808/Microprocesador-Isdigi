@@ -5,15 +5,15 @@ RESET_N => RESET_N.IN1
 
 |top|aROM:aROM_inst
 address[0] => mem.RADDR
-address[1] => ~NO_FANOUT~
-address[2] => ~NO_FANOUT~
-address[3] => ~NO_FANOUT~
-address[4] => ~NO_FANOUT~
-address[5] => ~NO_FANOUT~
-address[6] => ~NO_FANOUT~
-address[7] => ~NO_FANOUT~
-address[8] => ~NO_FANOUT~
-address[9] => ~NO_FANOUT~
+address[1] => mem.RADDR1
+address[2] => mem.RADDR2
+address[3] => mem.RADDR3
+address[4] => mem.RADDR4
+address[5] => mem.RADDR5
+address[6] => mem.RADDR6
+address[7] => mem.RADDR7
+address[8] => mem.RADDR8
+address[9] => mem.RADDR9
 dsalida[0] <= mem.DATAOUT
 dsalida[1] <= mem.DATAOUT1
 dsalida[2] <= mem.DATAOUT2

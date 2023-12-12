@@ -1,5 +1,5 @@
 Analysis & Synthesis report for procesador
-Tue Dec 12 00:44:43 2023
+Tue Dec 12 01:58:04 2023
 Quartus Prime Version 17.1.1 Internal Build 593 12/11/2017 SJ Lite Edition
 
 
@@ -57,7 +57,7 @@ refer to the applicable agreement for further details.
 +-------------------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                              ;
 +------------------------------------+------------------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Tue Dec 12 00:44:43 2023                ;
+; Analysis & Synthesis Status        ; Successful - Tue Dec 12 01:58:04 2023                ;
 ; Quartus Prime Version              ; 17.1.1 Internal Build 593 12/11/2017 SJ Lite Edition ;
 ; Revision Name                      ; procesador                                           ;
 ; Top-level Entity Name              ; top                                                  ;
@@ -176,26 +176,27 @@ refer to the applicable agreement for further details.
 +----------------------------+-------------+
 
 
-+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Source Files Read                                                                                                                                                                        ;
-+----------------------------------+-----------------+---------------------------------------+--------------------------------------------------------------------------------------------------------+---------+
-; File Name with User-Entered Path ; Used in Netlist ; File Type                             ; File Name with Absolute Path                                                                           ; Library ;
-+----------------------------------+-----------------+---------------------------------------+--------------------------------------------------------------------------------------------------------+---------+
-; myFibo.hex                       ; yes             ; User Hexadecimal (Intel-Format) File  ; C:/Users/beltr/OneDrive/Documentos/ISDIGI LOCAL/Proyecto 3 GitHub/Microprocesador-Isdigi/myFibo.hex    ;         ;
-; top.sv                           ; yes             ; User SystemVerilog HDL File           ; C:/Users/beltr/OneDrive/Documentos/ISDIGI LOCAL/Proyecto 3 GitHub/Microprocesador-Isdigi/top.sv        ;         ;
-; sumador.sv                       ; yes             ; User SystemVerilog HDL File           ; C:/Users/beltr/OneDrive/Documentos/ISDIGI LOCAL/Proyecto 3 GitHub/Microprocesador-Isdigi/sumador.sv    ;         ;
-; REGBANK.sv                       ; yes             ; User SystemVerilog HDL File           ; C:/Users/beltr/OneDrive/Documentos/ISDIGI LOCAL/Proyecto 3 GitHub/Microprocesador-Isdigi/REGBANK.sv    ;         ;
-; RAM.sv                           ; yes             ; User SystemVerilog HDL File           ; C:/Users/beltr/OneDrive/Documentos/ISDIGI LOCAL/Proyecto 3 GitHub/Microprocesador-Isdigi/RAM.sv        ;         ;
-; PC.sv                            ; yes             ; User SystemVerilog HDL File           ; C:/Users/beltr/OneDrive/Documentos/ISDIGI LOCAL/Proyecto 3 GitHub/Microprocesador-Isdigi/PC.sv         ;         ;
-; mux_4to1.sv                      ; yes             ; User SystemVerilog HDL File           ; C:/Users/beltr/OneDrive/Documentos/ISDIGI LOCAL/Proyecto 3 GitHub/Microprocesador-Isdigi/mux_4to1.sv   ;         ;
-; mux_2to1.sv                      ; yes             ; User SystemVerilog HDL File           ; C:/Users/beltr/OneDrive/Documentos/ISDIGI LOCAL/Proyecto 3 GitHub/Microprocesador-Isdigi/mux_2to1.sv   ;         ;
-; Imm_Gen.sv                       ; yes             ; User SystemVerilog HDL File           ; C:/Users/beltr/OneDrive/Documentos/ISDIGI LOCAL/Proyecto 3 GitHub/Microprocesador-Isdigi/Imm_Gen.sv    ;         ;
-; core.sv                          ; yes             ; User SystemVerilog HDL File           ; C:/Users/beltr/OneDrive/Documentos/ISDIGI LOCAL/Proyecto 3 GitHub/Microprocesador-Isdigi/core.sv       ;         ;
-; control.sv                       ; yes             ; User SystemVerilog HDL File           ; C:/Users/beltr/OneDrive/Documentos/ISDIGI LOCAL/Proyecto 3 GitHub/Microprocesador-Isdigi/control.sv    ;         ;
-; aROM.sv                          ; yes             ; User SystemVerilog HDL File           ; C:/Users/beltr/OneDrive/Documentos/ISDIGI LOCAL/Proyecto 3 GitHub/Microprocesador-Isdigi/aROM.sv       ;         ;
-; ALUcontrol.sv                    ; yes             ; User SystemVerilog HDL File           ; C:/Users/beltr/OneDrive/Documentos/ISDIGI LOCAL/Proyecto 3 GitHub/Microprocesador-Isdigi/ALUcontrol.sv ;         ;
-; ALU.sv                           ; yes             ; User SystemVerilog HDL File           ; C:/Users/beltr/OneDrive/Documentos/ISDIGI LOCAL/Proyecto 3 GitHub/Microprocesador-Isdigi/ALU.sv        ;         ;
-+----------------------------------+-----------------+---------------------------------------+--------------------------------------------------------------------------------------------------------+---------+
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                                                                                                  ;
++----------------------------------+-----------------+---------------------------------------------+------------------------------------------------------------------------------------------------------------+---------+
+; File Name with User-Entered Path ; Used in Netlist ; File Type                                   ; File Name with Absolute Path                                                                               ; Library ;
++----------------------------------+-----------------+---------------------------------------------+------------------------------------------------------------------------------------------------------------+---------+
+; myFibo.hex                       ; yes             ; User Hexadecimal (Intel-Format) File        ; C:/Users/beltr/OneDrive/Documentos/ISDIGI LOCAL/Proyecto 3 GitHub/Microprocesador-Isdigi/myFibo.hex        ;         ;
+; top.sv                           ; yes             ; User SystemVerilog HDL File                 ; C:/Users/beltr/OneDrive/Documentos/ISDIGI LOCAL/Proyecto 3 GitHub/Microprocesador-Isdigi/top.sv            ;         ;
+; sumador.sv                       ; yes             ; User SystemVerilog HDL File                 ; C:/Users/beltr/OneDrive/Documentos/ISDIGI LOCAL/Proyecto 3 GitHub/Microprocesador-Isdigi/sumador.sv        ;         ;
+; REGBANK.sv                       ; yes             ; User SystemVerilog HDL File                 ; C:/Users/beltr/OneDrive/Documentos/ISDIGI LOCAL/Proyecto 3 GitHub/Microprocesador-Isdigi/REGBANK.sv        ;         ;
+; RAM.sv                           ; yes             ; User SystemVerilog HDL File                 ; C:/Users/beltr/OneDrive/Documentos/ISDIGI LOCAL/Proyecto 3 GitHub/Microprocesador-Isdigi/RAM.sv            ;         ;
+; PC.sv                            ; yes             ; User SystemVerilog HDL File                 ; C:/Users/beltr/OneDrive/Documentos/ISDIGI LOCAL/Proyecto 3 GitHub/Microprocesador-Isdigi/PC.sv             ;         ;
+; mux_4to1.sv                      ; yes             ; User SystemVerilog HDL File                 ; C:/Users/beltr/OneDrive/Documentos/ISDIGI LOCAL/Proyecto 3 GitHub/Microprocesador-Isdigi/mux_4to1.sv       ;         ;
+; mux_2to1.sv                      ; yes             ; User SystemVerilog HDL File                 ; C:/Users/beltr/OneDrive/Documentos/ISDIGI LOCAL/Proyecto 3 GitHub/Microprocesador-Isdigi/mux_2to1.sv       ;         ;
+; Imm_Gen.sv                       ; yes             ; User SystemVerilog HDL File                 ; C:/Users/beltr/OneDrive/Documentos/ISDIGI LOCAL/Proyecto 3 GitHub/Microprocesador-Isdigi/Imm_Gen.sv        ;         ;
+; core.sv                          ; yes             ; User SystemVerilog HDL File                 ; C:/Users/beltr/OneDrive/Documentos/ISDIGI LOCAL/Proyecto 3 GitHub/Microprocesador-Isdigi/core.sv           ;         ;
+; control.sv                       ; yes             ; User SystemVerilog HDL File                 ; C:/Users/beltr/OneDrive/Documentos/ISDIGI LOCAL/Proyecto 3 GitHub/Microprocesador-Isdigi/control.sv        ;         ;
+; aROM.sv                          ; yes             ; User SystemVerilog HDL File                 ; C:/Users/beltr/OneDrive/Documentos/ISDIGI LOCAL/Proyecto 3 GitHub/Microprocesador-Isdigi/aROM.sv           ;         ;
+; ALUcontrol.sv                    ; yes             ; User SystemVerilog HDL File                 ; C:/Users/beltr/OneDrive/Documentos/ISDIGI LOCAL/Proyecto 3 GitHub/Microprocesador-Isdigi/ALUcontrol.sv     ;         ;
+; ALU.sv                           ; yes             ; User SystemVerilog HDL File                 ; C:/Users/beltr/OneDrive/Documentos/ISDIGI LOCAL/Proyecto 3 GitHub/Microprocesador-Isdigi/ALU.sv            ;         ;
+; ram_fibonacci.hex                ; yes             ; Auto-Found Hexadecimal (Intel-Format) File  ; C:/Users/beltr/OneDrive/Documentos/ISDIGI LOCAL/Proyecto 3 GitHub/Microprocesador-Isdigi/ram_fibonacci.hex ;         ;
++----------------------------------+-----------------+---------------------------------------------+------------------------------------------------------------------------------------------------------------+---------+
 
 
 +-----------------------------------------------------+
@@ -437,7 +438,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 17.1.1 Internal Build 593 12/11/2017 SJ Lite Edition
-    Info: Processing started: Tue Dec 12 00:44:24 2023
+    Info: Processing started: Tue Dec 12 01:57:47 2023
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off procesador -c procesador
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 4 of the 4 processors detected
@@ -472,9 +473,9 @@ Info (12021): Found 1 design units, including 1 entities, in source file alu.sv
 Warning (10236): Verilog HDL Implicit Net warning at core.sv(118): created implicit net for "sel_mux" File: C:/Users/beltr/OneDrive/Documentos/ISDIGI LOCAL/Proyecto 3 GitHub/Microprocesador-Isdigi/core.sv Line: 118
 Info (12127): Elaborating entity "top" for the top level hierarchy
 Info (12128): Elaborating entity "aROM" for hierarchy "aROM:aROM_inst" File: C:/Users/beltr/OneDrive/Documentos/ISDIGI LOCAL/Proyecto 3 GitHub/Microprocesador-Isdigi/top.sv Line: 15
-Warning (10850): Verilog HDL warning at aROM.sv(12): number of words (28) in memory file does not match the number of elements in the address range [0:0] File: C:/Users/beltr/OneDrive/Documentos/ISDIGI LOCAL/Proyecto 3 GitHub/Microprocesador-Isdigi/aROM.sv Line: 12
+Warning (10850): Verilog HDL warning at aROM.sv(14): number of words (28) in memory file does not match the number of elements in the address range [0:1023] File: C:/Users/beltr/OneDrive/Documentos/ISDIGI LOCAL/Proyecto 3 GitHub/Microprocesador-Isdigi/aROM.sv Line: 14
 Warning (10030): Net "mem.data_a" at aROM.sv(9) has no driver or initial value, using a default initial value '0' File: C:/Users/beltr/OneDrive/Documentos/ISDIGI LOCAL/Proyecto 3 GitHub/Microprocesador-Isdigi/aROM.sv Line: 9
-Warning (10030): Net "mem.waddr_a[0]" at aROM.sv(9) has no driver or initial value, using a default initial value '0' File: C:/Users/beltr/OneDrive/Documentos/ISDIGI LOCAL/Proyecto 3 GitHub/Microprocesador-Isdigi/aROM.sv Line: 9
+Warning (10030): Net "mem.waddr_a" at aROM.sv(9) has no driver or initial value, using a default initial value '0' File: C:/Users/beltr/OneDrive/Documentos/ISDIGI LOCAL/Proyecto 3 GitHub/Microprocesador-Isdigi/aROM.sv Line: 9
 Warning (10030): Net "mem.we_a" at aROM.sv(9) has no driver or initial value, using a default initial value '0' File: C:/Users/beltr/OneDrive/Documentos/ISDIGI LOCAL/Proyecto 3 GitHub/Microprocesador-Isdigi/aROM.sv Line: 9
 Info (12128): Elaborating entity "RAM" for hierarchy "RAM:RAM_inst" File: C:/Users/beltr/OneDrive/Documentos/ISDIGI LOCAL/Proyecto 3 GitHub/Microprocesador-Isdigi/top.sv Line: 25
 Info (12128): Elaborating entity "core" for hierarchy "core:core_inst" File: C:/Users/beltr/OneDrive/Documentos/ISDIGI LOCAL/Proyecto 3 GitHub/Microprocesador-Isdigi/top.sv Line: 39
@@ -500,8 +501,8 @@ Info (21057): Implemented 2 device resources after synthesis - the final resourc
     Info (21059): Implemented 0 output pins
 Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 12 warnings
     Info: Peak virtual memory: 4740 megabytes
-    Info: Processing ended: Tue Dec 12 00:44:43 2023
-    Info: Elapsed time: 00:00:19
-    Info: Total CPU time (on all processors): 00:00:40
+    Info: Processing ended: Tue Dec 12 01:58:04 2023
+    Info: Elapsed time: 00:00:17
+    Info: Total CPU time (on all processors): 00:00:35
 
 

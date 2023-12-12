@@ -97,8 +97,8 @@ ALU ALU_inst
 mux_2to1 mux_2to1_inst2
 (
 	.select(MemtoReg) ,	
-	.dato1(ddata_r) ,	
-	.dato2(daddr) ,	
+	.dato1(daddr) ,	
+	.dato2(ddata_r) ,	
 	.salida(write_data_reg) 	
 );
 

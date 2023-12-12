@@ -14,6 +14,7 @@ source_file = 1, C:/Users/beltr/OneDrive/Documentos/ISDIGI LOCAL/Proyecto 3 GitH
 source_file = 1, C:/Users/beltr/OneDrive/Documentos/ISDIGI LOCAL/Proyecto 3 GitHub/Microprocesador-Isdigi/aROM.sv
 source_file = 1, C:/Users/beltr/OneDrive/Documentos/ISDIGI LOCAL/Proyecto 3 GitHub/Microprocesador-Isdigi/ALUcontrol.sv
 source_file = 1, C:/Users/beltr/OneDrive/Documentos/ISDIGI LOCAL/Proyecto 3 GitHub/Microprocesador-Isdigi/ALU.sv
+source_file = 1, C:/Users/beltr/OneDrive/Documentos/ISDIGI LOCAL/Proyecto 3 GitHub/Microprocesador-Isdigi/ram_fibonacci.hex
 source_file = 1, C:/Users/beltr/OneDrive/Documentos/ISDIGI LOCAL/Proyecto 3 GitHub/Microprocesador-Isdigi/db/procesador.cbx.xml
 design_name = top
 instance = comp, \CLK~input , CLK~input, top, 1

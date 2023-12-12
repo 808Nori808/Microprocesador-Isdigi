@@ -13,6 +13,8 @@ always_ff @(posedge clock)
         mem[address]<=data;
 
 assign salida=(wread)? mem[address]:0;
-		
+
+initial  	
+$readmemh("RAM_fibonacci.hex", mem);
 
 endmodule 
