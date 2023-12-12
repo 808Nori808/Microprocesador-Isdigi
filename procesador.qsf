@@ -69,10 +69,16 @@ set_global_assignment -name PARTITION_COLOR 16764057 -section_id Top
 set_global_assignment -name POWER_PRESET_COOLING_SOLUTION "23 MM HEAT SINK WITH 200 LFPM AIRFLOW"
 set_global_assignment -name POWER_BOARD_THERMAL_MODEL "NONE (CONSERVATIVE)"
 set_global_assignment -name EDA_TEST_BENCH_ENABLE_STATUS TEST_BENCH_MODE -section_id eda_simulation
-set_global_assignment -name EDA_NATIVELINK_SIMULATION_TEST_BENCH tb_procesador -section_id eda_simulation
+set_global_assignment -name EDA_NATIVELINK_SIMULATION_TEST_BENCH tb_procesador_cob -section_id eda_simulation
 set_global_assignment -name EDA_TEST_BENCH_NAME tb_procesador -section_id eda_simulation
 set_global_assignment -name EDA_DESIGN_INSTANCE_NAME NA -section_id tb_procesador
 set_global_assignment -name EDA_TEST_BENCH_MODULE_NAME tb_procesador -section_id tb_procesador
+set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top
+set_global_assignment -name SYSTEMVERILOG_FILE tb_procesador.sv
+set_global_assignment -name SYSTEMVERILOG_FILE tb_procesador_cob.sv
+set_global_assignment -name EDA_TEST_BENCH_NAME tb_procesador_cob -section_id eda_simulation
+set_global_assignment -name EDA_DESIGN_INSTANCE_NAME NA -section_id tb_procesador_cob
+set_global_assignment -name EDA_TEST_BENCH_MODULE_NAME tb_procesador_cob -section_id tb_procesador_cob
 set_global_assignment -name EDA_TEST_BENCH_FILE ALU.sv -section_id tb_procesador
 set_global_assignment -name EDA_TEST_BENCH_FILE ALUcontrol.sv -section_id tb_procesador
 set_global_assignment -name EDA_TEST_BENCH_FILE control.sv -section_id tb_procesador
@@ -89,4 +95,18 @@ set_global_assignment -name EDA_TEST_BENCH_FILE aROM.sv -section_id tb_procesado
 set_global_assignment -name EDA_TEST_BENCH_FILE RAM.sv -section_id tb_procesador
 set_global_assignment -name EDA_TEST_BENCH_FILE core.sv -section_id tb_procesador
 set_global_assignment -name EDA_TEST_BENCH_FILE tb_procesador.sv -section_id tb_procesador
-set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top
+set_global_assignment -name EDA_TEST_BENCH_FILE ALU.sv -section_id tb_procesador_cob
+set_global_assignment -name EDA_TEST_BENCH_FILE ALUcontrol.sv -section_id tb_procesador_cob
+set_global_assignment -name EDA_TEST_BENCH_FILE control.sv -section_id tb_procesador_cob
+set_global_assignment -name EDA_TEST_BENCH_FILE Imm_Gen.sv -section_id tb_procesador_cob
+set_global_assignment -name EDA_TEST_BENCH_FILE mux_2to1.sv -section_id tb_procesador_cob
+set_global_assignment -name EDA_TEST_BENCH_FILE myFibo.hex -section_id tb_procesador_cob
+set_global_assignment -name EDA_TEST_BENCH_FILE mux_4to1.sv -section_id tb_procesador_cob
+set_global_assignment -name EDA_TEST_BENCH_FILE PC.sv -section_id tb_procesador_cob
+set_global_assignment -name EDA_TEST_BENCH_FILE REGBANK.sv -section_id tb_procesador_cob
+set_global_assignment -name EDA_TEST_BENCH_FILE sumador.sv -section_id tb_procesador_cob
+set_global_assignment -name EDA_TEST_BENCH_FILE Inicializacion_RAM.hex -section_id tb_procesador_cob
+set_global_assignment -name EDA_TEST_BENCH_FILE aROM.sv -section_id tb_procesador_cob
+set_global_assignment -name EDA_TEST_BENCH_FILE core.sv -section_id tb_procesador_cob
+set_global_assignment -name EDA_TEST_BENCH_FILE RAM.sv -section_id tb_procesador_cob
+set_global_assignment -name EDA_TEST_BENCH_FILE tb_procesador_cob.sv -section_id tb_procesador_cob
