@@ -45,7 +45,7 @@ aROM aROM_inst
 
 
 
-RAM RAM_Dani_inst
+RAM RAM_inst
 (
 	.data(ddata_w) ,	
 	.wren(~d_rw) ,	

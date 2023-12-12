@@ -41,7 +41,7 @@ logic  [address_size-1:0] idata, ddata_r, daddr;
 
 
 
-RAM RAM_Dani_inst
+RAM RAM_inst
 (
 	.data(ddata_w) ,	
 	.wren(~d_rw) ,	
