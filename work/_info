@@ -18,6 +18,7 @@ o-quiet -auto_acc_if_foreign -work work
 Z1 tCvgOpt 0
 n@_opt
 OL;O;2020.2;71
+R0
 vALU
 Z2 DXx6 sv_std 3 std 0 22 9oUSJO;AeEaW`l:M@^WG92
 !s110 1702331231
@@ -274,6 +275,32 @@ r1
 R7
 R1
 n@r@a@m
+vRAM_Dani
+R2
+!s110 1702346617
+!i10b 1
+!s100 ZO33D^PVVW9a0Z4n4b9jO3
+R3
+I`IS_mo0KWLioi833QhL4Q2
+R4
+S1
+R0
+w1702346554
+8C:/Users/beltr/OneDrive/Documentos/ISDIGI LOCAL/Proyecto 3 GitHub/Microprocesador-Isdigi/RAM_Dani.sv
+FC:/Users/beltr/OneDrive/Documentos/ISDIGI LOCAL/Proyecto 3 GitHub/Microprocesador-Isdigi/RAM_Dani.sv
+!i122 175
+L0 1 24
+R6
+r1
+!s85 0
+31
+!s108 1702346617.000000
+!s107 C:/Users/beltr/OneDrive/Documentos/ISDIGI LOCAL/Proyecto 3 GitHub/Microprocesador-Isdigi/RAM_Dani.sv|
+!s90 -reportprogress|300|-work|work|C:/Users/beltr/OneDrive/Documentos/ISDIGI LOCAL/Proyecto 3 GitHub/Microprocesador-Isdigi/RAM_Dani.sv|
+!i113 0
+R7
+R1
+n@r@a@m_@dani
 vREGBANK
 R2
 !s110 1702331250

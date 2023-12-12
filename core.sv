@@ -1,3 +1,28 @@
+// Universitat Politècnica de València
+// Escuela Técnica Superior de Ingenieros de Telecomunicación
+// --------------------------------------------------------------------
+// INTEGRACIÓN DE SISTEMAS DIGITALES
+// Curso 2023 - 2024
+// --------------------------------------------------------------------
+// Nombre del archivo: core
+//
+//
+// --------------------------------------------------------------------
+// Versión: V1.0 | Fecha Modificación: 11/12/2023
+//
+// Autor:     Grupo B3 3 (6):
+//                Hugo Arnau Oms
+//                Hugo Beltrán Sanz
+//                Ferran Guiñón Tatay
+//                Marco Ibañez Véliz 
+//                Tomas Oviedo
+//                Adrián Tena Moreno 
+//
+// Ordenador de trabajo: Personal y Laboratorio.
+//
+// --------------------------------------------------------------------
+
+
 // --- E n t r a d a s ----------------------------
 // Bus de datos IMEM: idata
 // Bus de datos de lectura DMEM: ddata_r
@@ -7,6 +32,7 @@
 // Bus de direcciones IMEM: iaddr
 // Bus de direcciones DMEM: daddr 
 // Bus de datos de escritura DMEM: ddata_w
+// Habilitacion de lectura/escritura : d_rw
 // ------------------------------------------------
 
 module core 

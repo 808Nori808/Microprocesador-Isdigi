@@ -1,7 +1,7 @@
 vendor_name = ModelSim
+source_file = 1, C:/Users/beltr/OneDrive/Documentos/ISDIGI LOCAL/Proyecto 3 GitHub/Microprocesador-Isdigi/RAM_Dani.sv
 source_file = 1, C:/Users/beltr/OneDrive/Documentos/ISDIGI LOCAL/Proyecto 3 GitHub/Microprocesador-Isdigi/myFibo.hex
 source_file = 1, C:/Users/beltr/OneDrive/Documentos/ISDIGI LOCAL/Proyecto 3 GitHub/Microprocesador-Isdigi/top.sv
-source_file = 1, C:/Users/beltr/OneDrive/Documentos/ISDIGI LOCAL/Proyecto 3 GitHub/Microprocesador-Isdigi/tb_ALU.sv
 source_file = 1, C:/Users/beltr/OneDrive/Documentos/ISDIGI LOCAL/Proyecto 3 GitHub/Microprocesador-Isdigi/sumador.sv
 source_file = 1, C:/Users/beltr/OneDrive/Documentos/ISDIGI LOCAL/Proyecto 3 GitHub/Microprocesador-Isdigi/REGBANK.sv
 source_file = 1, C:/Users/beltr/OneDrive/Documentos/ISDIGI LOCAL/Proyecto 3 GitHub/Microprocesador-Isdigi/RAM.sv

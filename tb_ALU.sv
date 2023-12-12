@@ -35,7 +35,6 @@ module tb_ALU();
 	logic [size-1:0] RESULTADO;
 	logic ZERO;
 	
-	ALU duv (.*);
 	
 	initial
 	begin

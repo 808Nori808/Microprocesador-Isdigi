@@ -41,7 +41,7 @@ set_global_assignment -name DEVICE EP4CE115F29C7
 set_global_assignment -name TOP_LEVEL_ENTITY top
 set_global_assignment -name ORIGINAL_QUARTUS_VERSION 17.1.0
 set_global_assignment -name PROJECT_CREATION_TIME_DATE "11:38:43  DECEMBER 11, 2023"
-set_global_assignment -name LAST_QUARTUS_VERSION "17.1.0 Lite Edition"
+set_global_assignment -name LAST_QUARTUS_VERSION "17.1.1 Lite Edition"
 set_global_assignment -name PROJECT_OUTPUT_DIRECTORY output_files
 set_global_assignment -name MIN_CORE_JUNCTION_TEMP 0
 set_global_assignment -name MAX_CORE_JUNCTION_TEMP 85
@@ -57,21 +57,6 @@ set_global_assignment -name EDA_NATIVELINK_SIMULATION_TEST_BENCH tb_procesador -
 set_global_assignment -name EDA_TEST_BENCH_NAME tb_procesador -section_id eda_simulation
 set_global_assignment -name EDA_DESIGN_INSTANCE_NAME NA -section_id tb_procesador
 set_global_assignment -name EDA_TEST_BENCH_MODULE_NAME tb_procesador -section_id tb_procesador
-set_global_assignment -name HEX_FILE myFibo.hex
-set_global_assignment -name SYSTEMVERILOG_FILE top.sv
-set_global_assignment -name SYSTEMVERILOG_FILE tb_ALU.sv
-set_global_assignment -name SYSTEMVERILOG_FILE sumador.sv
-set_global_assignment -name SYSTEMVERILOG_FILE REGBANK.sv
-set_global_assignment -name SYSTEMVERILOG_FILE RAM.sv
-set_global_assignment -name SYSTEMVERILOG_FILE PC.sv
-set_global_assignment -name SYSTEMVERILOG_FILE mux_4to1.sv
-set_global_assignment -name SYSTEMVERILOG_FILE mux_2to1.sv
-set_global_assignment -name SYSTEMVERILOG_FILE Imm_Gen.sv
-set_global_assignment -name SYSTEMVERILOG_FILE core.sv
-set_global_assignment -name SYSTEMVERILOG_FILE control.sv
-set_global_assignment -name SYSTEMVERILOG_FILE aROM.sv
-set_global_assignment -name SYSTEMVERILOG_FILE ALUcontrol.sv
-set_global_assignment -name SYSTEMVERILOG_FILE ALU.sv
 set_global_assignment -name EDA_TEST_BENCH_FILE myFibo.hex -section_id tb_procesador
 set_global_assignment -name EDA_TEST_BENCH_FILE aROM.sv -section_id tb_procesador
 set_global_assignment -name EDA_TEST_BENCH_FILE RAM.sv -section_id tb_procesador
@@ -87,4 +72,19 @@ set_global_assignment -name EDA_TEST_BENCH_FILE tb_procesador.sv -section_id tb_
 set_global_assignment -name PARTITION_NETLIST_TYPE SOURCE -section_id Top
 set_global_assignment -name PARTITION_FITTER_PRESERVATION_LEVEL PLACEMENT_AND_ROUTING -section_id Top
 set_global_assignment -name PARTITION_COLOR 16764057 -section_id Top
+set_global_assignment -name SYSTEMVERILOG_FILE RAM_Dani.sv
+set_global_assignment -name HEX_FILE myFibo.hex
+set_global_assignment -name SYSTEMVERILOG_FILE top.sv
+set_global_assignment -name SYSTEMVERILOG_FILE sumador.sv
+set_global_assignment -name SYSTEMVERILOG_FILE REGBANK.sv
+set_global_assignment -name SYSTEMVERILOG_FILE RAM.sv
+set_global_assignment -name SYSTEMVERILOG_FILE PC.sv
+set_global_assignment -name SYSTEMVERILOG_FILE mux_4to1.sv
+set_global_assignment -name SYSTEMVERILOG_FILE mux_2to1.sv
+set_global_assignment -name SYSTEMVERILOG_FILE Imm_Gen.sv
+set_global_assignment -name SYSTEMVERILOG_FILE core.sv
+set_global_assignment -name SYSTEMVERILOG_FILE control.sv
+set_global_assignment -name SYSTEMVERILOG_FILE aROM.sv
+set_global_assignment -name SYSTEMVERILOG_FILE ALUcontrol.sv
+set_global_assignment -name SYSTEMVERILOG_FILE ALU.sv
 set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top

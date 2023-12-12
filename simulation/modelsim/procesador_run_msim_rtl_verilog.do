@@ -44,7 +44,7 @@ vlog -sv -work work +incdir+C:/Users/beltr/OneDrive/Documentos/ISDIGI\ LOCAL/Pro
 vlog -sv -work work +incdir+C:/Users/beltr/OneDrive/Documentos/ISDIGI\ LOCAL/Proyecto\ 3\ GitHub/Microprocesador-Isdigi {C:/Users/beltr/OneDrive/Documentos/ISDIGI LOCAL/Proyecto 3 GitHub/Microprocesador-Isdigi/control.sv}
 vlog -sv -work work +incdir+C:/Users/beltr/OneDrive/Documentos/ISDIGI\ LOCAL/Proyecto\ 3\ GitHub/Microprocesador-Isdigi {C:/Users/beltr/OneDrive/Documentos/ISDIGI LOCAL/Proyecto 3 GitHub/Microprocesador-Isdigi/ALUcontrol.sv}
 vlog -sv -work work +incdir+C:/Users/beltr/OneDrive/Documentos/ISDIGI\ LOCAL/Proyecto\ 3\ GitHub/Microprocesador-Isdigi {C:/Users/beltr/OneDrive/Documentos/ISDIGI LOCAL/Proyecto 3 GitHub/Microprocesador-Isdigi/ALU.sv}
-vlog -sv -work work +incdir+C:/Users/beltr/OneDrive/Documentos/ISDIGI\ LOCAL/Proyecto\ 3\ GitHub/Microprocesador-Isdigi {C:/Users/beltr/OneDrive/Documentos/ISDIGI LOCAL/Proyecto 3 GitHub/Microprocesador-Isdigi/RAM.sv}
+vlog -sv -work work +incdir+C:/Users/beltr/OneDrive/Documentos/ISDIGI\ LOCAL/Proyecto\ 3\ GitHub/Microprocesador-Isdigi {C:/Users/beltr/OneDrive/Documentos/ISDIGI LOCAL/Proyecto 3 GitHub/Microprocesador-Isdigi/RAM_Dani.sv}
 vlog -sv -work work +incdir+C:/Users/beltr/OneDrive/Documentos/ISDIGI\ LOCAL/Proyecto\ 3\ GitHub/Microprocesador-Isdigi {C:/Users/beltr/OneDrive/Documentos/ISDIGI LOCAL/Proyecto 3 GitHub/Microprocesador-Isdigi/aROM.sv}
 
 vlog -sv -work work +incdir+C:/Users/beltr/OneDrive/Documentos/ISDIGI\ LOCAL/Proyecto\ 3\ GitHub/Microprocesador-Isdigi {C:/Users/beltr/OneDrive/Documentos/ISDIGI LOCAL/Proyecto 3 GitHub/Microprocesador-Isdigi/aROM.sv}

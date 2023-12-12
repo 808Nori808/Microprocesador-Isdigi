@@ -1,7 +1,33 @@
+// Universitat Politècnica de València
+// Escuela Técnica Superior de Ingenieros de Telecomunicación
+// --------------------------------------------------------------------
+// INTEGRACIÓN DE SISTEMAS DIGITALES
+// Curso 2023 - 2024
+// --------------------------------------------------------------------
+// Nombre del archivo: ALUcontrol
+//
+//
+// --------------------------------------------------------------------
+// Versión: V1.0 | Fecha Modificación: 11/12/2023
+//
+// Autor:     Grupo B3 3 (6):
+//                Hugo Arnau Oms
+//                Hugo Beltrán Sanz
+//                Ferran Guiñón Tatay
+//                Marco Ibañez Véliz 
+//                Tomas Oviedo
+//                Adrián Tena Moreno 
+//
+// Ordenador de trabajo: Personal y Laboratorio.
+//
+// --------------------------------------------------------------------
+
 module ALUcontrol(ALUOp, bits, salida_ALUcontrol);
 
 input [3:0] ALUOp;
-input [3:0] bits; //bit3 = bit30 y bits2,1,0 = bits14,13,12
+input [3:0] bits; 
+
+//bits[3] corresponde a la entrada en la posicion [30] y bits[2:0] corresponde a la entrada en las posiciones [14:12]
 
 output logic [3:0] salida_ALUcontrol;
 

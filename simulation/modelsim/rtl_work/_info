@@ -9,209 +9,200 @@ z2
 !i10f 100
 cModel Technology
 Z0 dC:/Users/beltr/OneDrive/Documentos/ISDIGI LOCAL/Proyecto 3 GitHub/Microprocesador-Isdigi/simulation/modelsim
-T_opt
-!s110 1702342740
-V^MU<Che`j3AaM97EemVEK3
-04 13 4 work tb_procesador fast 0
-=1-f8b46abc1277-6577b054-15-1678
-o-quiet -auto_acc_if_foreign -work work -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cycloneive_ver -L rtl_work -L work +acc
-Z1 tCvgOpt 0
-n@_opt
-OL;O;2020.2;71
 vALU
-Z2 DXx6 sv_std 3 std 0 22 9oUSJO;AeEaW`l:M@^WG92
-Z3 !s110 1702342738
+Z1 DXx6 sv_std 3 std 0 22 9oUSJO;AeEaW`l:M@^WG92
+Z2 !s110 1702353399
 !i10b 1
-!s100 DHEO@@EQYAF9Q@>5VJ7U62
-Z4 !s11b Dg1SIo80bB@j0V0VzS_@n1
-ImVZz6zH4hQDOT<;7Vm_6N0
-Z5 VDg1SIo80bB@j0V0VzS_@n1
+!s100 bfSZ7zgbDB>VM>2CPY`Vg3
+Z3 !s11b Dg1SIo80bB@j0V0VzS_@n1
+I8c9NhDQ4VYUM=mkWAkagm0
+Z4 VDg1SIo80bB@j0V0VzS_@n1
 S1
 R0
-Z6 w1702219987
+w1702351733
 8C:/Users/beltr/OneDrive/Documentos/ISDIGI LOCAL/Proyecto 3 GitHub/Microprocesador-Isdigi/ALU.sv
 FC:/Users/beltr/OneDrive/Documentos/ISDIGI LOCAL/Proyecto 3 GitHub/Microprocesador-Isdigi/ALU.sv
 !i122 17
-L0 1 38
-Z7 OL;L;2020.2;71
+L0 25 38
+Z5 OL;L;2020.2;71
 r1
 !s85 0
 31
-Z8 !s108 1702342738.000000
+Z6 !s108 1702353399.000000
 !s107 C:/Users/beltr/OneDrive/Documentos/ISDIGI LOCAL/Proyecto 3 GitHub/Microprocesador-Isdigi/ALU.sv|
 !s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/beltr/OneDrive/Documentos/ISDIGI LOCAL/Proyecto 3 GitHub/Microprocesador-Isdigi|C:/Users/beltr/OneDrive/Documentos/ISDIGI LOCAL/Proyecto 3 GitHub/Microprocesador-Isdigi/ALU.sv|
 !i113 0
-Z9 o-sv -work work -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
-Z10 !s92 -sv -work work {+incdir+C:/Users/beltr/OneDrive/Documentos/ISDIGI LOCAL/Proyecto 3 GitHub/Microprocesador-Isdigi} -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
-R1
+Z7 o-sv -work work -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+Z8 !s92 -sv -work work {+incdir+C:/Users/beltr/OneDrive/Documentos/ISDIGI LOCAL/Proyecto 3 GitHub/Microprocesador-Isdigi} -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+Z9 tCvgOpt 0
 n@a@l@u
 vALUcontrol
+R1
 R2
-R3
 !i10b 1
-!s100 f7@81<JZU4ealUEMdR[:`2
+!s100 5KM5zWee>]7o:M@emFb@[2
+R3
+IQIc[Qc?Xb2[[W4O2jADVW2
 R4
-I1k^R2e]iCBj9a@?^SLGHF3
-R5
 S1
 R0
-R6
+w1702351815
 8C:/Users/beltr/OneDrive/Documentos/ISDIGI LOCAL/Proyecto 3 GitHub/Microprocesador-Isdigi/ALUcontrol.sv
 FC:/Users/beltr/OneDrive/Documentos/ISDIGI LOCAL/Proyecto 3 GitHub/Microprocesador-Isdigi/ALUcontrol.sv
 !i122 18
-L0 1 61
-R7
+L0 25 63
+R5
 r1
 !s85 0
 31
-R8
+R6
 !s107 C:/Users/beltr/OneDrive/Documentos/ISDIGI LOCAL/Proyecto 3 GitHub/Microprocesador-Isdigi/ALUcontrol.sv|
 !s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/beltr/OneDrive/Documentos/ISDIGI LOCAL/Proyecto 3 GitHub/Microprocesador-Isdigi|C:/Users/beltr/OneDrive/Documentos/ISDIGI LOCAL/Proyecto 3 GitHub/Microprocesador-Isdigi/ALUcontrol.sv|
 !i113 0
+R7
+R8
 R9
-R10
-R1
 n@a@l@ucontrol
 vaROM
-R2
-Z11 !s110 1702342737
+R1
+Z10 !s110 1702353398
 !i10b 1
-!s100 4RU4hlh9nHTeDF1OZ`;T`1
+!s100 g>@@UX841QT?CXSRdgdiD0
+R3
+Ika`>QC]=dSlLXmb2=h`771
 R4
-IK@73>jLWU]^6f9:fSn3JV2
-R5
 S1
 R0
-w1702339102
+w1702352035
 8C:/Users/beltr/OneDrive/Documentos/ISDIGI LOCAL/Proyecto 3 GitHub/Microprocesador-Isdigi/aROM.sv
 FC:/Users/beltr/OneDrive/Documentos/ISDIGI LOCAL/Proyecto 3 GitHub/Microprocesador-Isdigi/aROM.sv
 !i122 13
-Z12 L0 1 17
-R7
+L0 25 17
+R5
 r1
 !s85 0
 31
-Z13 !s108 1702342737.000000
+Z11 !s108 1702353398.000000
 !s107 C:/Users/beltr/OneDrive/Documentos/ISDIGI LOCAL/Proyecto 3 GitHub/Microprocesador-Isdigi/aROM.sv|
 !s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/beltr/OneDrive/Documentos/ISDIGI LOCAL/Proyecto 3 GitHub/Microprocesador-Isdigi|C:/Users/beltr/OneDrive/Documentos/ISDIGI LOCAL/Proyecto 3 GitHub/Microprocesador-Isdigi/aROM.sv|
 !i113 0
+R7
+R8
 R9
-R10
-R1
 na@r@o@m
 vcontrol
-R2
-R3
+R1
+Z12 !s110 1702353400
 !i10b 1
-!s100 h1MQg=<W2KcQi_0>Jz=B]2
+!s100 @1QVGdCBjk_JQbmcm;dln3
+R3
+Idce8W1T2ML`JzGFjhMil=1
 R4
-IIfjJJzhOBVjQnnR@>9IQ62
-R5
 S1
 R0
-w1702060402
+w1702352222
 8C:/Users/beltr/OneDrive/Documentos/ISDIGI LOCAL/Proyecto 3 GitHub/Microprocesador-Isdigi/control.sv
 FC:/Users/beltr/OneDrive/Documentos/ISDIGI LOCAL/Proyecto 3 GitHub/Microprocesador-Isdigi/control.sv
 !i122 19
-L0 1 75
-R7
+L0 25 76
+R5
 r1
 !s85 0
 31
-R8
+Z13 !s108 1702353400.000000
 !s107 C:/Users/beltr/OneDrive/Documentos/ISDIGI LOCAL/Proyecto 3 GitHub/Microprocesador-Isdigi/control.sv|
 !s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/beltr/OneDrive/Documentos/ISDIGI LOCAL/Proyecto 3 GitHub/Microprocesador-Isdigi|C:/Users/beltr/OneDrive/Documentos/ISDIGI LOCAL/Proyecto 3 GitHub/Microprocesador-Isdigi/control.sv|
 !i113 0
+R7
+R8
 R9
-R10
-R1
 vcore
-R2
-!s110 1702342736
+R1
+!s110 1702353397
 !i10b 1
-!s100 @OOeE1zBGT>XM4?]M<lz>0
+!s100 Y_8lFnkQJM0lJGmOaQoN70
+R3
+I^PcH8<Z@LG46[J3Cf^`R93
 R4
-I^ch^nfkn:^@7MHd]fb`n=1
-R5
 S1
 R0
-w1702340805
+w1702352311
 8C:/Users/beltr/OneDrive/Documentos/ISDIGI LOCAL/Proyecto 3 GitHub/Microprocesador-Isdigi/core.sv
 FC:/Users/beltr/OneDrive/Documentos/ISDIGI LOCAL/Proyecto 3 GitHub/Microprocesador-Isdigi/core.sv
 !i122 7
-L0 12 141
-R7
+L0 38 141
+R5
 r1
 !s85 0
 31
-Z14 !s108 1702342735.000000
+!s108 1702353397.000000
 !s107 C:/Users/beltr/OneDrive/Documentos/ISDIGI LOCAL/Proyecto 3 GitHub/Microprocesador-Isdigi/core.sv|
 !s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/beltr/OneDrive/Documentos/ISDIGI LOCAL/Proyecto 3 GitHub/Microprocesador-Isdigi|C:/Users/beltr/OneDrive/Documentos/ISDIGI LOCAL/Proyecto 3 GitHub/Microprocesador-Isdigi/core.sv|
 !i113 0
+R7
+R8
 R9
-R10
-R1
 vImm_Gen
+R1
 R2
-R11
 !i10b 1
-!s100 S2o0KG@4d[F8e_CkEPJf_0
+!s100 Bf8dh>gRao4Z`Tb3^7j7;3
+R3
+IXoL]3<mHS^28jhVcQ?CTn3
 R4
-I50oCN>;nd18`]Vm7<Vl^;2
-R5
 S1
 R0
-w1702047366
+w1702352363
 8C:/Users/beltr/OneDrive/Documentos/ISDIGI LOCAL/Proyecto 3 GitHub/Microprocesador-Isdigi/Imm_Gen.sv
 FC:/Users/beltr/OneDrive/Documentos/ISDIGI LOCAL/Proyecto 3 GitHub/Microprocesador-Isdigi/Imm_Gen.sv
 !i122 16
-Z15 L0 1 20
-R7
+L0 25 20
+R5
 r1
 !s85 0
 31
-R13
+R6
 !s107 C:/Users/beltr/OneDrive/Documentos/ISDIGI LOCAL/Proyecto 3 GitHub/Microprocesador-Isdigi/Imm_Gen.sv|
 !s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/beltr/OneDrive/Documentos/ISDIGI LOCAL/Proyecto 3 GitHub/Microprocesador-Isdigi|C:/Users/beltr/OneDrive/Documentos/ISDIGI LOCAL/Proyecto 3 GitHub/Microprocesador-Isdigi/Imm_Gen.sv|
 !i113 0
+R7
+R8
 R9
-R10
-R1
 n@imm_@gen
 vmux_2to1
-R2
-R3
+R1
+R12
 !i10b 1
 !s100 N0^ISL[ABS>]HTDV9f_1k1
-R4
+R3
 InKT86Pe5A7n3MAIz_bTe90
-R5
+R4
 S1
 R0
 w1702312162
 8C:/Users/beltr/OneDrive/Documentos/ISDIGI LOCAL/Proyecto 3 GitHub/Microprocesador-Isdigi/mux_2to1.sv
 FC:/Users/beltr/OneDrive/Documentos/ISDIGI LOCAL/Proyecto 3 GitHub/Microprocesador-Isdigi/mux_2to1.sv
 !i122 20
-R12
-R7
+L0 1 17
+R5
 r1
 !s85 0
 31
-R8
+R13
 !s107 C:/Users/beltr/OneDrive/Documentos/ISDIGI LOCAL/Proyecto 3 GitHub/Microprocesador-Isdigi/mux_2to1.sv|
 !s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/beltr/OneDrive/Documentos/ISDIGI LOCAL/Proyecto 3 GitHub/Microprocesador-Isdigi|C:/Users/beltr/OneDrive/Documentos/ISDIGI LOCAL/Proyecto 3 GitHub/Microprocesador-Isdigi/mux_2to1.sv|
 !i113 0
+R7
+R8
 R9
-R10
-R1
 vmux_4to1
-R2
-Z16 !s110 1702342739
+R1
+R12
 !i10b 1
 !s100 XKiMYEkZm[9PCSJ7ghLSG1
-R4
+R3
 IS06H_3DXLfj]5cc=DCk_A1
-R5
+R4
 S1
 R0
 w1702312210
@@ -219,25 +210,25 @@ w1702312210
 FC:/Users/beltr/OneDrive/Documentos/ISDIGI LOCAL/Proyecto 3 GitHub/Microprocesador-Isdigi/mux_4to1.sv
 !i122 21
 L0 1 18
-R7
+R5
 r1
 !s85 0
 31
-R8
+R13
 !s107 C:/Users/beltr/OneDrive/Documentos/ISDIGI LOCAL/Proyecto 3 GitHub/Microprocesador-Isdigi/mux_4to1.sv|
 !s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/beltr/OneDrive/Documentos/ISDIGI LOCAL/Proyecto 3 GitHub/Microprocesador-Isdigi|C:/Users/beltr/OneDrive/Documentos/ISDIGI LOCAL/Proyecto 3 GitHub/Microprocesador-Isdigi/mux_4to1.sv|
 !i113 0
+R7
+R8
 R9
-R10
-R1
 vPC
-R2
-!s110 1702342735
+R1
+!s110 1702353396
 !i10b 1
 !s100 WAY?hLUm0Hob6Z^F:F50E1
-R4
+R3
 IjQh^0RRkba:0W;B^j?>k`0
-R5
+R4
 S1
 R0
 w1702333417
@@ -245,53 +236,80 @@ w1702333417
 FC:/Users/beltr/OneDrive/Documentos/ISDIGI LOCAL/Proyecto 3 GitHub/Microprocesador-Isdigi/PC.sv
 !i122 3
 L0 1 19
-R7
+R5
 r1
 !s85 0
 31
-R14
+!s108 1702353396.000000
 !s107 C:/Users/beltr/OneDrive/Documentos/ISDIGI LOCAL/Proyecto 3 GitHub/Microprocesador-Isdigi/PC.sv|
 !s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/beltr/OneDrive/Documentos/ISDIGI LOCAL/Proyecto 3 GitHub/Microprocesador-Isdigi|C:/Users/beltr/OneDrive/Documentos/ISDIGI LOCAL/Proyecto 3 GitHub/Microprocesador-Isdigi/PC.sv|
 !i113 0
+R7
+R8
 R9
-R10
-R1
 n@p@c
 vRAM
+R1
 R2
-R11
 !i10b 1
 !s100 DSNJk?g6W@9eN7mgmAMd52
-R4
+R3
 IIT8n`do0^3LE>4YR=DJ;11
-R5
+R4
 S1
 R0
 w1702342606
 8C:/Users/beltr/OneDrive/Documentos/ISDIGI LOCAL/Proyecto 3 GitHub/Microprocesador-Isdigi/RAM.sv
 FC:/Users/beltr/OneDrive/Documentos/ISDIGI LOCAL/Proyecto 3 GitHub/Microprocesador-Isdigi/RAM.sv
 !i122 14
-R15
-R7
+L0 1 20
+R5
 r1
 !s85 0
 31
-R13
+R11
 !s107 C:/Users/beltr/OneDrive/Documentos/ISDIGI LOCAL/Proyecto 3 GitHub/Microprocesador-Isdigi/RAM.sv|
 !s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/beltr/OneDrive/Documentos/ISDIGI LOCAL/Proyecto 3 GitHub/Microprocesador-Isdigi|C:/Users/beltr/OneDrive/Documentos/ISDIGI LOCAL/Proyecto 3 GitHub/Microprocesador-Isdigi/RAM.sv|
 !i113 0
+R7
+R8
 R9
-R10
-R1
 n@r@a@m
+vRAM_Dani
+R1
+R10
+!i10b 1
+!s100 ZO33D^PVVW9a0Z4n4b9jO3
+R3
+I908_YNh=eFfig;c:NX_EU1
+R4
+S1
+R0
+w1702346554
+8C:/Users/beltr/OneDrive/Documentos/ISDIGI LOCAL/Proyecto 3 GitHub/Microprocesador-Isdigi/RAM_Dani.sv
+FC:/Users/beltr/OneDrive/Documentos/ISDIGI LOCAL/Proyecto 3 GitHub/Microprocesador-Isdigi/RAM_Dani.sv
+!i122 11
+L0 1 24
+R5
+r1
+!s85 0
+31
+R11
+!s107 C:/Users/beltr/OneDrive/Documentos/ISDIGI LOCAL/Proyecto 3 GitHub/Microprocesador-Isdigi/RAM_Dani.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/beltr/OneDrive/Documentos/ISDIGI LOCAL/Proyecto 3 GitHub/Microprocesador-Isdigi|C:/Users/beltr/OneDrive/Documentos/ISDIGI LOCAL/Proyecto 3 GitHub/Microprocesador-Isdigi/RAM_Dani.sv|
+!i113 0
+R7
+R8
+R9
+n@r@a@m_@dani
 vREGBANK
-R2
-R16
+R1
+R12
 !i10b 1
 !s100 WH3DEng2RB_97[B]LncBM3
-R4
+R3
 ImM1[=e?W51W?7k[FkJUIe2
-R5
+R4
 S1
 R0
 w1702230992
@@ -299,26 +317,26 @@ w1702230992
 FC:/Users/beltr/OneDrive/Documentos/ISDIGI LOCAL/Proyecto 3 GitHub/Microprocesador-Isdigi/REGBANK.sv
 !i122 22
 L0 1 35
-R7
+R5
 r1
 !s85 0
 31
-Z17 !s108 1702342739.000000
+R13
 !s107 C:/Users/beltr/OneDrive/Documentos/ISDIGI LOCAL/Proyecto 3 GitHub/Microprocesador-Isdigi/REGBANK.sv|
 !s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/beltr/OneDrive/Documentos/ISDIGI LOCAL/Proyecto 3 GitHub/Microprocesador-Isdigi|C:/Users/beltr/OneDrive/Documentos/ISDIGI LOCAL/Proyecto 3 GitHub/Microprocesador-Isdigi/REGBANK.sv|
 !i113 0
+R7
+R8
 R9
-R10
-R1
 n@r@e@g@b@a@n@k
 vsumador
+R1
 R2
-R11
 !i10b 1
 !s100 UaP[^DFUL2fmZ;798TZll1
-R4
+R3
 I::9`aMzgj3m9YL;9OH_5Y2
-R5
+R4
 S1
 R0
 w1702313041
@@ -326,66 +344,40 @@ w1702313041
 FC:/Users/beltr/OneDrive/Documentos/ISDIGI LOCAL/Proyecto 3 GitHub/Microprocesador-Isdigi/sumador.sv
 !i122 15
 L0 1 12
-R7
+R5
 r1
 !s85 0
 31
-R13
+R6
 !s107 C:/Users/beltr/OneDrive/Documentos/ISDIGI LOCAL/Proyecto 3 GitHub/Microprocesador-Isdigi/sumador.sv|
 !s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/beltr/OneDrive/Documentos/ISDIGI LOCAL/Proyecto 3 GitHub/Microprocesador-Isdigi|C:/Users/beltr/OneDrive/Documentos/ISDIGI LOCAL/Proyecto 3 GitHub/Microprocesador-Isdigi/sumador.sv|
 !i113 0
-R9
-R10
-R1
-vtb_procesador
-R2
-R16
-!i10b 1
-!s100 8c_=Oj38zQBg9U56RH@[Q2
-R4
-IzX:OB@V0S8a1US9;zF>_80
-R5
-S1
-R0
-w1702335799
-8C:/Users/beltr/OneDrive/Documentos/ISDIGI LOCAL/Proyecto 3 GitHub/Microprocesador-Isdigi/tb_procesador.sv
-FC:/Users/beltr/OneDrive/Documentos/ISDIGI LOCAL/Proyecto 3 GitHub/Microprocesador-Isdigi/tb_procesador.sv
-!i122 23
-L0 3 55
 R7
-r1
-!s85 0
-31
-R17
-!s107 C:/Users/beltr/OneDrive/Documentos/ISDIGI LOCAL/Proyecto 3 GitHub/Microprocesador-Isdigi/tb_procesador.sv|
-!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/beltr/OneDrive/Documentos/ISDIGI LOCAL/Proyecto 3 GitHub/Microprocesador-Isdigi|C:/Users/beltr/OneDrive/Documentos/ISDIGI LOCAL/Proyecto 3 GitHub/Microprocesador-Isdigi/tb_procesador.sv|
-!i113 0
+R8
 R9
-R10
-R1
 vtop
-R2
-!s110 1702342734
+R1
+!s110 1702353395
 !i10b 1
-!s100 GOa>B?5__[`CBN6;NI6jU2
+!s100 bl<Dn_l>`@d^^P11]8z2e2
+R3
+Ila5_LZmVZ>CJ=I1S6z9L`2
 R4
-IDSU8JF>Ud:U>BZUG8CzmY0
-R5
 S1
 R0
-w1702335942
+w1702347215
 8C:/Users/beltr/OneDrive/Documentos/ISDIGI LOCAL/Proyecto 3 GitHub/Microprocesador-Isdigi/top.sv
 FC:/Users/beltr/OneDrive/Documentos/ISDIGI LOCAL/Proyecto 3 GitHub/Microprocesador-Isdigi/top.sv
 !i122 0
 L0 1 42
-R7
+R5
 r1
 !s85 0
 31
-!s108 1702342734.000000
+!s108 1702353395.000000
 !s107 C:/Users/beltr/OneDrive/Documentos/ISDIGI LOCAL/Proyecto 3 GitHub/Microprocesador-Isdigi/top.sv|
 !s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/beltr/OneDrive/Documentos/ISDIGI LOCAL/Proyecto 3 GitHub/Microprocesador-Isdigi|C:/Users/beltr/OneDrive/Documentos/ISDIGI LOCAL/Proyecto 3 GitHub/Microprocesador-Isdigi/top.sv|
 !i113 0
+R7
+R8
 R9
-R10
-R1
