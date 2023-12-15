@@ -35,7 +35,7 @@ logic [tam_salida-1:0] mem[tam_entrada-1:0] ;
 assign dsalida = mem[address];
  
 initial
-    $readmemh("algoritmo_ordenamiento.hex", mem);
+    $readmemh("myFibo.hex", mem);
  
 
 endmodule 

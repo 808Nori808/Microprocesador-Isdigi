@@ -10,186 +10,176 @@ z2
 cModel Technology
 Z0 dC:/Users/beltr/OneDrive/Documentos/ISDIGI LOCAL/Pruebas Proyecto 3/Fases1y2
 T_opt
-!s110 1702359940
-VXnQO_oGz[B4Fl>HPBTgma3
-04 10 4 work REGBANK_tb fast 0
-=1-f8b46abc1277-6577f383-286-13e8
-Z1 o-quiet -auto_acc_if_foreign -work work +acc
+!s110 1702588446
+V4h1aVfAWhQfGUQfMFi1T70
+Z1 04 13 4 work tb_procesador fast 0
+=1-f8b46abc1277-657b701d-1d0-1490
+o-quiet -auto_acc_if_foreign -work work
 Z2 tCvgOpt 0
 n@_opt
 Z3 OL;O;2020.2;71
 R0
-T_opt1
-!s110 1702421534
-Vb]N_RQm:>DY0169X6EO?S3
-04 17 4 work tb_procesador_cob fast 0
-=1-b068e6a89a09-6578e41e-20c-bb0
-R1
-R2
-n@_opt1
-R3
-R0
 T_opt2
-!s110 1702505901
-VFU3?P[lm8GUN_cfLf0Keg0
-04 13 4 work tb_procesador fast 0
-=1-f8b46abc1277-657a2dad-53-2b18
+!s110 1702630431
+VSz_Fo?Z<jCHWJYFOPBbO42
 R1
+=27-f8b46abc1277-657c141f-171-b04
+o-quiet -auto_acc_if_foreign -work work +acc
 R2
 n@_opt2
 R3
 vALU
 Z4 DXx6 sv_std 3 std 0 22 9oUSJO;AeEaW`l:M@^WG92
-Z5 !s110 1702504417
+Z5 !s110 1702630430
 !i10b 1
-!s100 2<R<5kiGT:@QCA@IZLVaO0
+!s100 48H:=AlL6@5KYeM^K@GRn0
 Z6 !s11b Dg1SIo80bB@j0V0VzS_@n1
-I_JU^Xded2Fc?ZcUVB6Scl2
+IO3ooJZbZT4AzmQT;VJmR_2
 Z7 VDg1SIo80bB@j0V0VzS_@n1
 S1
 R0
-w1702504281
-8C:/Users/beltr/OneDrive/Documentos/ISDIGI LOCAL/Pruebas Proyecto 3/Fases1y2/ALU.sv
-FC:/Users/beltr/OneDrive/Documentos/ISDIGI LOCAL/Pruebas Proyecto 3/Fases1y2/ALU.sv
-!i122 301
+w1702569456
+8ALU.sv
+FALU.sv
+!i122 662
 L0 25 35
 Z8 OL;L;2020.2;71
 r1
 !s85 0
 31
-Z9 !s108 1702504417.000000
-!s107 C:/Users/beltr/OneDrive/Documentos/ISDIGI LOCAL/Pruebas Proyecto 3/Fases1y2/ALU.sv|
-!s90 -reportprogress|300|-work|work|C:/Users/beltr/OneDrive/Documentos/ISDIGI LOCAL/Pruebas Proyecto 3/Fases1y2/ALU.sv|
+Z9 !s108 1702630429.000000
+Z10 !s107 top.sv|tb_procesador_cob.sv|tb_procesador.sv|tb_ALU.sv|sumador.sv|mux_4to1.sv|mux_2to1.sv|core.sv|control.sv|aROM_tb.sv|aROM.sv|REGBANK_tb.sv|REGBANK.sv|RAM_tb.sv|RAM.sv|PC.sv|Imm_Gen.sv|ALUcontrol.sv|ALU.sv|
+Z11 !s90 -reportprogress|300|-work|work|ALU.sv|ALUcontrol.sv|Imm_Gen.sv|PC.sv|RAM.sv|RAM_tb.sv|REGBANK.sv|REGBANK_tb.sv|aROM.sv|aROM_tb.sv|control.sv|core.sv|mux_2to1.sv|mux_4to1.sv|sumador.sv|tb_ALU.sv|tb_procesador.sv|tb_procesador_cob.sv|top.sv|
 !i113 0
-Z10 o-work work -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+Z12 o-work work -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
 R2
 n@a@l@u
 vALUcontrol
 R4
-Z11 !s110 1702504418
+R5
 !i10b 1
-!s100 `<`6k>`D`XYV_;neo49Ai3
+!s100 zN59m:znZ:H2^YgNSYk5T0
 R6
-ILEY^5lD>ieNNA=fYOBVFX2
+IoWGJh:GC?PL3m@ORz6UoO2
 R7
 S1
 R0
-w1702501850
-8C:/Users/beltr/OneDrive/Documentos/ISDIGI LOCAL/Pruebas Proyecto 3/Fases1y2/ALUcontrol.sv
-FC:/Users/beltr/OneDrive/Documentos/ISDIGI LOCAL/Pruebas Proyecto 3/Fases1y2/ALUcontrol.sv
-!i122 303
-L0 25 63
+w1702581723
+8ALUcontrol.sv
+FALUcontrol.sv
+!i122 662
+L0 25 64
 R8
 r1
 !s85 0
 31
-Z12 !s108 1702504418.000000
-!s107 C:/Users/beltr/OneDrive/Documentos/ISDIGI LOCAL/Pruebas Proyecto 3/Fases1y2/ALUcontrol.sv|
-!s90 -reportprogress|300|-work|work|C:/Users/beltr/OneDrive/Documentos/ISDIGI LOCAL/Pruebas Proyecto 3/Fases1y2/ALUcontrol.sv|
-!i113 0
+R9
 R10
+R11
+!i113 0
+R12
 R2
 n@a@l@ucontrol
 vaROM
 R4
-!s110 1702505890
+R5
 !i10b 1
-!s100 Bbnl7FAb`1K`ai1[gdICU3
+!s100 g>@@UX841QT?CXSRdgdiD0
 R6
-If1VP3_PiGnb`nK5m5FcJG1
+IC>nD6aLcmVR0SC?gIdQ?U1
 R7
 S1
 R0
-w1702505884
-8C:/Users/beltr/OneDrive/Documentos/ISDIGI LOCAL/Pruebas Proyecto 3/Fases1y2/aROM.sv
-FC:/Users/beltr/OneDrive/Documentos/ISDIGI LOCAL/Pruebas Proyecto 3/Fases1y2/aROM.sv
-!i122 322
+w1702629376
+8aROM.sv
+FaROM.sv
+!i122 662
 Z13 L0 25 17
 R8
 r1
 !s85 0
 31
-!s108 1702505890.000000
-!s107 C:/Users/beltr/OneDrive/Documentos/ISDIGI LOCAL/Pruebas Proyecto 3/Fases1y2/aROM.sv|
-!s90 -reportprogress|300|-work|work|C:/Users/beltr/OneDrive/Documentos/ISDIGI LOCAL/Pruebas Proyecto 3/Fases1y2/aROM.sv|
-!i113 0
+R9
 R10
+R11
+!i113 0
+R12
 R2
 na@r@o@m
 vcontrol
 R4
 R5
 !i10b 1
-!s100 oBN<ZCF`>^om^91682khP2
+!s100 UH9R;DgJb`7zZC@f4DSH50
 R6
-Iaijo0ZVo^WmoQK^o>kDe92
+Id[h`Y5bL87dROj9VNbRf41
 R7
 S1
 R0
-w1702501956
-8C:/Users/beltr/OneDrive/Documentos/ISDIGI LOCAL/Pruebas Proyecto 3/Fases1y2/control.sv
-FC:/Users/beltr/OneDrive/Documentos/ISDIGI LOCAL/Pruebas Proyecto 3/Fases1y2/control.sv
-!i122 302
+w1702626593
+8control.sv
+Fcontrol.sv
+!i122 662
 L0 25 98
 R8
 r1
 !s85 0
 31
 R9
-!s107 C:/Users/beltr/OneDrive/Documentos/ISDIGI LOCAL/Pruebas Proyecto 3/Fases1y2/control.sv|
-!s90 -reportprogress|300|-work|work|C:/Users/beltr/OneDrive/Documentos/ISDIGI LOCAL/Pruebas Proyecto 3/Fases1y2/control.sv|
-!i113 0
 R10
+R11
+!i113 0
+R12
 R2
 vcore
 R4
-Z14 !s110 1702504419
+R5
 !i10b 1
 !s100 ViU7DmFVT^:QKY9EE>OR43
 R6
-I2lzhX`Y@6bP2md659335b2
+IFcfha0^1QXX42:6mEojPZ3
 R7
 S1
 R0
 w1702417365
-8C:/Users/beltr/OneDrive/Documentos/ISDIGI LOCAL/Pruebas Proyecto 3/Fases1y2/core.sv
-FC:/Users/beltr/OneDrive/Documentos/ISDIGI LOCAL/Pruebas Proyecto 3/Fases1y2/core.sv
-!i122 309
+8core.sv
+Fcore.sv
+!i122 662
 L0 38 138
 R8
 r1
 !s85 0
 31
-Z15 !s108 1702504419.000000
-!s107 C:/Users/beltr/OneDrive/Documentos/ISDIGI LOCAL/Pruebas Proyecto 3/Fases1y2/core.sv|
-!s90 -reportprogress|300|-work|work|C:/Users/beltr/OneDrive/Documentos/ISDIGI LOCAL/Pruebas Proyecto 3/Fases1y2/core.sv|
-!i113 0
+R9
 R10
+R11
+!i113 0
+R12
 R2
 vImm_Gen
 R4
 R5
 !i10b 1
-!s100 b;Y`=I`aQzgh:NJE[bJ2B2
+!s100 X=?:zQBbC_L;jO1P:kf171
 R6
-IX^MlVF7>4OoIBPJoVEmh]2
+IA1hRIV_6^7`k7[3AhE1`92
 R7
 S1
 R0
-w1702504400
-Z16 8C:/Users/beltr/OneDrive/Documentos/ISDIGI LOCAL/Pruebas Proyecto 3/Fases1y2/Imm_Gen.sv
-Z17 FC:/Users/beltr/OneDrive/Documentos/ISDIGI LOCAL/Pruebas Proyecto 3/Fases1y2/Imm_Gen.sv
-!i122 300
+w1702628493
+8Imm_Gen.sv
+FImm_Gen.sv
+!i122 662
 L0 25 53
 R8
 r1
 !s85 0
 31
 R9
-Z18 !s107 C:/Users/beltr/OneDrive/Documentos/ISDIGI LOCAL/Pruebas Proyecto 3/Fases1y2/Imm_Gen.sv|
-Z19 !s90 -reportprogress|300|-work|work|C:/Users/beltr/OneDrive/Documentos/ISDIGI LOCAL/Pruebas Proyecto 3/Fases1y2/Imm_Gen.sv|
-!i113 0
 R10
+R11
+!i113 0
+R12
 R2
 n@imm_@gen
 vImmGen
@@ -203,276 +193,276 @@ R7
 S1
 R0
 w1702493708
-R16
-R17
+8C:/Users/beltr/OneDrive/Documentos/ISDIGI LOCAL/Pruebas Proyecto 3/Fases1y2/Imm_Gen.sv
+FC:/Users/beltr/OneDrive/Documentos/ISDIGI LOCAL/Pruebas Proyecto 3/Fases1y2/Imm_Gen.sv
 !i122 91
-Z20 L0 25 19
+Z14 L0 25 19
 R8
 r1
 !s85 0
 31
 !s108 1702493718.000000
-R18
-R19
+!s107 C:/Users/beltr/OneDrive/Documentos/ISDIGI LOCAL/Pruebas Proyecto 3/Fases1y2/Imm_Gen.sv|
+!s90 -reportprogress|300|-work|work|C:/Users/beltr/OneDrive/Documentos/ISDIGI LOCAL/Pruebas Proyecto 3/Fases1y2/Imm_Gen.sv|
 !i113 0
-R10
+R12
 R2
 n@imm@gen
 vmux_2to1
 R4
-Z21 !s110 1702504420
+R5
 !i10b 1
 !s100 A5E^a8@JJ2]NY^Gn9jKkN2
 R6
-IJP5HRN92ohFbWHVAa617n0
+Ie1Yll>:@^aPP4`WQa2iN32
 R7
 S1
 R0
 w1702353828
-8C:/Users/beltr/OneDrive/Documentos/ISDIGI LOCAL/Pruebas Proyecto 3/Fases1y2/mux_2to1.sv
-FC:/Users/beltr/OneDrive/Documentos/ISDIGI LOCAL/Pruebas Proyecto 3/Fases1y2/mux_2to1.sv
-!i122 317
+8mux_2to1.sv
+Fmux_2to1.sv
+!i122 662
 R13
 R8
 r1
 !s85 0
 31
-Z22 !s108 1702504420.000000
-!s107 C:/Users/beltr/OneDrive/Documentos/ISDIGI LOCAL/Pruebas Proyecto 3/Fases1y2/mux_2to1.sv|
-!s90 -reportprogress|300|-work|work|C:/Users/beltr/OneDrive/Documentos/ISDIGI LOCAL/Pruebas Proyecto 3/Fases1y2/mux_2to1.sv|
-!i113 0
+R9
 R10
+R11
+!i113 0
+R12
 R2
 vmux_4to1
 R4
-R21
+R5
 !i10b 1
 !s100 gYFdL8:>WXMUU`2Wg>6740
 R6
-I_=<kzYU15DaK7;7kfK?lQ3
+IBn`K_`LbV;`[>icOToKi_2
 R7
 S1
 R0
 w1702353864
-8C:/Users/beltr/OneDrive/Documentos/ISDIGI LOCAL/Pruebas Proyecto 3/Fases1y2/mux_4to1.sv
-FC:/Users/beltr/OneDrive/Documentos/ISDIGI LOCAL/Pruebas Proyecto 3/Fases1y2/mux_4to1.sv
-!i122 316
+8mux_4to1.sv
+Fmux_4to1.sv
+!i122 662
 L0 25 18
 R8
 r1
 !s85 0
 31
-R15
-!s107 C:/Users/beltr/OneDrive/Documentos/ISDIGI LOCAL/Pruebas Proyecto 3/Fases1y2/mux_4to1.sv|
-!s90 -reportprogress|300|-work|work|C:/Users/beltr/OneDrive/Documentos/ISDIGI LOCAL/Pruebas Proyecto 3/Fases1y2/mux_4to1.sv|
-!i113 0
+R9
 R10
+R11
+!i113 0
+R12
 R2
 vPC
 R4
-R14
+R5
 !i10b 1
 !s100 Bk?aKg_U6f0_dF<KUa5Y70
 R6
-INlO^<HPEVPk?9ClOY>Y;30
+IOEcLk@C<K<CJRFDM92IzF2
 R7
 S1
 R0
 w1702417228
-8C:/Users/beltr/OneDrive/Documentos/ISDIGI LOCAL/Pruebas Proyecto 3/Fases1y2/PC.sv
-FC:/Users/beltr/OneDrive/Documentos/ISDIGI LOCAL/Pruebas Proyecto 3/Fases1y2/PC.sv
-!i122 310
-R20
+8PC.sv
+FPC.sv
+!i122 662
+R14
 R8
 r1
 !s85 0
 31
-R15
-!s107 C:/Users/beltr/OneDrive/Documentos/ISDIGI LOCAL/Pruebas Proyecto 3/Fases1y2/PC.sv|
-!s90 -reportprogress|300|-work|work|C:/Users/beltr/OneDrive/Documentos/ISDIGI LOCAL/Pruebas Proyecto 3/Fases1y2/PC.sv|
-!i113 0
+R9
 R10
+R11
+!i113 0
+R12
 R2
 n@p@c
 vRAM
 R4
-!s110 1702505339
+R5
 !i10b 1
-!s100 V;h`Qz^X>4elTCUGTLH6j1
+!s100 ADYR5G^4f5ogLmMmj>D1@3
 R6
-IBGB^D0Zg7n9RQLB6>N_lJ0
+IkD0ISVROcG:Q=b4m1z1773
 R7
 S1
 R0
-w1702420099
-8C:/Users/beltr/OneDrive/Documentos/ISDIGI LOCAL/Pruebas Proyecto 3/Fases1y2/RAM.sv
-FC:/Users/beltr/OneDrive/Documentos/ISDIGI LOCAL/Pruebas Proyecto 3/Fases1y2/RAM.sv
-!i122 321
+w1702626130
+8RAM.sv
+FRAM.sv
+!i122 662
 L0 25 24
 R8
 r1
 !s85 0
 31
-!s108 1702505339.000000
-!s107 C:/Users/beltr/OneDrive/Documentos/ISDIGI LOCAL/Pruebas Proyecto 3/Fases1y2/RAM.sv|
-!s90 -reportprogress|300|-work|work|C:/Users/beltr/OneDrive/Documentos/ISDIGI LOCAL/Pruebas Proyecto 3/Fases1y2/RAM.sv|
-!i113 0
+R9
 R10
+R11
+!i113 0
+R12
 R2
 n@r@a@m
 vRAM_tb
 R4
-R14
+R5
 !i10b 1
 !s100 ?lfOOAY?L]YQb9a0h[81S2
 R6
-IO9MKL2hG5FVJfNd>PPV;g1
+I`mmjG;RQX5NCdj_hY6U^:2
 R7
 S1
 R0
 w1702356919
-8C:/Users/beltr/OneDrive/Documentos/ISDIGI LOCAL/Pruebas Proyecto 3/Fases1y2/RAM_tb.sv
-FC:/Users/beltr/OneDrive/Documentos/ISDIGI LOCAL/Pruebas Proyecto 3/Fases1y2/RAM_tb.sv
-!i122 313
+8RAM_tb.sv
+FRAM_tb.sv
+!i122 662
 L0 26 66
 R8
 r1
 !s85 0
 31
-R15
-!s107 C:/Users/beltr/OneDrive/Documentos/ISDIGI LOCAL/Pruebas Proyecto 3/Fases1y2/RAM_tb.sv|
-!s90 -reportprogress|300|-work|work|C:/Users/beltr/OneDrive/Documentos/ISDIGI LOCAL/Pruebas Proyecto 3/Fases1y2/RAM_tb.sv|
-!i113 0
+R9
 R10
+R11
+!i113 0
+R12
 R2
 n@r@a@m_tb
 vREGBANK
 R4
-R11
+R5
 !i10b 1
-!s100 2cZYYghH>8Mmoh<LfdhlV2
+!s100 T^PDYW_m4fX0FE[lA4k>h1
 R6
-IK;eWDVXlj<K;]2mZU9JIB2
+IlXNU255=KC_KMdSm:8`0k1
 R7
 S1
 R0
-w1702498116
-8C:/Users/beltr/OneDrive/Documentos/ISDIGI LOCAL/Pruebas Proyecto 3/Fases1y2/REGBANK.sv
-FC:/Users/beltr/OneDrive/Documentos/ISDIGI LOCAL/Pruebas Proyecto 3/Fases1y2/REGBANK.sv
-!i122 305
-L0 25 26
+w1702582361
+8REGBANK.sv
+FREGBANK.sv
+!i122 662
+L0 25 25
 R8
 r1
 !s85 0
 31
-R12
-!s107 C:/Users/beltr/OneDrive/Documentos/ISDIGI LOCAL/Pruebas Proyecto 3/Fases1y2/REGBANK.sv|
-!s90 -reportprogress|300|-work|work|C:/Users/beltr/OneDrive/Documentos/ISDIGI LOCAL/Pruebas Proyecto 3/Fases1y2/REGBANK.sv|
-!i113 0
+R9
 R10
+R11
+!i113 0
+R12
 R2
 n@r@e@g@b@a@n@k
 vREGBANK_tb
 R4
-R14
+R5
 !i10b 1
 !s100 K:C1=aZVX8lz2VhHADRLl1
 R6
-Iz9oPnGejk>d2LKW7O>Lz32
+Ih6kj`h]L]j3[HcMj0cHo80
 R7
 S1
 R0
 w1702359916
-8C:/Users/beltr/OneDrive/Documentos/ISDIGI LOCAL/Pruebas Proyecto 3/Fases1y2/REGBANK_tb.sv
-FC:/Users/beltr/OneDrive/Documentos/ISDIGI LOCAL/Pruebas Proyecto 3/Fases1y2/REGBANK_tb.sv
-!i122 312
+8REGBANK_tb.sv
+FREGBANK_tb.sv
+!i122 662
 L0 27 112
 R8
 r1
 !s85 0
 31
-R15
-!s107 C:/Users/beltr/OneDrive/Documentos/ISDIGI LOCAL/Pruebas Proyecto 3/Fases1y2/REGBANK_tb.sv|
-!s90 -reportprogress|300|-work|work|C:/Users/beltr/OneDrive/Documentos/ISDIGI LOCAL/Pruebas Proyecto 3/Fases1y2/REGBANK_tb.sv|
-!i113 0
+R9
 R10
+R11
+!i113 0
+R12
 R2
 n@r@e@g@b@a@n@k_tb
 vROM_tb
 R4
-R14
+R5
 !i10b 1
 !s100 12S6i8e^=:ab7I2nkPmMj3
 R6
-IU]nKz18o8ZAQZK4baEHVj2
+I>k;UQ]j`K:[FjOk6Xoc8D1
 R7
 S1
 R0
 w1702356241
-8C:/Users/beltr/OneDrive/Documentos/ISDIGI LOCAL/Pruebas Proyecto 3/Fases1y2/aROM_tb.sv
-FC:/Users/beltr/OneDrive/Documentos/ISDIGI LOCAL/Pruebas Proyecto 3/Fases1y2/aROM_tb.sv
-!i122 314
+8aROM_tb.sv
+FaROM_tb.sv
+!i122 662
 L0 26 57
 R8
 r1
 !s85 0
 31
-R15
-!s107 C:/Users/beltr/OneDrive/Documentos/ISDIGI LOCAL/Pruebas Proyecto 3/Fases1y2/aROM_tb.sv|
-!s90 -reportprogress|300|-work|work|C:/Users/beltr/OneDrive/Documentos/ISDIGI LOCAL/Pruebas Proyecto 3/Fases1y2/aROM_tb.sv|
-!i113 0
+R9
 R10
+R11
+!i113 0
+R12
 R2
 n@r@o@m_tb
 vsumador
 R4
-R14
+R5
 !i10b 1
 !s100 UJa=GBAE7]Sd^5OZ?@USf0
 R6
-IX=J@WKz@GPa=<>nDYPUOB0
+Ij_0TMnG>SoUjlVIhLbUe=3
 R7
 S1
 R0
 w1702354335
-8C:/Users/beltr/OneDrive/Documentos/ISDIGI LOCAL/Pruebas Proyecto 3/Fases1y2/sumador.sv
-FC:/Users/beltr/OneDrive/Documentos/ISDIGI LOCAL/Pruebas Proyecto 3/Fases1y2/sumador.sv
-!i122 315
+8sumador.sv
+Fsumador.sv
+!i122 662
 L0 25 12
 R8
 r1
 !s85 0
 31
-R15
-!s107 C:/Users/beltr/OneDrive/Documentos/ISDIGI LOCAL/Pruebas Proyecto 3/Fases1y2/sumador.sv|
-!s90 -reportprogress|300|-work|work|C:/Users/beltr/OneDrive/Documentos/ISDIGI LOCAL/Pruebas Proyecto 3/Fases1y2/sumador.sv|
-!i113 0
+R9
 R10
+R11
+!i113 0
+R12
 R2
 vtb_ALU
 R4
-R21
+R5
 !i10b 1
 !s100 GHgN76e1NCP0fMU9V7bXi3
 R6
-I`ZW`WF^_8UEc[LeB@fzAK0
+I^2BWAMD^fgLmCNSFaz4d42
 R7
 S1
 R0
 w1702353508
-8C:/Users/beltr/OneDrive/Documentos/ISDIGI LOCAL/Pruebas Proyecto 3/Fases1y2/tb_ALU.sv
-FC:/Users/beltr/OneDrive/Documentos/ISDIGI LOCAL/Pruebas Proyecto 3/Fases1y2/tb_ALU.sv
-!i122 318
+8tb_ALU.sv
+Ftb_ALU.sv
+!i122 662
 L0 27 166
 R8
 r1
 !s85 0
 31
-R22
-!s107 C:/Users/beltr/OneDrive/Documentos/ISDIGI LOCAL/Pruebas Proyecto 3/Fases1y2/tb_ALU.sv|
-!s90 -reportprogress|300|-work|work|C:/Users/beltr/OneDrive/Documentos/ISDIGI LOCAL/Pruebas Proyecto 3/Fases1y2/tb_ALU.sv|
-!i113 0
+R9
 R10
+R11
+!i113 0
+R12
 R2
 ntb_@a@l@u
 vtb_banco_registros
@@ -498,80 +488,80 @@ r1
 !s107 C:/Users/beltr/OneDrive/Documentos/ISDIGI LOCAL/Pruebas Proyecto 3/Fases1y2/tb_banco_registros.sv|
 !s90 -reportprogress|300|-work|work|C:/Users/beltr/OneDrive/Documentos/ISDIGI LOCAL/Pruebas Proyecto 3/Fases1y2/tb_banco_registros.sv|
 !i113 0
-R10
+R12
 R2
 vtb_procesador
 R4
-R11
+R5
 !i10b 1
-!s100 bFh>8i^AQN^k=hAVj8Ba01
+!s100 cRAlYSalKdO?eKR<3<jd]1
 R6
-I]JMUb;mPaYlbj;=dS]5>I2
+IAj9==Q>C6Q3C>mj0ma7Ed0
 R7
 S1
 R0
-w1702418190
-8C:/Users/beltr/OneDrive/Documentos/ISDIGI LOCAL/Pruebas Proyecto 3/Fases1y2/tb_procesador.sv
-FC:/Users/beltr/OneDrive/Documentos/ISDIGI LOCAL/Pruebas Proyecto 3/Fases1y2/tb_procesador.sv
-!i122 307
+w1702630426
+8tb_procesador.sv
+Ftb_procesador.sv
+!i122 662
 L0 27 64
 R8
 r1
 !s85 0
 31
-R12
-!s107 C:/Users/beltr/OneDrive/Documentos/ISDIGI LOCAL/Pruebas Proyecto 3/Fases1y2/tb_procesador.sv|
-!s90 -reportprogress|300|-work|work|C:/Users/beltr/OneDrive/Documentos/ISDIGI LOCAL/Pruebas Proyecto 3/Fases1y2/tb_procesador.sv|
-!i113 0
+R9
 R10
+R11
+!i113 0
+R12
 R2
 vtb_procesador_cob
 R4
-R11
+R5
 !i10b 1
 !s100 7N5GC8>HC;53eC88O^2Aj2
 R6
-ILjldYeF1TC?8kfRJG_KPA0
+IE46:LB8X_>?ER`EKEA6Yo0
 R7
 S1
 R0
 w1702418124
-8C:/Users/beltr/OneDrive/Documentos/ISDIGI LOCAL/Pruebas Proyecto 3/Fases1y2/tb_procesador_cob.sv
-FC:/Users/beltr/OneDrive/Documentos/ISDIGI LOCAL/Pruebas Proyecto 3/Fases1y2/tb_procesador_cob.sv
-!i122 308
+8tb_procesador_cob.sv
+Ftb_procesador_cob.sv
+!i122 662
 L0 29 268
 R8
 r1
 !s85 0
 31
-R12
-!s107 C:/Users/beltr/OneDrive/Documentos/ISDIGI LOCAL/Pruebas Proyecto 3/Fases1y2/tb_procesador_cob.sv|
-!s90 -reportprogress|300|-work|work|C:/Users/beltr/OneDrive/Documentos/ISDIGI LOCAL/Pruebas Proyecto 3/Fases1y2/tb_procesador_cob.sv|
-!i113 0
+R9
 R10
+R11
+!i113 0
+R12
 R2
 vtop
 R4
-R14
+R5
 !i10b 1
 !s100 <AY6204h=9>==@FI:2Q8a1
 R6
-I^2WzY@Ub^W;1N0=F3=K6L3
+If0^m9e9iBd`cB4^>>S89z2
 R7
 S1
 R0
 w1702416545
-8C:/Users/beltr/OneDrive/Documentos/ISDIGI LOCAL/Pruebas Proyecto 3/Fases1y2/top.sv
-FC:/Users/beltr/OneDrive/Documentos/ISDIGI LOCAL/Pruebas Proyecto 3/Fases1y2/top.sv
-!i122 311
+8top.sv
+Ftop.sv
+!i122 662
 L0 25 41
 R8
 r1
 !s85 0
 31
-R15
-!s107 C:/Users/beltr/OneDrive/Documentos/ISDIGI LOCAL/Pruebas Proyecto 3/Fases1y2/top.sv|
-!s90 -reportprogress|300|-work|work|C:/Users/beltr/OneDrive/Documentos/ISDIGI LOCAL/Pruebas Proyecto 3/Fases1y2/top.sv|
-!i113 0
+R9
 R10
+R11
+!i113 0
+R12
 R2

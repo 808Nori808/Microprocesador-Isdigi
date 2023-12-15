@@ -40,9 +40,8 @@ always @ (posedge CLK)
 	if (!aRSTn)
 		mem<='0;
 	else 
-		if (ENA_WRITE)
+		if (ENA_WRITE) 
 			mem[WRITE_REG] <= WRITE_DATA;
-
 
 assign read_data1 = mem[READREG_1];
 assign read_data2 = mem[READREG_2];

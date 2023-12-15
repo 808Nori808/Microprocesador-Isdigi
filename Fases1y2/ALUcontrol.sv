@@ -60,6 +60,7 @@ begin
 				case(bits[2:0]) // B-FORMAT
 					3'b000: salida_ALUcontrol=4'b1111; //BEQ 
 					3'b001: salida_ALUcontrol=4'b0011; //BNE 
+					3'b100: salida_ALUcontrol= 4'b0100;//BLT <--- NUEVA
 					default: salida_ALUcontrol=4'b0000;
 				endcase
 				end

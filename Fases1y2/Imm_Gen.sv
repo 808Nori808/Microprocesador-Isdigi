@@ -32,20 +32,20 @@ always_comb
 			
 			//I-Format
 			
-					7'b0010011: begin
-								imm = {{21{instruccion[31]}}, instruccion[30:25], instruccion[24:21], instruccion[20]};
+					7'b0010011,7'b0000011 : begin
+								imm = {{21{instruccion[31]}}, instruccion[30:20]};
 								 end
 			
 			//S-Format
 			
 					7'b0100011: begin
-								imm = {{21{instruccion[31]}}, instruccion[30:25], instruccion[11:8], instruccion[7]};
+								imm = {{21{instruccion[31]}}, instruccion[30:25], instruccion[11:7]};
 								 end
-			//S-Format
+			// //S-Format
 			
-					7'b0000011: begin
-								imm = {{21{instruccion[31]}}, instruccion[30:25], instruccion[11:8], instruccion[7]};
-								 end
+			// 		7'b0000011: begin
+			// 					imm = {{21{instruccion[31]}}, instruccion[30:25], instruccion[11:8], instruccion[7]};
+			// 					 end
 								
 			//B-Format
 					7'b1100011: begin

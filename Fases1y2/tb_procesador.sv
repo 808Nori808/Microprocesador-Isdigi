@@ -84,7 +84,7 @@ endtask
     begin
 		CLK = 0;
 		reset();
-        repeat (1000) @(negedge CLK);
+        repeat (500) @(negedge CLK);
         $stop;
     end
 endmodule

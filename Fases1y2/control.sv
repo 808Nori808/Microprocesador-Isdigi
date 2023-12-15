@@ -68,7 +68,7 @@ case (instruccion)
 					Branch= 1'b0;    
 					MemRead= 1'b0;
 					MemtoReg= 1'b0;
-					ALUOp= 4'b0011;
+					ALUOp= 4'b0001;
 					MemWrite= 1'b1;
 					ALUSrc= 1'b1; 
 					RegWrite= 1'b0;
