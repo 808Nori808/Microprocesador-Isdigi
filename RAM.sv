@@ -35,11 +35,11 @@ logic [size-1:0] mem [mem_depth-1:0];
 always_ff @(posedge clock)
 begin
 	if (wren==1'b1)
-		mem[address/4]<=data;
+		mem[address]<=data;
 	else
-		mem[address/4]<=mem[address/4];
+		mem[address]<=mem[address];
 end
-assign salida=mem[address/4]; 
+assign salida=mem[address]; 
 
 
 initial  	

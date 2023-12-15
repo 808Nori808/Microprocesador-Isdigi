@@ -21,7 +21,6 @@ id_ex id_ex_inst
 	.CLK(CLK_sig) ,	// input  CLK_sig
 	.RESET_N(RESET_N_sig) ,	// input  RESET_N_sig
 	.PC_ID(PC_ID_sig) ,	// input [size-1:0] PC_ID_sig
-	.dsalida_ID(dsalida_ID_sig) ,	// input [size-1:0] dsalida_ID_sig
 	.imm_ID(imm_ID_sig) ,	// input [size-1:0] imm_ID_sig
 	.read_data1_ID(read_data1_ID_sig) ,	// input [size-1:0] read_data1_ID_sig
 	.read_data2_ID(read_data2_ID_sig) ,	// input [size-1:0] read_data2_ID_sig
@@ -36,7 +35,6 @@ id_ex id_ex_inst
 	.RegWrite_ID(RegWrite_ID_sig) ,	// input  RegWrite_ID_sig
 	.ALUSrc_ID(ALUSrc_ID_sig) ,	// input  ALUSrc_ID_sig
 	.PC_EX(PC_EX_sig) ,	// output [size-1:0] PC_EX_sig
-	.dsalida_EX(dsalida_EX_sig) ,	// output [size-1:0] dsalida_EX_sig
 	.imm_EX(imm_EX_sig) ,	// output [size-1:0] imm_EX_sig
 	.read_data1_EX(read_data1_EX_sig) ,	// output [size-1:0] read_data1_EX_sig
 	.read_data2_EX(read_data2_EX_sig) ,	// output [size-1:0] read_data2_EX_sig

@@ -5,7 +5,7 @@ parameter size = 32;
 input CLK, RESET_N;
 input [size-1:0] PC_IF, dsalida_IF;
 
-output [size-1:0] PC_ID, dsalida_ID;
+output logic [size-1:0] PC_ID, dsalida_ID;
 
 always @(posedge CLK, negedge RESET_N)
 	if (!RESET_N)

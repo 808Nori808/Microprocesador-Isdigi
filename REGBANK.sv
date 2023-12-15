@@ -34,24 +34,16 @@ input logic [size-1:0] WRITE_DATA,
 output logic [size-1:0] read_data1, read_data2
 );
 
-logic [size-1:0] mem [mem_depth-1:0];
+logic [size-1:0][mem_depth-1:0] mem;
 
-always @ (posedge CLK or negedge aRSTn) 
-begin
+always @ (posedge CLK) 
 	if (!aRSTn)
-	begin
-		for(int i=0; i<(size-1); i++)
-			mem[i] <= '0;
-	end
+		mem<='0;
 	else 
-		if (ENA_WRITE)
-		begin
-		mem[WRITE_REG] <= WRITE_DATA;
-		end
+		if (ENA_WRITE) 
+			mem[WRITE_REG] <= WRITE_DATA;
 
-end
-
-assign read_data1 = (READREG_1=='0)?'0:mem[READREG_1];
-assign read_data2 = (READREG_2=='0)?'0:mem[READREG_2];
+assign read_data1 = mem[READREG_1];
+assign read_data2 = mem[READREG_2];
 
 endmodule

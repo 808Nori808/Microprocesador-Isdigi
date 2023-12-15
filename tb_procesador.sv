@@ -39,7 +39,7 @@ logic  [address_size-1:0] idata, ddata_r, daddr;
 
 aROM aROM_inst
 (
-	.address(iaddr),	
+	.address(iaddr[11:2]),	
 	.dsalida(idata) // INSTRUCCIÓN
 ); 
 
@@ -48,8 +48,8 @@ aROM aROM_inst
 RAM RAM_inst
 (
 	.data(ddata_w) ,	
-	.wren(~d_rw) ,	
-    .wread(d_rw) ,
+	.wren(MemWrite) ,	
+   .wread(MemRead) ,
 	.clock(CLK) ,	
 	.address(daddr[11:2]) ,	
 	.salida(ddata_r) 
@@ -90,5 +90,8 @@ endtask
     begin
 		CLK = 0;
 		reset();
+			        repeat (500) @(negedge CLK);
+        $stop;
+
     end
 endmodule

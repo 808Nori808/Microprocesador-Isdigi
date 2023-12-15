@@ -1,12 +1,12 @@
 module id_ex #(parameter size = 32)
 (
 input CLK, RESET_N,
-input [size-1:0] PC_ID, dsalida_ID, imm_ID, read_data1_ID, read_data2_ID,
+input [size-1:0] PC_ID, imm_ID, read_data1_ID, read_data2_ID,
 input [4:0] wrin_ID,
 input [3:0] ALUOp_ID, entrada_alu_control_ID,
 input [1:0] AuipcLui_ID,
 input Branch_ID, MemRead_ID, MemtoReg_ID, MemWrite_ID, RegWrite_ID, ALUSrc_ID,
-output logic [size-1:0] PC_EX, dsalida_EX, imm_EX, read_data1_EX, read_data2_EX,
+output logic [size-1:0] PC_EX, imm_EX, read_data1_EX, read_data2_EX,
 output logic [4:0] wrin_EX,
 output logic [3:0] ALUOp_EX, entrada_alu_control_EX,
 output logic [1:0] AuipcLui_EX,
@@ -19,7 +19,6 @@ always @(posedge CLK, negedge RESET_N)
 	if (!RESET_N)
 		begin
 		PC_EX <= 0;
-		dsalida_EX <= 0;
 		imm_EX <= 0;
 		read_data1_EX <= 0;
 		read_data2_EX <= 0;
@@ -37,7 +36,6 @@ always @(posedge CLK, negedge RESET_N)
 	else
 		begin
 		PC_EX <= PC_ID;
-		dsalida_EX <= dsalida_ID;
 		imm_EX <= imm_ID;
 		read_data1_EX <= read_data1_ID;
 		read_data2_EX <= read_data2_ID;
