@@ -1,0 +1,43 @@
+module ex_mem #(parameter size = 32)
+(
+input CLK, RESET_N,
+input [size-1:0] alu_resultado, sum_resultado, read_data2_out,
+input [4:0] wrin_out,
+input [1:0] AuipcLui_out,
+input Branch_out, MemRead_out, MemtoReg_out, MemWrite_out, RegWrite_out, ZERO
+output logic [size-1:0] alu_resultado_out, sum_resultado_out, read_data2_out2,
+output logic [4:0] wrin_out2,
+output logic [1:0] AuipcLui_out2,
+output logic Branch_out2, MemRead_out2, MemtoReg_out2, MemWrite_out2, RegWrite_out2, ZERO_out
+);
+
+
+always @(posedge CLK, negedge RESET_N)
+	if (!RESET_N)
+		begin
+		alu_resultado_out <= 0;
+		sum_resultado_out <= 0;
+		read_data_out2 <= 0;
+		wrin_out2 <= 0;
+		Branch_out2 <= 0;
+		MemRead_out2 <= 0;
+		MemtoReg_out2 <= 0;
+		MemWrite_out2 <= 0;
+		RegWrite_out2 <= 0;
+		ZERO_out <= 0;
+		end
+	else
+		begin
+		alu_resultado_out <= alu_resultado;
+		sum_resultado_out <= sum_resultado;
+		read_data_out2 <= read_data_out;
+		wrin_out2 <= wrin_out;
+		Branch_out2 <= Branch_out;
+		MemRead_out2 <= MemRead_out;
+		MemtoReg_out2 <= MemtoReg_out;
+		MemWrite_out2 <= MemWrite_out;
+		RegWrite_out2 <= RegWrite_out;
+		ZERO_out <= ZERO;		
+		end
+		
+endmodule 

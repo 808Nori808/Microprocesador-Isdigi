@@ -1,0 +1,66 @@
+module id_ex #(parameter size = 32)
+(
+input CLK, RESET_N,
+input [size-1:0] PC_out, dsalida_out, imm, read_data1, read_data2,
+input [4:0] wrin,
+input [3:0] ALUOp, entrada_alu_control,
+input [1:0] AuipcLui,
+input Branch, MemRead, MemtoReg, MemWrite, RegWrite, ALUSrc,
+output logic [size-1:0] PC_out2, dsalida_out2, imm_out, read_data1_out, read_data2_out,
+output logic [4:0] wrin_out,
+output logic [3:0] ALUOp_out, entrada_alu_control_out,
+output logic [1:0] AuipcLui_out,
+output logic Branch_out, MemRead_out, MemtoReg_out, MemWrite_out, RegWrite_out, ALUSrc_out
+);
+
+
+
+always @(posedge CLK, negedge RST)
+	if (!RST)
+		begin
+		PC_out2 <= 0;
+		dsalida_out2 <= 0;
+		imm_out <= 0;
+		read_data1_out <= 0;
+		read_data2_out <= 0;
+		wrin_out <= 0;
+		ALUOp_out <= 0;
+		entrada_alu_control_out <= 0;
+		AuipcLui_out <= 0;
+		Branch_out <= 0;
+		MemRead_out <= 0;
+		MemtoReg_out <= 0;
+		MemWrite_out <= 0;
+		RegWrite_out <= 0;
+		ALUSrc_out <= 0;
+		end
+	else
+		begin
+		PC_out2 <= PC_out;
+		dsalida_out2 <= dsalida_out;
+		imm_out <= imm;
+		read_data1_out <= read_data1;
+		read_data2_out <= read_data2;
+		wrin_out <= write;
+		ALUOp_out <= ALUOp;
+		entrada_alu_control_out <= entrada_alu_control;
+		AuipcLui_out <= AuipcLui;
+		Branch_out <= Branch;
+		MemRead_out <= MemRead;
+		MemtoReg_out <= MemtoReg;
+		MemWrite_out <= MemWrite;
+		RegWrite_out <= RegWrite;
+		ALUSrc_out <= ALUSrc;
+		end
+		
+endmodule 
+
+
+
+
+
+
+
+
+
+

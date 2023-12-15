@@ -1,0 +1,29 @@
+module mem_wb #(parameter size = 32)
+(
+input [size-1:0] salida_ram, alu_resultado_out,
+input [4:0] wrin_out2,
+input RegWrite_out2, MemtoReg_out2,
+output logic [size-1:0] salida_ram_out, alu_resultado_out2,
+input [4:0] wrin_out3,
+input RegWrite_out3, MemtoReg_out3
+);
+
+always @(posedge CLK, negedge RESET_N)
+	if (!RESET_N)
+		begin
+		salida_ram_out <= 0;
+		alu_resultado_out2 <= 0;
+		wrin_out3 <= 0;
+		RegWrite_out3 <= 0;
+		MemtoReg_out3 <= 0;
+		end
+	else
+		begin
+		salida_ram_out <= salida_ram;
+		alu_resultado_out2 <= alu_resultado_out;
+		wrin_out3 <= wrin_out2;
+		RegWrite_out3 <= RegWrite_out2;
+		MemtoReg_out3 <= MemtoReg_out2;	
+		end
+		
+endmodule 

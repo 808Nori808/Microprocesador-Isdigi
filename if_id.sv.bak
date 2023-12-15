@@ -1,0 +1,22 @@
+module if_id(CLK,RESET_N,PC,PC_out,salida,salida_out);
+
+parameter size = 32;
+
+input CLK, RESET_N;
+input [size-1:0] PC, salida;
+
+output [size-1:0] PC_out, salida_out;
+
+always @(posedge CLK, negedge RST)
+	if (!RST)
+		begin
+		PC_out <= 0;
+		salida_out <= 0;
+		end
+	else 
+		begin
+		PC_out <= PC;
+		salida_out <= salida;
+		end
+
+endmodule
