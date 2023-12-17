@@ -1,4 +1,4 @@
-module if_id(CLK,RESET_N, ENA, CLEAR,PC_IF,PC_ID,idata_IF, idata_ID, adder_IF, adder_ID);
+module if_id(CLK,RESET_N, IF_ID_Write, CLEAR,PC_IF,PC_ID,idata_IF, idata_ID, adder_IF, adder_ID);
 
 parameter size = 32;
 

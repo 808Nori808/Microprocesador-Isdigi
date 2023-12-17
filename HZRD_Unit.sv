@@ -1,18 +1,18 @@
-module HZRD_Unit(input MemRead_EX, output PCSel, ENA, HZRDcontrol);
+module HZRD_Unit(input MemRead_EX, output PCWrite, IF_ID_Write, HZRDcontrol);
 
 always_comb
 begin
     if(MemRead_EX)
         begin
-            PCSel = 1;
-            ENA = 1;
+            IF_ID_Write = 1;
             HZRDcontrol = 1;
+            PCWrite = 1;
         end
     else 
         begin
-            PCSel = 0;
-            ENA = 0;
+            IF_ID_Write = 0;
             HZRDcontrol = 0;
+            PCWrite = 0;
         end
 end
 

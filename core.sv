@@ -41,54 +41,53 @@ module core
     input CLK, RESET_N,
 	input [address_size-1:0] idata, ddata_r,
 
-    output [$clog2(data_size-1)-1:0] iaddr,
-    output [address_size-1:0] ddata_w, daddr,
+    output [address_size-1:0] ddata_w, daddr, iaddr,
 	output MemRead, MemWrite, d_rw
 
 );
+logic [address_size-1:0] write_data_reg;
 
-	logic [address_size-1:0] write_data_reg;
+logic [4:0] wrin_ID, wrin_EX, wrin_MEM, wrin_WB, Rs1, Rs2;
 
-    logic [4:0] wrin_ID, wrin_EX, wrin_MEM, wrin_WB;
+logic [address_size-1:0] read_data1_ID, read_data1_EX;
+logic [address_size-1:0] read_data2_ID, read_data2_EX, read_data2_MEM;
 
-	logic [address_size-1:0] read_data1_ID, read_data1_EX;
-	logic [address_size-1:0] read_data2_ID, read_data2_EX, read_data2_MEM;
+logic [address_size-1:0] imm_ID, imm_EX;
 
-    logic [address_size-1:0] imm_ID, imm_EX;
+logic [3:0] ALU_control;
 
-    logic [3:0] ALU_control;
+logic [address_size-1:0] ALU_x, ALU_y;
+logic [1:0] ForwardA, ForwardB;
+logic PCSrc, PCWrite, HZRDcontrol;
+logic Branch_ID, Branch_EX, Branch_MEM;
+logic MemtoReg_ID, MemtoReg_EX, MemtoReg_MEM, MemtoReg_WB;
+logic MemRead_ID, MemRead_EX, MemRead_MEM;
+logic MemWrite_ID, MemWrite_EX, MemWrite_MEM;
+logic RegWrite_ID, RegWrite_EX, RegWrite_MEM, RegWrite_WB; 
+logic ALUSrc_ID, ALUSrc_EX;
+logic [3:0] ALUOp_ID, ALUOp_EX;
+logic [1:0] AuipcLui_ID, AuipcLui_EX;
 
-    logic [address_size-1:0] ALU_x, ALU_y;
+logic ZERO_EX, ZERO_MEM;
 
-	logic PCSrc, PCWrite;
-	logic  Branch_ID, Branch_EX, Branch_MEM;
-	logic MemtoReg_ID, MemtoReg_EX, MemtoReg_MEM, MemtoReg_WB;
-	logic MemRead_ID, MemRead_EX, MemRead_MEM;
-	logic MemWrite_ID, MemWrite_EX, MemWrite_MEM;
-	logic RegWrite_ID, RegWrite_EX, RegWrite_MEM, RegWrite_WB; 
-	logic ALUSrc_ID, ALUSrc_EX;
-	logic [3:0] ALUOp_ID, ALUOp_EX;
-	logic [1:0] AuipcLui_ID, AuipcLui_EX;
+logic [address_size-1:0] sum1, sum_resultado_EX, sum_resultado_MEM;
 
-   logic ZERO_EX, ZERO_MEM;
+logic [address_size-1:0] out_mux;
 
-   logic [address_size-1:0] sum1, sum_resultado_EX, sum_resultado_MEM;
+logic [address_size-1:0] PC_IF, PC_ID, PC_EX;
 
-   logic [address_size-1:0] out_mux;
+logic [address_size-1:0] idata_ID, idata_IF;
 
-	logic [address_size-1:0] PC_IF, PC_ID, PC_EX;
+logic [3:0] entrada_alu_control_ID, entrada_alu_control_EX;
 
-	logic [address_size-1:0] idata_ID;
-	
-	logic [3:0] entrada_alu_control_ID, entrada_alu_control_EX;
-	
-	logic [address_size-1:0] salida_ram_MEM, salida_ram_WB;
-	
-	logic [address_size-1:0] alu_resultado_EX, alu_resultado_MEM, alu_resultado_WB;
-	
-	assign MemRead = MemRead_MEM;
-	assign MemWrite = MemWrite_MEM;
-	
+logic [address_size-1:0] salida_ram_MEM, salida_ram_WB;
+
+logic [address_size-1:0] alu_resultado_EX, alu_resultado_MEM, alu_resultado_WB;
+
+assign MemRead = MemRead_MEM;
+assign MemWrite = MemWrite_MEM;
+assign idata_IF = idata;
+
 REGBANK REGBANK_inst
 (
 	.CLK(CLK) ,	
@@ -96,7 +95,7 @@ REGBANK REGBANK_inst
 	.ENA_WRITE(RegWrite_WB) ,	
 	.READREG_1(idata_ID[19:15]) ,	
 	.READREG_2(idata_ID[24:20]) ,	
-	.WRITE_REG(wrin_MEM) ,	
+	.WRITE_REG(wrin_WB) ,	
 	.WRITE_DATA(write_data_reg) ,	
 	.read_data1(read_data1_ID) ,	
 	.read_data2(read_data2_ID) 	
@@ -137,7 +136,7 @@ ALUcontrol ALUcontrol_inst
 ALU ALU_inst
 (
 	.X(ALU_x) ,	
-	.Y(ALU_y) ,	
+	.Y(read_data1_EX) ,	
 	.RESULTADO(alu_resultado_EX) ,	
 	.ZERO(ZERO_EX) ,	
 	.CONTROL(ALU_control) 	
@@ -228,10 +227,10 @@ if_id if_id_inst // A la entrada de IF_ID se tiene la salida idata de la ROM
 (
 	.CLK(CLK) ,
 	.RESET_N(RESET_N),
-	.ENA(ENA),
+	.IF_ID_Write(IF_ID_Write),
 	.PC_IF(PC_IF) ,
 	.PC_ID(PC_ID) ,
-	.idata_IF(idata), // Salida ROM entra en etapa IF/ID
+	.idata_IF(idata_IF), // Salida ROM entra en etapa IF/ID
 	.idata_ID(idata_ID),
 	.adder_ID(adder_ID),
 	.adder_IF(sum1) // Salida sumador + 4.
@@ -268,7 +267,11 @@ id_ex id_ex_inst
 	.MemtoReg_EX(MemtoReg_EX) ,
 	.MemWrite_EX(MemWrite_EX) ,
 	.RegWrite_EX(RegWrite_EX) ,
-	.ALUSrc_EX(ALUSrc_EX)
+	.ALUSrc_EX(ALUSrc_EX),
+	.Rs1_ID(idata_ID[19:15]),
+	.Rs2_ID(idata_ID[24:20]),
+	.Rs1_EX(Rs1)
+	.Rs2_EX(Rs2)
 );
 
 mem_wb mem_wb_inst
@@ -285,6 +288,27 @@ mem_wb mem_wb_inst
 	.wrin_WB(wrin_WB) ,
 	.RegWrite_WB(RegWrite_WB) ,
 	.MemtoReg_WB(MemtoReg_WB) 
+);
+
+HZRD_Unit hazard_detection_unit
+(
+	.MemRead_EX(MemRead_EX),
+	.PCWrite(PCWrite),
+	.IF_ID_Write(IF_ID_Write),
+	.HZRDcontrol(HZRDcontrol)
+);
+
+FWD_Unit forward_unit
+(
+	.Rs1(Rs1),
+	.Rs2(Rs2),
+	.WB_MEMR(wrin_WB),
+	.WB_WBR(wrin_MEM),
+	.RegWrite_MEM(RegWrite_MEM),
+	.RegWrite_WB(RegWrite_WB),
+	.MemRead(MemRead_MEM),
+	.ForwardA(ForwardA),
+	.ForwardB(ForwardB)
 );
 
 assign PCSrc = Branch_MEM & ZERO_MEM;  //Control del multiplexor que decide la entrada del PC.
