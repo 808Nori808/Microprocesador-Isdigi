@@ -24,7 +24,7 @@
 
 
 // --- E n t r a d a s ----------------------------
-// Bus de datos IMEM: idata
+// Bus de datos IMEM: idata (ROM entrada, salida PC)
 // Bus de datos de lectura DMEM: ddata_r
 // ------------------------------------------------
 
@@ -78,7 +78,7 @@ module core
 
 	logic [address_size-1:0] PC_IF, PC_ID, PC_EX;
 
-	logic [address_size-1:0] idata_ID, idata_IF;
+	logic [address_size-1:0] idata_ID;
 	
 	logic [3:0] entrada_alu_control_ID, entrada_alu_control_EX;
 	
@@ -225,14 +225,17 @@ ex_mem ex_mem_inst
 	.ZERO_MEM(ZERO_MEM)
 );
 
-if_id if_id_inst
+if_id if_id_inst // A la entrada de IF_ID se tiene la salida idata de la ROM
 (
 	.CLK(CLK) ,
-	.RESET_N(RESET_N) ,
+	.RESET_N(RESET_N),
+	.ENA(ENA),
 	.PC_IF(PC_IF) ,
 	.PC_ID(PC_ID) ,
-	.dsalida_IF(idata_IF) ,
-	.dsalida_ID(idata_ID) 
+	.idata_IF(idata), // Salida ROM entra en etapa IF/ID
+	.idata_ID(idata_ID),
+	.adder_ID(adder_ID),
+	.adder_IF(sum1) // Salida sumador + 4.
 );
 
 id_ex id_ex_inst
