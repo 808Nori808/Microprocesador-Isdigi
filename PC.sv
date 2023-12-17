@@ -25,7 +25,7 @@
 module PC 
 #(parameter size = 32)
 (
-   input CLK,RESET_N,
+   input CLK,RESET_N, PCWrite
    input [size-1:0] PC_in,
    output [size-1:0] PC
 );
@@ -34,10 +34,12 @@ module PC
 	
     always_ff@(posedge CLK or negedge RESET_N)
     if(~RESET_N)
-            PC_reg <= '0;
-    else
-            PC_reg <= PC_in;
-				
+                PC_reg <= '0;
+    else if(PCWrite)
+                PC_reg <= PC_reg;
+        else
+                PC_reg <= PC_in;       
+
 	assign PC = PC_reg;
 	
 endmodule

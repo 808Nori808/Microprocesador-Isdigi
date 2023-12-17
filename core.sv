@@ -60,7 +60,7 @@ module core
 
     logic [address_size-1:0] ALU_x, ALU_y;
 
-	logic PCSrc;
+	logic PCSrc, PCWrite;
 	logic  Branch_ID, Branch_EX, Branch_MEM;
 	logic MemtoReg_ID, MemtoReg_EX, MemtoReg_MEM, MemtoReg_WB;
 	logic MemRead_ID, MemRead_EX, MemRead_MEM;
@@ -110,7 +110,7 @@ Imm_Gen Imm_Gen_inst
 	.imm(imm_ID) 	 
 );
 
-mux_2to1 mux_2to1_inst1		//MULTIPLEXOR DE ANTES DE LA ALU
+mux_2to1 mux_2to1_inst1	//MULTIPLEXOR DE ANTES DE LA ALU
 (
 	.select(ALUSrc_EX) ,	
 	.dato1(read_data2_EX) ,	
@@ -167,8 +167,6 @@ control control_inst
 	.AuipcLui(AuipcLui_ID) 	
 );
 
-assign PCSrc = Branch_MEM & ZERO_MEM; 
-
 sumador sumador_inst2
 (
 	.dataa(PC_EX) ,	
@@ -183,7 +181,7 @@ sumador sumador_inst1
 	.result(sum1) 	
 );
 
-mux_2to1 mux_2to1_inst3		//MULTIPLEXOR DEL PRINCIPIO
+mux_2to1 mux_2to1_inst3		//MULTIPLEXOR DEL PRINCIPIO // Decide la entrada del PC.
 (
 	.select(PCSrc) ,	
 	.dato1(sum1) ,	
@@ -195,7 +193,8 @@ PC PC_inst
 (
     .CLK(CLK) ,
     .RESET_N(RESET_N) ,
-    .PC_in(out_mux) ,
+    .PC_in(out_mux),
+	.PCWrite(PCWrite),
     .PC(PC_IF) 
 );
 
@@ -288,10 +287,12 @@ mem_wb mem_wb_inst
 	.MemtoReg_WB(MemtoReg_WB) 
 );
 
+assign PCSrc = Branch_MEM & ZERO_MEM;  //Control del multiplexor que decide la entrada del PC.
+
 assign iaddr = PC_IF[11:2];
 
 assign entrada_alu_control_ID = {idata_ID[30],idata_ID[14:12]};
 
-assign wrin_ID = idata_ID[11:7];
+assign wrin_ID = idata_ID[11:7];	
 			
 endmodule

@@ -34,6 +34,24 @@ always @(posedge CLK, negedge RESET_N)
 		ALUSrc_EX <= 0;
 		end
 	else
+		if (CLEAR)
+		begin
+		PC_EX <= 0;
+		imm_EX <= 0;
+		read_data1_EX <= 0;
+		read_data2_EX <= 0;
+		wrin_EX <= 0;
+		ALUOp_EX <= 0;
+		entrada_alu_control_EX <= 0;
+		AuipcLui_EX <= 0;
+		Branch_EX <= 0;
+		MemRead_EX <= 0;
+		MemtoReg_EX <= 0;
+		MemWrite_EX <= 0;
+		RegWrite_EX <= 0;
+		ALUSrc_EX <= 0;
+		end
+	else
 		begin
 		PC_EX <= PC_ID;
 		imm_EX <= imm_ID;
