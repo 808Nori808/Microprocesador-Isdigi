@@ -28,30 +28,35 @@ input [4:0] WB_MEMR, WB_WBR, Rs1, Rs2, // WriteBacks // IDs de los Registros
 input MemRead, RegWrite_MEM, RegWrite_WB,output [1:0] ForwardA, ForwardB
 );      // ¿Cómo se redirigen los datos?
 
+logic [1:0] forwarda,forwardb;
+
 always_comb begin
     // ForwardA logic
     if (!MemRead) begin
         if (Rs1 == WB_MEMR &&  RegWrite_MEM)
-            ForwardA = 2'b10;
+            forwarda <= 2'b10;
         else if (Rs1 == WB_WBR && RegWrite_WB)
-            ForwardA = 2'b01;
+            forwarda <= 2'b01;
         else
-            ForwardA = 2'b00;
+            forwarda <= 2'b00;
     end else begin
-        ForwardA = 2'b00;
+        forwarda <= 2'b00;
     end
 
     // ForwardB logic
     if (!MemRead) begin
         if (Rs2 == WB_MEMR &&  RegWrite_MEM)
-            ForwardB = 2'b10;
+            forwardb <= 2'b10;
         else if (Rs2 == WB_WBR && RegWrite_WB)
-            ForwardB = 2'b01;
+            forwardb <= 2'b01;
         else
-            ForwardB = 2'b00;
+            forwardb <= 2'b00;
     end else begin
-        ForwardB = 2'b00;
+        forwardb <= 2'b00;
     end
 end
+
+assign ForwardA = forwarda;
+assign ForwardB = forwardb;
 
 endmodule
