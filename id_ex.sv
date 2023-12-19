@@ -1,6 +1,6 @@
 module id_ex #(parameter size = 32)
 (
-input CLK, RESET_N,
+input CLK, RESET_N, CLEAR, 
 input [size-1:0] PC_ID, imm_ID, read_data1_ID, read_data2_ID,
 input [4:0] wrin_ID, Rs1_ID, Rs2_ID,
 input [3:0] ALUOp_ID, entrada_alu_control_ID,

@@ -1,8 +1,8 @@
-module if_id(CLK,RESET_N, IF_ID_Write, CLEAR,PC_IF,PC_ID,idata_IF, idata_ID, adder_IF, adder_ID);
+module if_id(CLK,RESET_N, IF_ID_Write, CLEAR,PC_IF,PC_ID,idata_IF, idata_ID, adder_IF, adder_ID, ENA);
 
 parameter size = 32;
 
-input CLK, RESET_N, ENA, CLEAR;
+input CLK, RESET_N, ENA, CLEAR, IF_ID_Write;
 input [size-1:0] PC_IF, idata_IF, adder_IF;
 								//idata
 output logic [size-1:0] PC_ID, idata_ID, adder_ID;

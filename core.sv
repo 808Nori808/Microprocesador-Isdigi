@@ -270,7 +270,7 @@ id_ex id_ex_inst
 	.ALUSrc_EX(ALUSrc_EX),
 	.Rs1_ID(idata_ID[19:15]),
 	.Rs2_ID(idata_ID[24:20]),
-	.Rs1_EX(Rs1)
+	.Rs1_EX(Rs1),
 	.Rs2_EX(Rs2)
 );
 

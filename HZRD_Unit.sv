@@ -1,4 +1,4 @@
-module HZRD_Unit(input MemRead_EX, output PCWrite, IF_ID_Write, HZRDcontrol);
+module HZRD_Unit(input logic MemRead_EX, output logic PCWrite, IF_ID_Write, HZRDcontrol);
 
 always_comb
 begin

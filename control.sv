@@ -22,13 +22,13 @@
 //
 // --------------------------------------------------------------------
 
-module control (instruccion, Branch, MemRead, MemtoReg,ALUOp,MemWrite,ALUSrc,RegWrite,AuipcLui);
-	input HZRDcontrol;
-	input [6:0] instruccion;
-	output logic  Branch, MemRead, MemtoReg, MemWrite, RegWrite, ALUSrc;
-    output logic [3:0]ALUOp;
-	output logic [1:0]AuipcLui;
-	
+module control (
+	input HZRDcontrol,
+	input [6:0] instruccion,
+	output logic  Branch, MemRead, MemtoReg, MemWrite, RegWrite, ALUSrc,
+    output logic [3:0]ALUOp,
+	output logic [1:0]AuipcLui
+	);
 	
 always @(instruccion, HZRDcontrol)
 	if (HZRDcontrol)
