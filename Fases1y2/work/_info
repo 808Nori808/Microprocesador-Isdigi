@@ -19,185 +19,196 @@ Z2 tCvgOpt 0
 n@_opt
 Z3 OL;O;2020.2;71
 R0
+T_opt1
+!s110 1703010706
+V3JIH_GJhEi6ejmVZEA5oo0
+R1
+=7-d03745d662f1-6581e192-1-17e8
+Z4 o-quiet -auto_acc_if_foreign -work work +acc
+R2
+n@_opt1
+R3
+R0
 T_opt2
 !s110 1702630431
 VSz_Fo?Z<jCHWJYFOPBbO42
 R1
 =27-f8b46abc1277-657c141f-171-b04
-o-quiet -auto_acc_if_foreign -work work +acc
+R4
 R2
 n@_opt2
 R3
-vALU
-Z4 DXx6 sv_std 3 std 0 22 9oUSJO;AeEaW`l:M@^WG92
-Z5 !s110 1702630430
-!i10b 1
-!s100 48H:=AlL6@5KYeM^K@GRn0
-Z6 !s11b Dg1SIo80bB@j0V0VzS_@n1
-IO3ooJZbZT4AzmQT;VJmR_2
-Z7 VDg1SIo80bB@j0V0VzS_@n1
-S1
 R0
-w1702569456
+vALU
+Z5 DXx6 sv_std 3 std 0 22 9oUSJO;AeEaW`l:M@^WG92
+Z6 !s110 1703013084
+!i10b 1
+!s100 I5Elna5YJaAlNgAcBOS_02
+Z7 !s11b Dg1SIo80bB@j0V0VzS_@n1
+I@bFE2a_WB0SIJTn4l5>Um2
+Z8 VDg1SIo80bB@j0V0VzS_@n1
+S1
+Z9 dC:/Users/adria/Documents/Apuntes_3/1_CUATRI/ISDIGI/github/Microprocesador-Isdigi/Fases1y2
+w1703010696
 8ALU.sv
 FALU.sv
-!i122 662
+!i122 676
 L0 25 35
-Z8 OL;L;2020.2;71
+Z10 OL;L;2020.2;71
 r1
 !s85 0
 31
-Z9 !s108 1702630429.000000
-Z10 !s107 top.sv|tb_procesador_cob.sv|tb_procesador.sv|tb_ALU.sv|sumador.sv|mux_4to1.sv|mux_2to1.sv|core.sv|control.sv|aROM_tb.sv|aROM.sv|REGBANK_tb.sv|REGBANK.sv|RAM_tb.sv|RAM.sv|PC.sv|Imm_Gen.sv|ALUcontrol.sv|ALU.sv|
-Z11 !s90 -reportprogress|300|-work|work|ALU.sv|ALUcontrol.sv|Imm_Gen.sv|PC.sv|RAM.sv|RAM_tb.sv|REGBANK.sv|REGBANK_tb.sv|aROM.sv|aROM_tb.sv|control.sv|core.sv|mux_2to1.sv|mux_4to1.sv|sumador.sv|tb_ALU.sv|tb_procesador.sv|tb_procesador_cob.sv|top.sv|
+Z11 !s108 1703013084.000000
+!s107 top.sv|tb_procesador_cob.sv|tb_procesador.sv|tb_ALU.sv|sumador.sv|mux_4to1.sv|mux_2to1.sv|core.sv|control.sv|aROM_tb.sv|aROM.sv|REGBANK_tb.sv|REGBANK.sv|RAM_tb.sv|RAM.sv|PC.sv|Imm_Gen.sv|ALUcontrol.sv|ALU.sv|
+Z12 !s90 -reportprogress|300|-work|work|ALU.sv|ALUcontrol.sv|Imm_Gen.sv|PC.sv|RAM.sv|RAM_tb.sv|REGBANK.sv|REGBANK_tb.sv|aROM.sv|aROM_tb.sv|control.sv|core.sv|mux_2to1.sv|mux_4to1.sv|sumador.sv|tb_ALU.sv|tb_procesador.sv|tb_procesador_cob.sv|top.sv|
 !i113 0
-Z12 o-work work -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+Z13 o-work work -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
 R2
 n@a@l@u
 vALUcontrol
-R4
 R5
+R6
 !i10b 1
 !s100 zN59m:znZ:H2^YgNSYk5T0
-R6
-IoWGJh:GC?PL3m@ORz6UoO2
 R7
+IoWGJh:GC?PL3m@ORz6UoO2
+R8
 S1
-R0
-w1702581723
+R9
+Z14 w1703008878
 8ALUcontrol.sv
 FALUcontrol.sv
-!i122 662
+!i122 676
 L0 25 64
-R8
+R10
 r1
 !s85 0
 31
-R9
-R10
 R11
-!i113 0
+Z15 !s107 top.sv|tb_procesador_cob.sv|tb_procesador.sv|tb_ALU.sv|sumador.sv|mux_4to1.sv|mux_2to1.sv|core.sv|control.sv|aROM_tb.sv|aROM.sv|REGBANK_tb.sv|REGBANK.sv|RAM_tb.sv|RAM.sv|PC.sv|Imm_Gen.sv|ALUcontrol.sv|ALU.sv|
 R12
+!i113 0
+R13
 R2
 n@a@l@ucontrol
 vaROM
-R4
 R5
-!i10b 1
-!s100 g>@@UX841QT?CXSRdgdiD0
 R6
-IC>nD6aLcmVR0SC?gIdQ?U1
+!i10b 1
+!s100 mNk^mzOmIAe?6fRoc?`kD3
 R7
+I_<<CmEnEmH;P>fH5673Qg0
+R8
 S1
-R0
-w1702629376
+R9
+w1703009067
 8aROM.sv
 FaROM.sv
-!i122 662
-Z13 L0 25 17
-R8
+!i122 676
+Z16 L0 25 17
+R10
 r1
 !s85 0
 31
-R9
-R10
 R11
-!i113 0
+R15
 R12
+!i113 0
+R13
 R2
 na@r@o@m
 vcontrol
-R4
 R5
+R6
 !i10b 1
 !s100 UH9R;DgJb`7zZC@f4DSH50
-R6
-Id[h`Y5bL87dROj9VNbRf41
 R7
+Id[h`Y5bL87dROj9VNbRf41
+R8
 S1
-R0
-w1702626593
+R9
+R14
 8control.sv
 Fcontrol.sv
-!i122 662
+!i122 676
 L0 25 98
-R8
+R10
 r1
 !s85 0
 31
-R9
-R10
 R11
-!i113 0
+R15
 R12
+!i113 0
+R13
 R2
 vcore
-R4
 R5
+R6
 !i10b 1
 !s100 ViU7DmFVT^:QKY9EE>OR43
-R6
-IFcfha0^1QXX42:6mEojPZ3
 R7
+IFcfha0^1QXX42:6mEojPZ3
+R8
 S1
-R0
-w1702417365
+R9
+R14
 8core.sv
 Fcore.sv
-!i122 662
+!i122 676
 L0 38 138
-R8
+R10
 r1
 !s85 0
 31
-R9
-R10
 R11
-!i113 0
+R15
 R12
+!i113 0
+R13
 R2
 vImm_Gen
-R4
 R5
+R6
 !i10b 1
 !s100 X=?:zQBbC_L;jO1P:kf171
-R6
-IA1hRIV_6^7`k7[3AhE1`92
 R7
+IA1hRIV_6^7`k7[3AhE1`92
+R8
 S1
-R0
-w1702628493
+R9
+w1703008951
 8Imm_Gen.sv
 FImm_Gen.sv
-!i122 662
+!i122 676
 L0 25 53
-R8
+R10
 r1
 !s85 0
 31
-R9
-R10
 R11
-!i113 0
+R15
 R12
+!i113 0
+R13
 R2
 n@imm_@gen
 vImmGen
-R4
+R5
 !s110 1702493718
 !i10b 1
 !s100 T=ZDdLk?WPomnI?P1P:SJ1
-R6
-IfPPdQh?m@]Z9T14mDZCl[1
 R7
+IfPPdQh?m@]Z9T14mDZCl[1
+R8
 S1
 R0
 w1702493708
 8C:/Users/beltr/OneDrive/Documentos/ISDIGI LOCAL/Pruebas Proyecto 3/Fases1y2/Imm_Gen.sv
 FC:/Users/beltr/OneDrive/Documentos/ISDIGI LOCAL/Pruebas Proyecto 3/Fases1y2/Imm_Gen.sv
 !i122 91
-Z14 L0 25 19
-R8
+Z17 L0 25 19
+R10
 r1
 !s85 0
 31
@@ -205,274 +216,274 @@ r1
 !s107 C:/Users/beltr/OneDrive/Documentos/ISDIGI LOCAL/Pruebas Proyecto 3/Fases1y2/Imm_Gen.sv|
 !s90 -reportprogress|300|-work|work|C:/Users/beltr/OneDrive/Documentos/ISDIGI LOCAL/Pruebas Proyecto 3/Fases1y2/Imm_Gen.sv|
 !i113 0
-R12
+R13
 R2
 n@imm@gen
 vmux_2to1
-R4
 R5
+R6
 !i10b 1
 !s100 A5E^a8@JJ2]NY^Gn9jKkN2
-R6
-Ie1Yll>:@^aPP4`WQa2iN32
 R7
+Ie1Yll>:@^aPP4`WQa2iN32
+R8
 S1
-R0
-w1702353828
+R9
+R14
 8mux_2to1.sv
 Fmux_2to1.sv
-!i122 662
-R13
-R8
+!i122 676
+R16
+R10
 r1
 !s85 0
 31
-R9
-R10
 R11
-!i113 0
+R15
 R12
+!i113 0
+R13
 R2
 vmux_4to1
-R4
 R5
+R6
 !i10b 1
 !s100 gYFdL8:>WXMUU`2Wg>6740
-R6
-IBn`K_`LbV;`[>icOToKi_2
 R7
+IBn`K_`LbV;`[>icOToKi_2
+R8
 S1
-R0
-w1702353864
+R9
+R14
 8mux_4to1.sv
 Fmux_4to1.sv
-!i122 662
+!i122 676
 L0 25 18
-R8
+R10
 r1
 !s85 0
 31
-R9
-R10
 R11
-!i113 0
+R15
 R12
+!i113 0
+R13
 R2
 vPC
-R4
 R5
+R6
 !i10b 1
 !s100 Bk?aKg_U6f0_dF<KUa5Y70
-R6
-IOEcLk@C<K<CJRFDM92IzF2
 R7
+IOEcLk@C<K<CJRFDM92IzF2
+R8
 S1
-R0
-w1702417228
+R9
+R14
 8PC.sv
 FPC.sv
-!i122 662
-R14
-R8
+!i122 676
+R17
+R10
 r1
 !s85 0
 31
-R9
-R10
 R11
-!i113 0
+R15
 R12
+!i113 0
+R13
 R2
 n@p@c
 vRAM
-R4
 R5
+R6
 !i10b 1
 !s100 ADYR5G^4f5ogLmMmj>D1@3
-R6
-IkD0ISVROcG:Q=b4m1z1773
 R7
+IkD0ISVROcG:Q=b4m1z1773
+R8
 S1
-R0
-w1702626130
+R9
+R14
 8RAM.sv
 FRAM.sv
-!i122 662
+!i122 676
 L0 25 24
-R8
+R10
 r1
 !s85 0
 31
-R9
-R10
 R11
-!i113 0
+R15
 R12
+!i113 0
+R13
 R2
 n@r@a@m
 vRAM_tb
-R4
 R5
+R6
 !i10b 1
 !s100 ?lfOOAY?L]YQb9a0h[81S2
-R6
-I`mmjG;RQX5NCdj_hY6U^:2
 R7
+I`mmjG;RQX5NCdj_hY6U^:2
+R8
 S1
-R0
-w1702356919
+R9
+R14
 8RAM_tb.sv
 FRAM_tb.sv
-!i122 662
+!i122 676
 L0 26 66
-R8
+R10
 r1
 !s85 0
 31
-R9
-R10
 R11
-!i113 0
+R15
 R12
+!i113 0
+R13
 R2
 n@r@a@m_tb
 vREGBANK
-R4
 R5
+R6
 !i10b 1
 !s100 T^PDYW_m4fX0FE[lA4k>h1
-R6
-IlXNU255=KC_KMdSm:8`0k1
 R7
+IlXNU255=KC_KMdSm:8`0k1
+R8
 S1
-R0
-w1702582361
+R9
+R14
 8REGBANK.sv
 FREGBANK.sv
-!i122 662
+!i122 676
 L0 25 25
-R8
+R10
 r1
 !s85 0
 31
-R9
-R10
 R11
-!i113 0
+R15
 R12
+!i113 0
+R13
 R2
 n@r@e@g@b@a@n@k
 vREGBANK_tb
-R4
 R5
+R6
 !i10b 1
 !s100 K:C1=aZVX8lz2VhHADRLl1
-R6
-Ih6kj`h]L]j3[HcMj0cHo80
 R7
+Ih6kj`h]L]j3[HcMj0cHo80
+R8
 S1
-R0
-w1702359916
+R9
+R14
 8REGBANK_tb.sv
 FREGBANK_tb.sv
-!i122 662
+!i122 676
 L0 27 112
-R8
+R10
 r1
 !s85 0
 31
-R9
-R10
 R11
-!i113 0
+R15
 R12
+!i113 0
+R13
 R2
 n@r@e@g@b@a@n@k_tb
 vROM_tb
-R4
 R5
+R6
 !i10b 1
 !s100 12S6i8e^=:ab7I2nkPmMj3
-R6
-I>k;UQ]j`K:[FjOk6Xoc8D1
 R7
+I>k;UQ]j`K:[FjOk6Xoc8D1
+R8
 S1
-R0
-w1702356241
+R9
+R14
 8aROM_tb.sv
 FaROM_tb.sv
-!i122 662
+!i122 676
 L0 26 57
-R8
+R10
 r1
 !s85 0
 31
-R9
-R10
 R11
-!i113 0
+R15
 R12
+!i113 0
+R13
 R2
 n@r@o@m_tb
 vsumador
-R4
 R5
+R6
 !i10b 1
 !s100 UJa=GBAE7]Sd^5OZ?@USf0
-R6
-Ij_0TMnG>SoUjlVIhLbUe=3
 R7
+Ij_0TMnG>SoUjlVIhLbUe=3
+R8
 S1
-R0
-w1702354335
+R9
+Z18 w1703008879
 8sumador.sv
 Fsumador.sv
-!i122 662
+!i122 676
 L0 25 12
-R8
+R10
 r1
 !s85 0
 31
-R9
-R10
 R11
-!i113 0
+R15
 R12
+!i113 0
+R13
 R2
 vtb_ALU
-R4
 R5
+R6
 !i10b 1
 !s100 GHgN76e1NCP0fMU9V7bXi3
-R6
-I^2BWAMD^fgLmCNSFaz4d42
 R7
+I^2BWAMD^fgLmCNSFaz4d42
+R8
 S1
-R0
-w1702353508
+R9
+R18
 8tb_ALU.sv
 Ftb_ALU.sv
-!i122 662
+!i122 676
 L0 27 166
-R8
+R10
 r1
 !s85 0
 31
-R9
-R10
 R11
-!i113 0
+R15
 R12
+!i113 0
+R13
 R2
 ntb_@a@l@u
 vtb_banco_registros
-R4
+R5
 !s110 1702359723
 !i10b 1
 !s100 fW6ET[UQ^0Fz__d3ebc813
-R6
-I7Kc5Fh5iJ1bI7<haJY0>=2
 R7
+I7Kc5Fh5iJ1bI7<haJY0>=2
+R8
 S1
 R0
 w1702359558
@@ -480,7 +491,7 @@ w1702359558
 FC:/Users/beltr/OneDrive/Documentos/ISDIGI LOCAL/Pruebas Proyecto 3/Fases1y2/tb_banco_registros.sv
 !i122 19
 L0 2 120
-R8
+R10
 r1
 !s85 0
 31
@@ -488,80 +499,80 @@ r1
 !s107 C:/Users/beltr/OneDrive/Documentos/ISDIGI LOCAL/Pruebas Proyecto 3/Fases1y2/tb_banco_registros.sv|
 !s90 -reportprogress|300|-work|work|C:/Users/beltr/OneDrive/Documentos/ISDIGI LOCAL/Pruebas Proyecto 3/Fases1y2/tb_banco_registros.sv|
 !i113 0
-R12
+R13
 R2
 vtb_procesador
-R4
 R5
-!i10b 1
-!s100 cRAlYSalKdO?eKR<3<jd]1
 R6
-IAj9==Q>C6Q3C>mj0ma7Ed0
+!i10b 1
+!s100 ]YE:Zl=ACK7m?75O91IC41
 R7
+IJG8Gek:X@8I:@JCDWP9;`0
+R8
 S1
-R0
-w1702630426
+R9
+w1703010120
 8tb_procesador.sv
 Ftb_procesador.sv
-!i122 662
+!i122 676
 L0 27 64
-R8
+R10
 r1
 !s85 0
 31
-R9
-R10
 R11
-!i113 0
+R15
 R12
+!i113 0
+R13
 R2
 vtb_procesador_cob
-R4
 R5
+R6
 !i10b 1
 !s100 7N5GC8>HC;53eC88O^2Aj2
-R6
-IE46:LB8X_>?ER`EKEA6Yo0
 R7
+IE46:LB8X_>?ER`EKEA6Yo0
+R8
 S1
-R0
-w1702418124
+R9
+R18
 8tb_procesador_cob.sv
 Ftb_procesador_cob.sv
-!i122 662
+!i122 676
 L0 29 268
-R8
+R10
 r1
 !s85 0
 31
-R9
-R10
 R11
-!i113 0
+R15
 R12
+!i113 0
+R13
 R2
 vtop
-R4
 R5
+R6
 !i10b 1
 !s100 <AY6204h=9>==@FI:2Q8a1
-R6
-If0^m9e9iBd`cB4^>>S89z2
 R7
+If0^m9e9iBd`cB4^>>S89z2
+R8
 S1
-R0
-w1702416545
+R9
+R18
 8top.sv
 Ftop.sv
-!i122 662
+!i122 676
 L0 25 41
-R8
+R10
 r1
 !s85 0
 31
-R9
-R10
 R11
-!i113 0
+R15
 R12
+!i113 0
+R13
 R2
