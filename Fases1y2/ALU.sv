@@ -47,11 +47,8 @@ case (CONTROL)
 	4'b0110: RESULTADO = Y; // LUI   NO VA TAMPOCO
 	4'b1000: RESULTADO = X << Y; // SLL SLLI
 	4'b1010: RESULTADO = X >> Y; // SRL SRLI
-<<<<<<< HEAD
 	4'b1110: RESULTADO = (X[31])? ({32{1'b1}} | (X >> Y)) : ({32{1'b0}} | (X >> Y)); // SRA
-=======
 	4'b1110: RESULTADO = X >>> Y; // SRA NO VA CHAVALICOS 
->>>>>>> 00118cf3c154b694fc64f7b29ae90717592ad133
 	4'b1011: RESULTADO = (X >= Y) ? 0 : 1; //BGE
 	4'b1111: RESULTADO = X == Y; //BEQ
 	4'b0011: RESULTADO = ~(X!=Y)? 0:1; //BNE
