@@ -51,7 +51,7 @@ begin
 				end			
 		
 		4'b0001: salida_ALUcontrol=4'b0000; //SW //S-FORMAT 
-		4'b0011: salida_ALUcontrol=4'b0000; //LUI //U-FORMAT 
+		4'b0011: salida_ALUcontrol=4'b1100; //LUI //U-FORMAT 
 		
 		4'b0111: salida_ALUcontrol=4'b0000; //AUIPC //U-FORMAT 
 		

@@ -89,7 +89,7 @@ case (instruccion)
 	7'b0110111: begin
 					Branch<= 1'b0;    //U-format LUI
 					MemRead<= 1'b1;
-					MemtoReg<= 1'b1;
+					MemtoReg<= 1'b0;
 					ALUOp<= 4'b0011;
 					MemWrite<= 1'b0;
 					ALUSrc<= 1'b1; 

@@ -35,7 +35,7 @@ logic [tam_salida-1:0] mem[tam_entrada-1:0] ;
 assign dsalida = mem[address];
  
 initial
-    $readmemh("myFibo.hex", mem);
+    $readmemh("Pruebas Rom.hex", mem);
  
 
 endmodule 
