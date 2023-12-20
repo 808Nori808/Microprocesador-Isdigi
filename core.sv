@@ -117,7 +117,7 @@ mux_2to1 mux_2to1_inst1	//MULTIPLEXOR DE ANTES DE LA ALU
 	.salida(ALU_y) 	
 );
 
-mux_4to1 mux_4to1_inst1		//MULTIPLEXOR DE AUIPC Y LUI
+mux_3to1 mux_3to1_inst1		//MULTIPLEXOR DE AUIPC Y LUI
 (
 	.select(AuipcLui_EX) ,	
 	.dato1(PC_EX) , 	
