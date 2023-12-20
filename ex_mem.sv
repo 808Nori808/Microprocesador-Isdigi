@@ -1,4 +1,4 @@
-	module ex_mem #(parameter size = 32)
+module ex_mem #(parameter size = 32)
 (
 input CLK, RESET_N,
 input [size-1:0] alu_resultado_EX, sum_resultado_EX, read_data2_EX,

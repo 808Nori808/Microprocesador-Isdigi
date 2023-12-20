@@ -20,63 +20,63 @@ n@_opt
 Z4 OL;O;2020.2;71
 R0
 T_opt1
-!s110 1702667330
-V@R3CNjZboD5]TO[Z2@Sj;3
+!s110 1703079000
+VVXbR2h@5ORFZO^T50oo7P0
 R1
-=1-e40d362a5a17-657ca441-36f-8d8
+=1-18c04d8bec51-6582ec58-211-8ae8
 R2
 R3
 n@_opt1
 R4
 vALU
 Z5 DXx6 sv_std 3 std 0 22 9oUSJO;AeEaW`l:M@^WG92
-Z6 !s110 1702667328
+Z6 !s110 1703078998
 !i10b 1
 !s100 48H:=AlL6@5KYeM^K@GRn0
 Z7 !s11b Dg1SIo80bB@j0V0VzS_@n1
-IZ1>gGTN?V?A__`:H@gGBi2
+I<O`<:Wj:GLh`b4Z?3YJb@3
 Z8 VDg1SIo80bB@j0V0VzS_@n1
 S1
-Z9 dC:/Users/marco/Documents/GitHub/Microprocesador-Isdigi/simulation/modelsim
-w1702663377
-8C:/Users/marco/Documents/GitHub/Microprocesador-Isdigi/ALU.sv
-FC:/Users/marco/Documents/GitHub/Microprocesador-Isdigi/ALU.sv
-!i122 17
+R0
+Z9 w1703072990
+8C:/Users/itsep/OneDrive/Documentos/GitHub/Microprocesador-ISDIGI/ALU.sv
+FC:/Users/itsep/OneDrive/Documentos/GitHub/Microprocesador-ISDIGI/ALU.sv
+!i122 16
 L0 25 35
 Z10 OL;L;2020.2;71
 r1
 !s85 0
 31
-Z11 !s108 1702667328.000000
-!s107 C:/Users/marco/Documents/GitHub/Microprocesador-Isdigi/ALU.sv|
-!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/marco/Documents/GitHub/Microprocesador-Isdigi|C:/Users/marco/Documents/GitHub/Microprocesador-Isdigi/ALU.sv|
+Z11 !s108 1703078998.000000
+!s107 C:/Users/itsep/OneDrive/Documentos/GitHub/Microprocesador-ISDIGI/ALU.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/itsep/OneDrive/Documentos/GitHub/Microprocesador-ISDIGI|C:/Users/itsep/OneDrive/Documentos/GitHub/Microprocesador-ISDIGI/ALU.sv|
 !i113 0
 Z12 o-sv -work work -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
-Z13 !s92 -sv -work work +incdir+C:/Users/marco/Documents/GitHub/Microprocesador-Isdigi -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+Z13 !s92 -sv -work work +incdir+C:/Users/itsep/OneDrive/Documentos/GitHub/Microprocesador-ISDIGI -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
 R3
 n@a@l@u
 vALUcontrol
 R5
 R6
 !i10b 1
-!s100 zN59m:znZ:H2^YgNSYk5T0
+!s100 O?iT<bg_`nbmiki@EijN21
 R7
-IFFIJZFn=MR1S@BzY>U6bm1
+Ib;efb;=Y@W^@C?S`=Ia``1
 R8
 S1
+R0
 R9
-w1702663353
-8C:/Users/marco/Documents/GitHub/Microprocesador-Isdigi/ALUcontrol.sv
-FC:/Users/marco/Documents/GitHub/Microprocesador-Isdigi/ALUcontrol.sv
-!i122 18
-L0 25 64
+8C:/Users/itsep/OneDrive/Documentos/GitHub/Microprocesador-ISDIGI/ALUcontrol.sv
+FC:/Users/itsep/OneDrive/Documentos/GitHub/Microprocesador-ISDIGI/ALUcontrol.sv
+!i122 17
+L0 25 69
 R10
 r1
 !s85 0
 31
 R11
-!s107 C:/Users/marco/Documents/GitHub/Microprocesador-Isdigi/ALUcontrol.sv|
-!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/marco/Documents/GitHub/Microprocesador-Isdigi|C:/Users/marco/Documents/GitHub/Microprocesador-Isdigi/ALUcontrol.sv|
+!s107 C:/Users/itsep/OneDrive/Documentos/GitHub/Microprocesador-ISDIGI/ALUcontrol.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/itsep/OneDrive/Documentos/GitHub/Microprocesador-ISDIGI|C:/Users/itsep/OneDrive/Documentos/GitHub/Microprocesador-ISDIGI/ALUcontrol.sv|
 !i113 0
 R12
 R13
@@ -84,26 +84,26 @@ R3
 n@a@l@ucontrol
 vaROM
 R5
-Z14 !s110 1702667329
+Z14 !s110 1703078999
 !i10b 1
 !s100 9@m<S5Gz64>fDL2^02W4i3
 R7
-IZ:j?XKdI]]E3N@Q=f`2=G1
+IGW2l421@C^^Z^Uzo^[Fal2
 R8
 S1
+R0
 R9
-w1702667316
-8C:/Users/marco/Documents/GitHub/Microprocesador-Isdigi/aROM.sv
-FC:/Users/marco/Documents/GitHub/Microprocesador-Isdigi/aROM.sv
-!i122 26
+8C:/Users/itsep/OneDrive/Documentos/GitHub/Microprocesador-ISDIGI/aROM.sv
+FC:/Users/itsep/OneDrive/Documentos/GitHub/Microprocesador-ISDIGI/aROM.sv
+!i122 25
 Z15 L0 25 17
 R10
 r1
 !s85 0
 31
-Z16 !s108 1702667329.000000
-!s107 C:/Users/marco/Documents/GitHub/Microprocesador-Isdigi/aROM.sv|
-!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/marco/Documents/GitHub/Microprocesador-Isdigi|C:/Users/marco/Documents/GitHub/Microprocesador-Isdigi/aROM.sv|
+Z16 !s108 1703078999.000000
+!s107 C:/Users/itsep/OneDrive/Documentos/GitHub/Microprocesador-ISDIGI/aROM.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/itsep/OneDrive/Documentos/GitHub/Microprocesador-ISDIGI|C:/Users/itsep/OneDrive/Documentos/GitHub/Microprocesador-ISDIGI/aROM.sv|
 !i113 0
 R12
 R13
@@ -113,24 +113,24 @@ vcontrol
 R5
 R6
 !i10b 1
-!s100 UH9R;DgJb`7zZC@f4DSH50
+!s100 ;@^XUh0PELYL_c7nOS?0Q3
 R7
-I0mDjVVTkE^ePcg`iz;B6S3
+IASF9OMgfdOA:KGIBWFgED2
 R8
 S1
-R9
-w1702663316
-8C:/Users/marco/Documents/GitHub/Microprocesador-Isdigi/control.sv
-FC:/Users/marco/Documents/GitHub/Microprocesador-Isdigi/control.sv
-!i122 19
-L0 25 98
+R0
+w1703078928
+8C:/Users/itsep/OneDrive/Documentos/GitHub/Microprocesador-ISDIGI/control.sv
+FC:/Users/itsep/OneDrive/Documentos/GitHub/Microprocesador-ISDIGI/control.sv
+!i122 18
+L0 25 109
 R10
 r1
 !s85 0
 31
 R11
-!s107 C:/Users/marco/Documents/GitHub/Microprocesador-Isdigi/control.sv|
-!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/marco/Documents/GitHub/Microprocesador-Isdigi|C:/Users/marco/Documents/GitHub/Microprocesador-Isdigi/control.sv|
+!s107 C:/Users/itsep/OneDrive/Documentos/GitHub/Microprocesador-ISDIGI/control.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/itsep/OneDrive/Documentos/GitHub/Microprocesador-ISDIGI|C:/Users/itsep/OneDrive/Documentos/GitHub/Microprocesador-ISDIGI/control.sv|
 !i113 0
 R12
 R13
@@ -139,24 +139,24 @@ vcore
 R5
 R14
 !i10b 1
-!s100 Fin<:o8g6?M7X9b?]_j4Z1
+!s100 ^PDfN99;@OKf3=@AL4CzL1
 R7
-IjYGScYJ?AJ:DIe`;<Ob5@1
+Ij__8:l2GEQ]DbTClz9DH80
 R8
 S1
-R9
-w1702665741
-8C:/Users/marco/Documents/GitHub/Microprocesador-Isdigi/core.sv
-FC:/Users/marco/Documents/GitHub/Microprocesador-Isdigi/core.sv
-!i122 28
-L0 38 257
+R0
+w1703078896
+8C:/Users/itsep/OneDrive/Documentos/GitHub/Microprocesador-ISDIGI/core.sv
+FC:/Users/itsep/OneDrive/Documentos/GitHub/Microprocesador-ISDIGI/core.sv
+!i122 27
+L0 38 249
 R10
 r1
 !s85 0
 31
 R16
-!s107 C:/Users/marco/Documents/GitHub/Microprocesador-Isdigi/core.sv|
-!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/marco/Documents/GitHub/Microprocesador-Isdigi|C:/Users/marco/Documents/GitHub/Microprocesador-Isdigi/core.sv|
+!s107 C:/Users/itsep/OneDrive/Documentos/GitHub/Microprocesador-ISDIGI/core.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/itsep/OneDrive/Documentos/GitHub/Microprocesador-ISDIGI|C:/Users/itsep/OneDrive/Documentos/GitHub/Microprocesador-ISDIGI/core.sv|
 !i113 0
 R12
 R13
@@ -167,22 +167,22 @@ R6
 !i10b 1
 !s100 [TCWi_e1H:S8PYVTMij^a1
 R7
-Im5V>8oo?l5UA<J]6QkOXO3
+IoY8iCd29HX=fJRG`Z[i;z0
 R8
 S1
-R9
-w1702626095
-8C:/Users/marco/Documents/GitHub/Microprocesador-Isdigi/ex_mem.sv
-FC:/Users/marco/Documents/GitHub/Microprocesador-Isdigi/ex_mem.sv
-!i122 13
+R0
+w1703075743
+8C:/Users/itsep/OneDrive/Documentos/GitHub/Microprocesador-ISDIGI/ex_mem.sv
+FC:/Users/itsep/OneDrive/Documentos/GitHub/Microprocesador-ISDIGI/ex_mem.sv
+!i122 12
 L0 1 41
 R10
 r1
 !s85 0
 31
 R11
-!s107 C:/Users/marco/Documents/GitHub/Microprocesador-Isdigi/ex_mem.sv|
-!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/marco/Documents/GitHub/Microprocesador-Isdigi|C:/Users/marco/Documents/GitHub/Microprocesador-Isdigi/ex_mem.sv|
+!s107 C:/Users/itsep/OneDrive/Documentos/GitHub/Microprocesador-ISDIGI/ex_mem.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/itsep/OneDrive/Documentos/GitHub/Microprocesador-ISDIGI|C:/Users/itsep/OneDrive/Documentos/GitHub/Microprocesador-ISDIGI/ex_mem.sv|
 !i113 0
 R12
 R13
@@ -191,24 +191,24 @@ vid_ex
 R5
 R6
 !i10b 1
-!s100 9FkWg91fMW[eh@UYDBLlJ3
+!s100 J[0<?aNo?mF1h3NH]GJhU3
 R7
-I><m345eJFLZ1e36_j:0B=3
+IoX:KBfZHHQ[:B:JlY8`k<1
 R8
 S1
-R9
-w1702661657
-8C:/Users/marco/Documents/GitHub/Microprocesador-Isdigi/id_ex.sv
-FC:/Users/marco/Documents/GitHub/Microprocesador-Isdigi/id_ex.sv
-!i122 12
-L0 1 54
+R0
+w1703075159
+8C:/Users/itsep/OneDrive/Documentos/GitHub/Microprocesador-ISDIGI/id_ex.sv
+FC:/Users/itsep/OneDrive/Documentos/GitHub/Microprocesador-ISDIGI/id_ex.sv
+!i122 11
+L0 1 50
 R10
 r1
 !s85 0
 31
 R11
-!s107 C:/Users/marco/Documents/GitHub/Microprocesador-Isdigi/id_ex.sv|
-!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/marco/Documents/GitHub/Microprocesador-Isdigi|C:/Users/marco/Documents/GitHub/Microprocesador-Isdigi/id_ex.sv|
+!s107 C:/Users/itsep/OneDrive/Documentos/GitHub/Microprocesador-ISDIGI/id_ex.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/itsep/OneDrive/Documentos/GitHub/Microprocesador-ISDIGI|C:/Users/itsep/OneDrive/Documentos/GitHub/Microprocesador-ISDIGI/id_ex.sv|
 !i113 0
 R12
 R13
@@ -217,50 +217,50 @@ vif_id
 R5
 R6
 !i10b 1
-!s100 5@CRk^QhV2zfVKGc7MF^I2
+!s100 09B3O4<XJ:Xm1i5U][lSN3
 R7
-IaW`l1zI2Z@B8VJA5[KFI]2
+IGdSf;bY=m16H>N^RXORZ23
 R8
 S1
-R9
-w1702664627
-8C:/Users/marco/Documents/GitHub/Microprocesador-Isdigi/if_id.sv
-FC:/Users/marco/Documents/GitHub/Microprocesador-Isdigi/if_id.sv
-!i122 11
-L0 1 22
+R0
+w1703072996
+8C:/Users/itsep/OneDrive/Documentos/GitHub/Microprocesador-ISDIGI/if_id.sv
+FC:/Users/itsep/OneDrive/Documentos/GitHub/Microprocesador-ISDIGI/if_id.sv
+!i122 10
+L0 1 23
 R10
 r1
 !s85 0
 31
-R11
-!s107 C:/Users/marco/Documents/GitHub/Microprocesador-Isdigi/if_id.sv|
-!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/marco/Documents/GitHub/Microprocesador-Isdigi|C:/Users/marco/Documents/GitHub/Microprocesador-Isdigi/if_id.sv|
+Z17 !s108 1703078997.000000
+!s107 C:/Users/itsep/OneDrive/Documentos/GitHub/Microprocesador-ISDIGI/if_id.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/itsep/OneDrive/Documentos/GitHub/Microprocesador-ISDIGI|C:/Users/itsep/OneDrive/Documentos/GitHub/Microprocesador-ISDIGI/if_id.sv|
 !i113 0
 R12
 R13
 R3
 vImm_Gen
 R5
-R14
+R6
 !i10b 1
 !s100 X=?:zQBbC_L;jO1P:kf171
 R7
-IS_>2:oW;Lo>WRFm^9GJ1j1
+I64INS8>V_:GnWTc;Q]IYH0
 R8
 S1
+R0
 R9
-w1702663279
-8C:/Users/marco/Documents/GitHub/Microprocesador-Isdigi/Imm_Gen.sv
-FC:/Users/marco/Documents/GitHub/Microprocesador-Isdigi/Imm_Gen.sv
-!i122 20
+8C:/Users/itsep/OneDrive/Documentos/GitHub/Microprocesador-ISDIGI/Imm_Gen.sv
+FC:/Users/itsep/OneDrive/Documentos/GitHub/Microprocesador-ISDIGI/Imm_Gen.sv
+!i122 19
 L0 25 53
 R10
 r1
 !s85 0
 31
-R16
-!s107 C:/Users/marco/Documents/GitHub/Microprocesador-Isdigi/Imm_Gen.sv|
-!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/marco/Documents/GitHub/Microprocesador-Isdigi|C:/Users/marco/Documents/GitHub/Microprocesador-Isdigi/Imm_Gen.sv|
+R11
+!s107 C:/Users/itsep/OneDrive/Documentos/GitHub/Microprocesador-ISDIGI/Imm_Gen.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/itsep/OneDrive/Documentos/GitHub/Microprocesador-ISDIGI|C:/Users/itsep/OneDrive/Documentos/GitHub/Microprocesador-ISDIGI/Imm_Gen.sv|
 !i113 0
 R12
 R13
@@ -272,22 +272,22 @@ R6
 !i10b 1
 !s100 hAT?2gLjl>mL98F5mX1X01
 R7
-Io;>QBGQ_>kXVOJLAAB2LZ1
+I<Ae40QaZ69P`i3b_PCZY@2
 R8
 S1
+R0
 R9
-w1702625867
-8C:/Users/marco/Documents/GitHub/Microprocesador-Isdigi/mem_wb.sv
-FC:/Users/marco/Documents/GitHub/Microprocesador-Isdigi/mem_wb.sv
-!i122 14
+8C:/Users/itsep/OneDrive/Documentos/GitHub/Microprocesador-ISDIGI/mem_wb.sv
+FC:/Users/itsep/OneDrive/Documentos/GitHub/Microprocesador-ISDIGI/mem_wb.sv
+!i122 13
 L0 1 30
 R10
 r1
 !s85 0
 31
 R11
-!s107 C:/Users/marco/Documents/GitHub/Microprocesador-Isdigi/mem_wb.sv|
-!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/marco/Documents/GitHub/Microprocesador-Isdigi|C:/Users/marco/Documents/GitHub/Microprocesador-Isdigi/mem_wb.sv|
+!s107 C:/Users/itsep/OneDrive/Documentos/GitHub/Microprocesador-ISDIGI/mem_wb.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/itsep/OneDrive/Documentos/GitHub/Microprocesador-ISDIGI|C:/Users/itsep/OneDrive/Documentos/GitHub/Microprocesador-ISDIGI/mem_wb.sv|
 !i113 0
 R12
 R13
@@ -298,48 +298,48 @@ R14
 !i10b 1
 !s100 A5E^a8@JJ2]NY^Gn9jKkN2
 R7
-Ich[0QA0_=ch^FH0aF0aZW1
+IIKDj[j;nbe8>]WzCiRJU10
 R8
 S1
+R0
 R9
-w1702663254
-8C:/Users/marco/Documents/GitHub/Microprocesador-Isdigi/mux_2to1.sv
-FC:/Users/marco/Documents/GitHub/Microprocesador-Isdigi/mux_2to1.sv
-!i122 24
+8C:/Users/itsep/OneDrive/Documentos/GitHub/Microprocesador-ISDIGI/mux_2to1.sv
+FC:/Users/itsep/OneDrive/Documentos/GitHub/Microprocesador-ISDIGI/mux_2to1.sv
+!i122 23
 R15
 R10
 r1
 !s85 0
 31
 R16
-!s107 C:/Users/marco/Documents/GitHub/Microprocesador-Isdigi/mux_2to1.sv|
-!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/marco/Documents/GitHub/Microprocesador-Isdigi|C:/Users/marco/Documents/GitHub/Microprocesador-Isdigi/mux_2to1.sv|
+!s107 C:/Users/itsep/OneDrive/Documentos/GitHub/Microprocesador-ISDIGI/mux_2to1.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/itsep/OneDrive/Documentos/GitHub/Microprocesador-ISDIGI|C:/Users/itsep/OneDrive/Documentos/GitHub/Microprocesador-ISDIGI/mux_2to1.sv|
 !i113 0
 R12
 R13
 R3
-vmux_4to1
+vmux_3to1
 R5
 R14
 !i10b 1
-!s100 gYFdL8:>WXMUU`2Wg>6740
+!s100 :L>_@^ifz`dl6E:OIWE<M3
 R7
-IjCnI20;FQV22j8b]dFSXY3
+Ih_Z?5R^<WP4?IajNJY2iF3
 R8
 S1
+R0
 R9
-w1702663237
-8C:/Users/marco/Documents/GitHub/Microprocesador-Isdigi/mux_4to1.sv
-FC:/Users/marco/Documents/GitHub/Microprocesador-Isdigi/mux_4to1.sv
-!i122 23
+8C:/Users/itsep/OneDrive/Documentos/GitHub/Microprocesador-ISDIGI/mux_3to1.sv
+FC:/Users/itsep/OneDrive/Documentos/GitHub/Microprocesador-ISDIGI/mux_3to1.sv
+!i122 22
 L0 25 18
 R10
 r1
 !s85 0
 31
 R16
-!s107 C:/Users/marco/Documents/GitHub/Microprocesador-Isdigi/mux_4to1.sv|
-!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/marco/Documents/GitHub/Microprocesador-Isdigi|C:/Users/marco/Documents/GitHub/Microprocesador-Isdigi/mux_4to1.sv|
+!s107 C:/Users/itsep/OneDrive/Documentos/GitHub/Microprocesador-ISDIGI/mux_3to1.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/itsep/OneDrive/Documentos/GitHub/Microprocesador-ISDIGI|C:/Users/itsep/OneDrive/Documentos/GitHub/Microprocesador-ISDIGI/mux_3to1.sv|
 !i113 0
 R12
 R13
@@ -350,22 +350,22 @@ R14
 !i10b 1
 !s100 Bk?aKg_U6f0_dF<KUa5Y70
 R7
-I;6iD@n31D9E^kTd3CZlgO0
+IamUHC[T6A_m5E?U:a<?VO3
 R8
 S1
-R9
-w1702663214
-8C:/Users/marco/Documents/GitHub/Microprocesador-Isdigi/PC.sv
-FC:/Users/marco/Documents/GitHub/Microprocesador-Isdigi/PC.sv
-!i122 25
+R0
+w1703074082
+8C:/Users/itsep/OneDrive/Documentos/GitHub/Microprocesador-ISDIGI/PC.sv
+FC:/Users/itsep/OneDrive/Documentos/GitHub/Microprocesador-ISDIGI/PC.sv
+!i122 24
 L0 25 19
 R10
 r1
 !s85 0
 31
 R16
-!s107 C:/Users/marco/Documents/GitHub/Microprocesador-Isdigi/PC.sv|
-!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/marco/Documents/GitHub/Microprocesador-Isdigi|C:/Users/marco/Documents/GitHub/Microprocesador-Isdigi/PC.sv|
+!s107 C:/Users/itsep/OneDrive/Documentos/GitHub/Microprocesador-ISDIGI/PC.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/itsep/OneDrive/Documentos/GitHub/Microprocesador-ISDIGI|C:/Users/itsep/OneDrive/Documentos/GitHub/Microprocesador-ISDIGI/PC.sv|
 !i113 0
 R12
 R13
@@ -377,22 +377,22 @@ R14
 !i10b 1
 !s100 ADYR5G^4f5ogLmMmj>D1@3
 R7
-IBnkB0N7f=hT^QDj`a3YG53
+IE6_4XXkdWZ<H:8iJ@[bLO0
 R8
 S1
+R0
 R9
-w1702663218
-8C:/Users/marco/Documents/GitHub/Microprocesador-Isdigi/RAM.sv
-FC:/Users/marco/Documents/GitHub/Microprocesador-Isdigi/RAM.sv
-!i122 27
+8C:/Users/itsep/OneDrive/Documentos/GitHub/Microprocesador-ISDIGI/RAM.sv
+FC:/Users/itsep/OneDrive/Documentos/GitHub/Microprocesador-ISDIGI/RAM.sv
+!i122 26
 L0 25 24
 R10
 r1
 !s85 0
 31
 R16
-!s107 C:/Users/marco/Documents/GitHub/Microprocesador-Isdigi/RAM.sv|
-!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/marco/Documents/GitHub/Microprocesador-Isdigi|C:/Users/marco/Documents/GitHub/Microprocesador-Isdigi/RAM.sv|
+!s107 C:/Users/itsep/OneDrive/Documentos/GitHub/Microprocesador-ISDIGI/RAM.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/itsep/OneDrive/Documentos/GitHub/Microprocesador-ISDIGI|C:/Users/itsep/OneDrive/Documentos/GitHub/Microprocesador-ISDIGI/RAM.sv|
 !i113 0
 R12
 R13
@@ -404,22 +404,22 @@ R14
 !i10b 1
 !s100 T^PDYW_m4fX0FE[lA4k>h1
 R7
-I_b956;Y:CMRaKbaC>Di>f1
+I]cQlTbITUQNJf>jSIE_^R1
 R8
 S1
+R0
 R9
-w1702663168
-8C:/Users/marco/Documents/GitHub/Microprocesador-Isdigi/REGBANK.sv
-FC:/Users/marco/Documents/GitHub/Microprocesador-Isdigi/REGBANK.sv
-!i122 22
+8C:/Users/itsep/OneDrive/Documentos/GitHub/Microprocesador-ISDIGI/REGBANK.sv
+FC:/Users/itsep/OneDrive/Documentos/GitHub/Microprocesador-ISDIGI/REGBANK.sv
+!i122 21
 L0 25 25
 R10
 r1
 !s85 0
 31
 R16
-!s107 C:/Users/marco/Documents/GitHub/Microprocesador-Isdigi/REGBANK.sv|
-!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/marco/Documents/GitHub/Microprocesador-Isdigi|C:/Users/marco/Documents/GitHub/Microprocesador-Isdigi/REGBANK.sv|
+!s107 C:/Users/itsep/OneDrive/Documentos/GitHub/Microprocesador-ISDIGI/REGBANK.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/itsep/OneDrive/Documentos/GitHub/Microprocesador-ISDIGI|C:/Users/itsep/OneDrive/Documentos/GitHub/Microprocesador-ISDIGI/REGBANK.sv|
 !i113 0
 R12
 R13
@@ -427,26 +427,26 @@ R3
 n@r@e@g@b@a@n@k
 vsumador
 R5
-R14
+R6
 !i10b 1
 !s100 UJa=GBAE7]Sd^5OZ?@USf0
 R7
-I^N=0YV^[VkCQEJEcLn;^D1
+Izlm;FZem>1V<HWWL>PQDd2
 R8
 S1
-R9
-Z17 w1702547069
-8C:/Users/marco/Documents/GitHub/Microprocesador-Isdigi/sumador.sv
-FC:/Users/marco/Documents/GitHub/Microprocesador-Isdigi/sumador.sv
-!i122 21
+R0
+w1703072991
+8C:/Users/itsep/OneDrive/Documentos/GitHub/Microprocesador-ISDIGI/sumador.sv
+FC:/Users/itsep/OneDrive/Documentos/GitHub/Microprocesador-ISDIGI/sumador.sv
+!i122 20
 L0 25 12
 R10
 r1
 !s85 0
 31
-R16
-!s107 C:/Users/marco/Documents/GitHub/Microprocesador-Isdigi/sumador.sv|
-!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/marco/Documents/GitHub/Microprocesador-Isdigi|C:/Users/marco/Documents/GitHub/Microprocesador-Isdigi/sumador.sv|
+R11
+!s107 C:/Users/itsep/OneDrive/Documentos/GitHub/Microprocesador-ISDIGI/sumador.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/itsep/OneDrive/Documentos/GitHub/Microprocesador-ISDIGI|C:/Users/itsep/OneDrive/Documentos/GitHub/Microprocesador-ISDIGI/sumador.sv|
 !i113 0
 R12
 R13
@@ -455,50 +455,50 @@ vtb_procesador
 R5
 R14
 !i10b 1
-!s100 mafHhf[AFW3Gk3MDnSGHC0
+!s100 S<3Eh>JCmakYBnz@gm5P52
 R7
-I<]iAc5nO0E6X]9NPHjkXQ0
+I=XM6IQZJj4_I@EbA>GISG1
 R8
 S1
-R9
-w1702666142
-8C:/Users/marco/Documents/GitHub/Microprocesador-Isdigi/tb_procesador.sv
-FC:/Users/marco/Documents/GitHub/Microprocesador-Isdigi/tb_procesador.sv
-!i122 29
-L0 27 71
+R0
+Z18 w1703072997
+8C:/Users/itsep/OneDrive/Documentos/GitHub/Microprocesador-ISDIGI/tb_procesador.sv
+FC:/Users/itsep/OneDrive/Documentos/GitHub/Microprocesador-ISDIGI/tb_procesador.sv
+!i122 28
+L0 27 63
 R10
 r1
 !s85 0
 31
 R16
-!s107 C:/Users/marco/Documents/GitHub/Microprocesador-Isdigi/tb_procesador.sv|
-!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/marco/Documents/GitHub/Microprocesador-Isdigi|C:/Users/marco/Documents/GitHub/Microprocesador-Isdigi/tb_procesador.sv|
+!s107 C:/Users/itsep/OneDrive/Documentos/GitHub/Microprocesador-ISDIGI/tb_procesador.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/itsep/OneDrive/Documentos/GitHub/Microprocesador-ISDIGI|C:/Users/itsep/OneDrive/Documentos/GitHub/Microprocesador-ISDIGI/tb_procesador.sv|
 !i113 0
 R12
 R13
 R3
 vtop
 R5
-R6
+!s110 1703078997
 !i10b 1
-!s100 hRln3^6I[]0>bmKoX1l2h1
+!s100 :;OiRcYG@JHmfn=]7Pelc0
 R7
-I30Ihe4K:TJEJkL>jAPB1F0
+IEe>4bmOSHUPihKl5hdc:S0
 R8
 S1
-R9
-R17
-8C:/Users/marco/Documents/GitHub/Microprocesador-Isdigi/top.sv
-FC:/Users/marco/Documents/GitHub/Microprocesador-Isdigi/top.sv
+R0
+R18
+8C:/Users/itsep/OneDrive/Documentos/GitHub/Microprocesador-ISDIGI/top.sv
+FC:/Users/itsep/OneDrive/Documentos/GitHub/Microprocesador-ISDIGI/top.sv
 !i122 0
-L0 25 42
+L0 25 41
 R10
 r1
 !s85 0
 31
-R11
-!s107 C:/Users/marco/Documents/GitHub/Microprocesador-Isdigi/top.sv|
-!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/marco/Documents/GitHub/Microprocesador-Isdigi|C:/Users/marco/Documents/GitHub/Microprocesador-Isdigi/top.sv|
+R17
+!s107 C:/Users/itsep/OneDrive/Documentos/GitHub/Microprocesador-ISDIGI/top.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/itsep/OneDrive/Documentos/GitHub/Microprocesador-ISDIGI|C:/Users/itsep/OneDrive/Documentos/GitHub/Microprocesador-ISDIGI/top.sv|
 !i113 0
 R12
 R13

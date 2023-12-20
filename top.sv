@@ -58,8 +58,7 @@ core core_inst
     .ddata_w(ddata_w) ,
     .daddr(daddr) ,
     .MemRead(MemRead) ,
-    .MemWrite(MemWrite) ,
-    .d_rw(d_rw)
+    .MemWrite(MemWrite)
 );
 
 

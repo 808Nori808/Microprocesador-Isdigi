@@ -22,28 +22,15 @@
 //
 // --------------------------------------------------------------------
 
-module control (
-	input HZRDcontrol,
-	input [6:0] instruccion,
-	output logic  Branch, MemRead, MemtoReg, MemWrite, RegWrite, ALUSrc,
-    output logic [3:0]ALUOp,
-	output logic [1:0]AuipcLui
-	);
+module control (instruccion, Branch, MemRead, MemtoReg,ALUOp,MemWrite,ALUSrc,RegWrite,AuipcLui, );
+	input [6:0] instruccion;
+	output logic  Branch, MemRead, MemtoReg, MemWrite, RegWrite, ALUSrc;
+    output logic [3:0]ALUOp;
+	output logic [1:0]AuipcLui;
 	
-always @(instruccion, HZRDcontrol)
-	if (HZRDcontrol)
-		begin
-			Branch= 1'b0;    
-			MemRead= 1'b0;
-			MemtoReg= 1'b0;
-			ALUOp= 4'b0000;
-			MemWrite= 1'b0;
-			ALUSrc= 1'b0;
-			RegWrite= 1'b0;
-			AuipcLui= 2'b00; 
-		end
-	else
-		case (instruccion)
+	
+always @(instruccion)
+	case (instruccion)
 			7'b0110011:begin				//R-format
 							Branch= 1'b0;    
 							MemRead= 1'b0;
