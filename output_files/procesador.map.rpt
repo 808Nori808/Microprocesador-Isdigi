@@ -1,5 +1,5 @@
 Analysis & Synthesis report for procesador
-Wed Dec 20 12:15:38 2023
+Wed Dec 20 19:54:56 2023
 Quartus Prime Version 17.1.0 Build 590 10/25/2017 SJ Lite Edition
 
 
@@ -18,26 +18,24 @@ Quartus Prime Version 17.1.0 Build 590 10/25/2017 SJ Lite Edition
  10. Parameter Settings for User Entity Instance: aROM:aROM_inst
  11. Parameter Settings for User Entity Instance: RAM:RAM_inst
  12. Parameter Settings for User Entity Instance: core:core_inst
- 13. Parameter Settings for User Entity Instance: core:core_inst|REGBANK:REGBANK_inst
- 14. Parameter Settings for User Entity Instance: core:core_inst|mux_2to1:mux_2to1_inst1
- 15. Parameter Settings for User Entity Instance: core:core_inst|mux_2to1:mux_2to1_inst2
- 16. Parameter Settings for User Entity Instance: core:core_inst|sumador:sumador_inst2
- 17. Parameter Settings for User Entity Instance: core:core_inst|sumador:sumador_inst1
- 18. Parameter Settings for User Entity Instance: core:core_inst|mux_2to1:mux_2to1_inst3
- 19. Parameter Settings for User Entity Instance: core:core_inst|PC:PC_inst
- 20. Parameter Settings for User Entity Instance: core:core_inst|ex_mem:ex_mem_inst
- 21. Parameter Settings for User Entity Instance: core:core_inst|if_id:if_id_inst
- 22. Parameter Settings for User Entity Instance: core:core_inst|id_ex:id_ex_inst
+ 13. Parameter Settings for User Entity Instance: core:core_inst|mux_2to1:mux_2to1_inst3
+ 14. Parameter Settings for User Entity Instance: core:core_inst|PC:PC_inst
+ 15. Parameter Settings for User Entity Instance: core:core_inst|sumador:sumador_inst1
+ 16. Parameter Settings for User Entity Instance: core:core_inst|if_id:if_id_inst
+ 17. Parameter Settings for User Entity Instance: core:core_inst|REGBANK:REGBANK_inst
+ 18. Parameter Settings for User Entity Instance: core:core_inst|id_ex:id_ex_inst
+ 19. Parameter Settings for User Entity Instance: core:core_inst|mux_2to1:mux_2to1_inst1
+ 20. Parameter Settings for User Entity Instance: core:core_inst|mux_2to1:mux_2to1_inst2
+ 21. Parameter Settings for User Entity Instance: core:core_inst|sumador:sumador_inst2
+ 22. Parameter Settings for User Entity Instance: core:core_inst|ex_mem:ex_mem_inst
  23. Parameter Settings for User Entity Instance: core:core_inst|mem_wb:mem_wb_inst
- 24. Port Connectivity Checks: "core:core_inst|id_ex:id_ex_inst"
+ 24. Port Connectivity Checks: "core:core_inst|control:control_inst"
  25. Port Connectivity Checks: "core:core_inst|sumador:sumador_inst1"
- 26. Port Connectivity Checks: "core:core_inst|control:control_inst"
- 27. Port Connectivity Checks: "core:core_inst|mux_2to1:mux_2to1_inst1"
- 28. Port Connectivity Checks: "core:core_inst"
- 29. Post-Synthesis Netlist Statistics for Top Partition
- 30. Elapsed Time Per Partition
- 31. Analysis & Synthesis Messages
- 32. Analysis & Synthesis Suppressed Messages
+ 26. Port Connectivity Checks: "core:core_inst"
+ 27. Post-Synthesis Netlist Statistics for Top Partition
+ 28. Elapsed Time Per Partition
+ 29. Analysis & Synthesis Messages
+ 30. Analysis & Synthesis Suppressed Messages
 
 
 
@@ -63,7 +61,7 @@ refer to the applicable agreement for further details.
 +----------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                     ;
 +------------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Wed Dec 20 12:15:38 2023       ;
+; Analysis & Synthesis Status        ; Successful - Wed Dec 20 19:54:56 2023       ;
 ; Quartus Prime Version              ; 17.1.0 Build 590 10/25/2017 SJ Lite Edition ;
 ; Revision Name                      ; procesador                                  ;
 ; Top-level Entity Name              ; top                                         ;
@@ -308,6 +306,46 @@ Note: In order to hide this table in the UI and the text report file, please set
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
 
++-------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: core:core_inst|mux_2to1:mux_2to1_inst3 ;
++----------------+-------+------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                       ;
++----------------+-------+------------------------------------------------------------+
+; size           ; 32    ; Signed Integer                                             ;
++----------------+-------+------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: core:core_inst|PC:PC_inst ;
++----------------+-------+-----------------------------------------------+
+; Parameter Name ; Value ; Type                                          ;
++----------------+-------+-----------------------------------------------+
+; size           ; 32    ; Signed Integer                                ;
++----------------+-------+-----------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-----------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: core:core_inst|sumador:sumador_inst1 ;
++----------------+-------+----------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                     ;
++----------------+-------+----------------------------------------------------------+
+; WIDTH          ; 32    ; Signed Integer                                           ;
++----------------+-------+----------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: core:core_inst|if_id:if_id_inst ;
++----------------+-------+-----------------------------------------------------+
+; Parameter Name ; Value ; Type                                                ;
++----------------+-------+-----------------------------------------------------+
+; size           ; 32    ; Signed Integer                                      ;
++----------------+-------+-----------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
 +----------------------------------------------------------------------------------+
 ; Parameter Settings for User Entity Instance: core:core_inst|REGBANK:REGBANK_inst ;
 +----------------+-------+---------------------------------------------------------+
@@ -316,6 +354,16 @@ Note: In order to hide this table in the UI and the text report file, please set
 ; mem_depth      ; 32    ; Signed Integer                                          ;
 ; size           ; 32    ; Signed Integer                                          ;
 +----------------+-------+---------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: core:core_inst|id_ex:id_ex_inst ;
++----------------+-------+-----------------------------------------------------+
+; Parameter Name ; Value ; Type                                                ;
++----------------+-------+-----------------------------------------------------+
+; size           ; 32    ; Signed Integer                                      ;
++----------------+-------+-----------------------------------------------------+
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
 
@@ -349,36 +397,6 @@ Note: In order to hide this table in the UI and the text report file, please set
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
 
-+-----------------------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: core:core_inst|sumador:sumador_inst1 ;
-+----------------+-------+----------------------------------------------------------+
-; Parameter Name ; Value ; Type                                                     ;
-+----------------+-------+----------------------------------------------------------+
-; WIDTH          ; 32    ; Signed Integer                                           ;
-+----------------+-------+----------------------------------------------------------+
-Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
-
-
-+-------------------------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: core:core_inst|mux_2to1:mux_2to1_inst3 ;
-+----------------+-------+------------------------------------------------------------+
-; Parameter Name ; Value ; Type                                                       ;
-+----------------+-------+------------------------------------------------------------+
-; size           ; 32    ; Signed Integer                                             ;
-+----------------+-------+------------------------------------------------------------+
-Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
-
-
-+------------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: core:core_inst|PC:PC_inst ;
-+----------------+-------+-----------------------------------------------+
-; Parameter Name ; Value ; Type                                          ;
-+----------------+-------+-----------------------------------------------+
-; size           ; 32    ; Signed Integer                                ;
-+----------------+-------+-----------------------------------------------+
-Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
-
-
 +--------------------------------------------------------------------------------+
 ; Parameter Settings for User Entity Instance: core:core_inst|ex_mem:ex_mem_inst ;
 +----------------+-------+-------------------------------------------------------+
@@ -386,26 +404,6 @@ Note: In order to hide this table in the UI and the text report file, please set
 +----------------+-------+-------------------------------------------------------+
 ; size           ; 32    ; Signed Integer                                        ;
 +----------------+-------+-------------------------------------------------------+
-Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
-
-
-+------------------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: core:core_inst|if_id:if_id_inst ;
-+----------------+-------+-----------------------------------------------------+
-; Parameter Name ; Value ; Type                                                ;
-+----------------+-------+-----------------------------------------------------+
-; size           ; 32    ; Signed Integer                                      ;
-+----------------+-------+-----------------------------------------------------+
-Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
-
-
-+------------------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: core:core_inst|id_ex:id_ex_inst ;
-+----------------+-------+-----------------------------------------------------+
-; Parameter Name ; Value ; Type                                                ;
-+----------------+-------+-----------------------------------------------------+
-; size           ; 32    ; Signed Integer                                      ;
-+----------------+-------+-----------------------------------------------------+
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
 
@@ -419,14 +417,13 @@ Note: In order to hide this table in the UI and the text report file, please set
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
 
-+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Port Connectivity Checks: "core:core_inst|id_ex:id_ex_inst"                                                                                                                    ;
-+-------------+--------+----------+----------------------------------------------------------------------------------------------------------------------------------------------+
-; Port        ; Type   ; Severity ; Details                                                                                                                                      ;
-+-------------+--------+----------+----------------------------------------------------------------------------------------------------------------------------------------------+
-; AuipcLui_ID ; Input  ; Warning  ; Declared by entity but not connected by instance. If a default value exists, it will be used.  Otherwise, the port will be connected to GND. ;
-; AuipcLui_EX ; Output ; Warning  ; Declared by entity but not connected by instance. Logic that only feeds a dangling port will be removed.                                     ;
-+-------------+--------+----------+----------------------------------------------------------------------------------------------------------------------------------------------+
++-----------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "core:core_inst|control:control_inst"                                                                         ;
++----------+--------+----------+----------------------------------------------------------------------------------------------------------+
+; Port     ; Type   ; Severity ; Details                                                                                                  ;
++----------+--------+----------+----------------------------------------------------------------------------------------------------------+
+; AuipcLui ; Output ; Warning  ; Declared by entity but not connected by instance. Logic that only feeds a dangling port will be removed. ;
++----------+--------+----------+----------------------------------------------------------------------------------------------------------+
 
 
 +------------------------------------------------------------------+
@@ -438,25 +435,6 @@ Note: In order to hide this table in the UI and the text report file, please set
 ; datab[1..0]  ; Input ; Info     ; Stuck at GND                   ;
 ; datab[2]     ; Input ; Info     ; Stuck at VCC                   ;
 +--------------+-------+----------+--------------------------------+
-
-
-+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Port Connectivity Checks: "core:core_inst|control:control_inst"                                                                                                                ;
-+-------------+--------+----------+----------------------------------------------------------------------------------------------------------------------------------------------+
-; Port        ; Type   ; Severity ; Details                                                                                                                                      ;
-+-------------+--------+----------+----------------------------------------------------------------------------------------------------------------------------------------------+
-; HZRDcontrol ; Input  ; Warning  ; Declared by entity but not connected by instance. If a default value exists, it will be used.  Otherwise, the port will be connected to GND. ;
-; AuipcLui    ; Output ; Warning  ; Declared by entity but not connected by instance. Logic that only feeds a dangling port will be removed.                                     ;
-+-------------+--------+----------+----------------------------------------------------------------------------------------------------------------------------------------------+
-
-
-+------------------------------------------------------------------------------------------------------------------+
-; Port Connectivity Checks: "core:core_inst|mux_2to1:mux_2to1_inst1"                                               ;
-+--------+--------+----------+-------------------------------------------------------------------------------------+
-; Port   ; Type   ; Severity ; Details                                                                             ;
-+--------+--------+----------+-------------------------------------------------------------------------------------+
-; salida ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
-+--------+--------+----------+-------------------------------------------------------------------------------------+
 
 
 +------------------------------------------------------------------------------------------------------------------------------------------------------------------+
@@ -497,11 +475,10 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 17.1.0 Build 590 10/25/2017 SJ Lite Edition
-    Info: Processing started: Wed Dec 20 12:15:20 2023
+    Info: Processing started: Wed Dec 20 19:54:46 2023
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off procesador -c procesador
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 8 of the 8 processors detected
-Warning (10275): Verilog HDL Module Instantiation warning at top.sv(62): ignored dangling comma in List of Port Connections File: C:/Users/itsep/OneDrive/Documentos/GitHub/Microprocesador-ISDIGI/top.sv Line: 62
 Info (12021): Found 1 design units, including 1 entities, in source file top.sv
     Info (12023): Found entity 1: top File: C:/Users/itsep/OneDrive/Documentos/GitHub/Microprocesador-ISDIGI/top.sv Line: 25
 Info (12021): Found 1 design units, including 1 entities, in source file sumador.sv
@@ -512,14 +489,13 @@ Info (12021): Found 1 design units, including 1 entities, in source file ram.sv
     Info (12023): Found entity 1: RAM File: C:/Users/itsep/OneDrive/Documentos/GitHub/Microprocesador-ISDIGI/RAM.sv Line: 25
 Info (12021): Found 1 design units, including 1 entities, in source file pc.sv
     Info (12023): Found entity 1: PC File: C:/Users/itsep/OneDrive/Documentos/GitHub/Microprocesador-ISDIGI/PC.sv Line: 25
-Warning (12019): Can't analyze file -- file mux_4to1.sv is missing
 Info (12021): Found 1 design units, including 1 entities, in source file mux_2to1.sv
     Info (12023): Found entity 1: mux_2to1 File: C:/Users/itsep/OneDrive/Documentos/GitHub/Microprocesador-ISDIGI/mux_2to1.sv Line: 25
 Info (12021): Found 1 design units, including 1 entities, in source file imm_gen.sv
     Info (12023): Found entity 1: Imm_Gen File: C:/Users/itsep/OneDrive/Documentos/GitHub/Microprocesador-ISDIGI/Imm_Gen.sv Line: 25
-Warning (10275): Verilog HDL Module Instantiation warning at core.sv(224): ignored dangling comma in List of Port Connections File: C:/Users/itsep/OneDrive/Documentos/GitHub/Microprocesador-ISDIGI/core.sv Line: 224
 Info (12021): Found 1 design units, including 1 entities, in source file core.sv
     Info (12023): Found entity 1: core File: C:/Users/itsep/OneDrive/Documentos/GitHub/Microprocesador-ISDIGI/core.sv Line: 38
+Warning (10238): Verilog Module Declaration warning at control.sv(25): ignored anonymous port(s) indicated by duplicate or dangling comma(s) in the port list for module "control" File: C:/Users/itsep/OneDrive/Documentos/GitHub/Microprocesador-ISDIGI/control.sv Line: 25
 Info (12021): Found 1 design units, including 1 entities, in source file control.sv
     Info (12023): Found entity 1: control File: C:/Users/itsep/OneDrive/Documentos/GitHub/Microprocesador-ISDIGI/control.sv Line: 25
 Info (12021): Found 1 design units, including 1 entities, in source file arom.sv
@@ -536,6 +512,8 @@ Info (12021): Found 1 design units, including 1 entities, in source file ex_mem.
     Info (12023): Found entity 1: ex_mem File: C:/Users/itsep/OneDrive/Documentos/GitHub/Microprocesador-ISDIGI/ex_mem.sv Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file mem_wb.sv
     Info (12023): Found entity 1: mem_wb File: C:/Users/itsep/OneDrive/Documentos/GitHub/Microprocesador-ISDIGI/mem_wb.sv Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file mux_3to1.sv
+    Info (12023): Found entity 1: mux_3to1 File: C:/Users/itsep/OneDrive/Documentos/GitHub/Microprocesador-ISDIGI/mux_3to1.sv Line: 25
 Info (12127): Elaborating entity "top" for the top level hierarchy
 Info (12128): Elaborating entity "aROM" for hierarchy "aROM:aROM_inst" File: C:/Users/itsep/OneDrive/Documentos/GitHub/Microprocesador-ISDIGI/top.sv Line: 39
 Warning (10850): Verilog HDL warning at aROM.sv(38): number of words (90) in memory file does not match the number of elements in the address range [0:1023] File: C:/Users/itsep/OneDrive/Documentos/GitHub/Microprocesador-ISDIGI/aROM.sv Line: 38
@@ -544,21 +522,21 @@ Warning (10030): Net "mem.waddr_a" at aROM.sv(33) has no driver or initial value
 Warning (10030): Net "mem.we_a" at aROM.sv(33) has no driver or initial value, using a default initial value '0' File: C:/Users/itsep/OneDrive/Documentos/GitHub/Microprocesador-ISDIGI/aROM.sv Line: 33
 Info (12128): Elaborating entity "RAM" for hierarchy "RAM:RAM_inst" File: C:/Users/itsep/OneDrive/Documentos/GitHub/Microprocesador-ISDIGI/top.sv Line: 49
 Info (12128): Elaborating entity "core" for hierarchy "core:core_inst" File: C:/Users/itsep/OneDrive/Documentos/GitHub/Microprocesador-ISDIGI/top.sv Line: 62
-Info (12128): Elaborating entity "REGBANK" for hierarchy "core:core_inst|REGBANK:REGBANK_inst" File: C:/Users/itsep/OneDrive/Documentos/GitHub/Microprocesador-ISDIGI/core.sv Line: 101
-Info (12128): Elaborating entity "Imm_Gen" for hierarchy "core:core_inst|Imm_Gen:Imm_Gen_inst" File: C:/Users/itsep/OneDrive/Documentos/GitHub/Microprocesador-ISDIGI/core.sv Line: 109
-Info (12128): Elaborating entity "mux_2to1" for hierarchy "core:core_inst|mux_2to1:mux_2to1_inst1" File: C:/Users/itsep/OneDrive/Documentos/GitHub/Microprocesador-ISDIGI/core.sv Line: 117
-Info (12128): Elaborating entity "ALUcontrol" for hierarchy "core:core_inst|ALUcontrol:ALUcontrol_inst" File: C:/Users/itsep/OneDrive/Documentos/GitHub/Microprocesador-ISDIGI/core.sv Line: 125
-Info (12128): Elaborating entity "ALU" for hierarchy "core:core_inst|ALU:ALU_inst" File: C:/Users/itsep/OneDrive/Documentos/GitHub/Microprocesador-ISDIGI/core.sv Line: 134
+Info (12128): Elaborating entity "mux_2to1" for hierarchy "core:core_inst|mux_2to1:mux_2to1_inst3" File: C:/Users/itsep/OneDrive/Documentos/GitHub/Microprocesador-ISDIGI/core.sv Line: 97
+Info (12128): Elaborating entity "PC" for hierarchy "core:core_inst|PC:PC_inst" File: C:/Users/itsep/OneDrive/Documentos/GitHub/Microprocesador-ISDIGI/core.sv Line: 105
+Info (12128): Elaborating entity "sumador" for hierarchy "core:core_inst|sumador:sumador_inst1" File: C:/Users/itsep/OneDrive/Documentos/GitHub/Microprocesador-ISDIGI/core.sv Line: 112
+Info (12128): Elaborating entity "if_id" for hierarchy "core:core_inst|if_id:if_id_inst" File: C:/Users/itsep/OneDrive/Documentos/GitHub/Microprocesador-ISDIGI/core.sv Line: 122
+Info (12128): Elaborating entity "REGBANK" for hierarchy "core:core_inst|REGBANK:REGBANK_inst" File: C:/Users/itsep/OneDrive/Documentos/GitHub/Microprocesador-ISDIGI/core.sv Line: 136
+Info (12128): Elaborating entity "control" for hierarchy "core:core_inst|control:control_inst" File: C:/Users/itsep/OneDrive/Documentos/GitHub/Microprocesador-ISDIGI/core.sv Line: 148
+Warning (10230): Verilog HDL assignment warning at control.sv(114): truncated value with size 2 to match size of target (1) File: C:/Users/itsep/OneDrive/Documentos/GitHub/Microprocesador-ISDIGI/control.sv Line: 114
+Info (12128): Elaborating entity "Imm_Gen" for hierarchy "core:core_inst|Imm_Gen:Imm_Gen_inst" File: C:/Users/itsep/OneDrive/Documentos/GitHub/Microprocesador-ISDIGI/core.sv Line: 154
+Info (12128): Elaborating entity "id_ex" for hierarchy "core:core_inst|id_ex:id_ex_inst" File: C:/Users/itsep/OneDrive/Documentos/GitHub/Microprocesador-ISDIGI/core.sv Line: 186
+Info (12128): Elaborating entity "ALUcontrol" for hierarchy "core:core_inst|ALUcontrol:ALUcontrol_inst" File: C:/Users/itsep/OneDrive/Documentos/GitHub/Microprocesador-ISDIGI/core.sv Line: 202
+Info (12128): Elaborating entity "ALU" for hierarchy "core:core_inst|ALU:ALU_inst" File: C:/Users/itsep/OneDrive/Documentos/GitHub/Microprocesador-ISDIGI/core.sv Line: 211
 Warning (10230): Verilog HDL assignment warning at ALU.sv(57): truncated value with size 32 to match size of target (1) File: C:/Users/itsep/OneDrive/Documentos/GitHub/Microprocesador-ISDIGI/ALU.sv Line: 57
-Info (12128): Elaborating entity "control" for hierarchy "core:core_inst|control:control_inst" File: C:/Users/itsep/OneDrive/Documentos/GitHub/Microprocesador-ISDIGI/core.sv Line: 157
-Warning (10230): Verilog HDL assignment warning at control.sv(127): truncated value with size 2 to match size of target (1) File: C:/Users/itsep/OneDrive/Documentos/GitHub/Microprocesador-ISDIGI/control.sv Line: 127
-Info (12128): Elaborating entity "sumador" for hierarchy "core:core_inst|sumador:sumador_inst2" File: C:/Users/itsep/OneDrive/Documentos/GitHub/Microprocesador-ISDIGI/core.sv Line: 164
-Info (12128): Elaborating entity "PC" for hierarchy "core:core_inst|PC:PC_inst" File: C:/Users/itsep/OneDrive/Documentos/GitHub/Microprocesador-ISDIGI/core.sv Line: 188
-Info (12128): Elaborating entity "ex_mem" for hierarchy "core:core_inst|ex_mem:ex_mem_inst" File: C:/Users/itsep/OneDrive/Documentos/GitHub/Microprocesador-ISDIGI/core.sv Line: 214
-Info (12128): Elaborating entity "if_id" for hierarchy "core:core_inst|if_id:if_id_inst" File: C:/Users/itsep/OneDrive/Documentos/GitHub/Microprocesador-ISDIGI/core.sv Line: 224
-Info (12128): Elaborating entity "id_ex" for hierarchy "core:core_inst|id_ex:id_ex_inst" File: C:/Users/itsep/OneDrive/Documentos/GitHub/Microprocesador-ISDIGI/core.sv Line: 256
-Info (12128): Elaborating entity "mem_wb" for hierarchy "core:core_inst|mem_wb:mem_wb_inst" File: C:/Users/itsep/OneDrive/Documentos/GitHub/Microprocesador-ISDIGI/core.sv Line: 272
-Warning (12241): 3 hierarchies have connectivity warnings - see the Connectivity Checks report folder
+Info (12128): Elaborating entity "ex_mem" for hierarchy "core:core_inst|ex_mem:ex_mem_inst" File: C:/Users/itsep/OneDrive/Documentos/GitHub/Microprocesador-ISDIGI/core.sv Line: 254
+Info (12128): Elaborating entity "mem_wb" for hierarchy "core:core_inst|mem_wb:mem_wb_inst" File: C:/Users/itsep/OneDrive/Documentos/GitHub/Microprocesador-ISDIGI/core.sv Line: 270
+Warning (12241): 2 hierarchies have connectivity warnings - see the Connectivity Checks report folder
 Info (144001): Generated suppressed messages file C:/Users/itsep/OneDrive/Documentos/GitHub/Microprocesador-ISDIGI/output_files/procesador.map.smsg
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
@@ -568,11 +546,11 @@ Warning (21074): Design contains 2 input pin(s) that do not drive logic
 Info (21057): Implemented 2 device resources after synthesis - the final resource count might be different
     Info (21058): Implemented 2 input pins
     Info (21059): Implemented 0 output pins
-Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 14 warnings
+Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 13 warnings
     Info: Peak virtual memory: 4746 megabytes
-    Info: Processing ended: Wed Dec 20 12:15:38 2023
-    Info: Elapsed time: 00:00:18
-    Info: Total CPU time (on all processors): 00:00:15
+    Info: Processing ended: Wed Dec 20 19:54:56 2023
+    Info: Elapsed time: 00:00:10
+    Info: Total CPU time (on all processors): 00:00:08
 
 
 +------------------------------------------+
