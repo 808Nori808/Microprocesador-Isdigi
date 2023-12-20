@@ -1,0 +1,38 @@
+Quartus Prime Archive log --	C:/Users/itsep/OneDrive/Documentos/GitHub/Microprocesador-ISDIGI/procesador.qarlog
+
+Archive:	C:/Users/itsep/OneDrive/Documentos/GitHub/Microprocesador-ISDIGI/procesador.qar
+Date:		Wed Dec 20 20:09:04 2023
+Quartus Prime		17.1.0 Build 590 10/25/2017 SJ Lite Edition
+
+	=========== Files Selected: ===========
+C:/Users/itsep/OneDrive/Documentos/GitHub/Microprocesador-ISDIGI/ALU.sv
+C:/Users/itsep/OneDrive/Documentos/GitHub/Microprocesador-ISDIGI/ALUcontrol.sv
+C:/Users/itsep/OneDrive/Documentos/GitHub/Microprocesador-ISDIGI/Imm_Gen.sv
+C:/Users/itsep/OneDrive/Documentos/GitHub/Microprocesador-ISDIGI/Inicializacion_RAM.hex
+C:/Users/itsep/OneDrive/Documentos/GitHub/Microprocesador-ISDIGI/PC.sv
+C:/Users/itsep/OneDrive/Documentos/GitHub/Microprocesador-ISDIGI/RAM.sv
+C:/Users/itsep/OneDrive/Documentos/GitHub/Microprocesador-ISDIGI/REGBANK.sv
+C:/Users/itsep/OneDrive/Documentos/GitHub/Microprocesador-ISDIGI/aROM.sv
+C:/Users/itsep/OneDrive/Documentos/GitHub/Microprocesador-ISDIGI/algoritmo_ordenamiento.hex
+C:/Users/itsep/OneDrive/Documentos/GitHub/Microprocesador-ISDIGI/control.sv
+C:/Users/itsep/OneDrive/Documentos/GitHub/Microprocesador-ISDIGI/core.sv
+C:/Users/itsep/OneDrive/Documentos/GitHub/Microprocesador-ISDIGI/ex_mem.sv
+C:/Users/itsep/OneDrive/Documentos/GitHub/Microprocesador-ISDIGI/id_ex.sv
+C:/Users/itsep/OneDrive/Documentos/GitHub/Microprocesador-ISDIGI/if_id.sv
+C:/Users/itsep/OneDrive/Documentos/GitHub/Microprocesador-ISDIGI/inicializacion_ram.hex
+C:/Users/itsep/OneDrive/Documentos/GitHub/Microprocesador-ISDIGI/mem_wb.sv
+C:/Users/itsep/OneDrive/Documentos/GitHub/Microprocesador-ISDIGI/mux_2to1.sv
+C:/Users/itsep/OneDrive/Documentos/GitHub/Microprocesador-ISDIGI/mux_3to1.sv
+C:/Users/itsep/OneDrive/Documentos/GitHub/Microprocesador-ISDIGI/myFibo.hex
+C:/Users/itsep/OneDrive/Documentos/GitHub/Microprocesador-ISDIGI/myfibo.hex
+C:/Users/itsep/OneDrive/Documentos/GitHub/Microprocesador-ISDIGI/procesador.qpf
+C:/Users/itsep/OneDrive/Documentos/GitHub/Microprocesador-ISDIGI/procesador.qsf
+C:/Users/itsep/OneDrive/Documentos/GitHub/Microprocesador-ISDIGI/sumador.sv
+C:/Users/itsep/OneDrive/Documentos/GitHub/Microprocesador-ISDIGI/tb_procesador.sv
+C:/Users/itsep/OneDrive/Documentos/GitHub/Microprocesador-ISDIGI/tb_procesador_cob.sv
+C:/Users/itsep/OneDrive/Documentos/GitHub/Microprocesador-ISDIGI/top.sv
+c:/intelfpga_lite/17.1/quartus/bin64/assignment_defaults.qdf
+	======= Total: 27 files to archive =======
+
+	================ Status: ===============
+All files archived successfully.

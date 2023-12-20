@@ -1,5 +1,5 @@
 Flow report for procesador
-Wed Dec 20 19:54:56 2023
+Wed Dec 20 20:16:45 2023
 Quartus Prime Version 17.1.0 Build 590 10/25/2017 SJ Lite Edition
 
 
@@ -40,7 +40,7 @@ refer to the applicable agreement for further details.
 +----------------------------------------------------------------------------------+
 ; Flow Summary                                                                     ;
 +------------------------------------+---------------------------------------------+
-; Flow Status                        ; Successful - Wed Dec 20 19:54:56 2023       ;
+; Flow Status                        ; Successful - Wed Dec 20 20:16:45 2023       ;
 ; Quartus Prime Version              ; 17.1.0 Build 590 10/25/2017 SJ Lite Edition ;
 ; Revision Name                      ; procesador                                  ;
 ; Top-level Entity Name              ; top                                         ;
@@ -64,71 +64,30 @@ refer to the applicable agreement for further details.
 +-------------------+---------------------+
 ; Option            ; Setting             ;
 +-------------------+---------------------+
-; Start date & time ; 12/20/2023 19:54:47 ;
+; Start date & time ; 12/20/2023 20:16:37 ;
 ; Main task         ; Compilation         ;
 ; Revision Name     ; procesador          ;
 +-------------------+---------------------+
 
 
-+---------------------------------------------------------------------------------------------------------------------------------+
-; Flow Non-Default Global Settings                                                                                                ;
-+--------------------------------------+----------------------------------------+---------------+-------------+-------------------+
-; Assignment Name                      ; Value                                  ; Default Value ; Entity Name ; Section Id        ;
-+--------------------------------------+----------------------------------------+---------------+-------------+-------------------+
-; COMPILER_SIGNATURE_ID                ; 27214213803089.170309848729712         ; --            ; --          ; --                ;
-; EDA_DESIGN_INSTANCE_NAME             ; NA                                     ; --            ; --          ; tb_procesador_cob ;
-; EDA_DESIGN_INSTANCE_NAME             ; NA                                     ; --            ; --          ; tb_procesador     ;
-; EDA_NATIVELINK_SIMULATION_TEST_BENCH ; tb_procesador                          ; --            ; --          ; eda_simulation    ;
-; EDA_OUTPUT_DATA_FORMAT               ; Systemverilog Hdl                      ; --            ; --          ; eda_simulation    ;
-; EDA_SIMULATION_TOOL                  ; QuestaSim (SystemVerilog)              ; <None>        ; --          ; --                ;
-; EDA_TEST_BENCH_ENABLE_STATUS         ; TEST_BENCH_MODE                        ; --            ; --          ; eda_simulation    ;
-; EDA_TEST_BENCH_FILE                  ; ALU.sv                                 ; --            ; --          ; tb_procesador_cob ;
-; EDA_TEST_BENCH_FILE                  ; ALUcontrol.sv                          ; --            ; --          ; tb_procesador_cob ;
-; EDA_TEST_BENCH_FILE                  ; control.sv                             ; --            ; --          ; tb_procesador_cob ;
-; EDA_TEST_BENCH_FILE                  ; Imm_Gen.sv                             ; --            ; --          ; tb_procesador_cob ;
-; EDA_TEST_BENCH_FILE                  ; mux_2to1.sv                            ; --            ; --          ; tb_procesador_cob ;
-; EDA_TEST_BENCH_FILE                  ; myFibo.hex                             ; --            ; --          ; tb_procesador_cob ;
-; EDA_TEST_BENCH_FILE                  ; mux_4to1.sv                            ; --            ; --          ; tb_procesador_cob ;
-; EDA_TEST_BENCH_FILE                  ; PC.sv                                  ; --            ; --          ; tb_procesador_cob ;
-; EDA_TEST_BENCH_FILE                  ; REGBANK.sv                             ; --            ; --          ; tb_procesador_cob ;
-; EDA_TEST_BENCH_FILE                  ; sumador.sv                             ; --            ; --          ; tb_procesador_cob ;
-; EDA_TEST_BENCH_FILE                  ; Inicializacion_RAM.hex                 ; --            ; --          ; tb_procesador_cob ;
-; EDA_TEST_BENCH_FILE                  ; aROM.sv                                ; --            ; --          ; tb_procesador_cob ;
-; EDA_TEST_BENCH_FILE                  ; core.sv                                ; --            ; --          ; tb_procesador_cob ;
-; EDA_TEST_BENCH_FILE                  ; RAM.sv                                 ; --            ; --          ; tb_procesador_cob ;
-; EDA_TEST_BENCH_FILE                  ; tb_procesador_cob.sv                   ; --            ; --          ; tb_procesador_cob ;
-; EDA_TEST_BENCH_FILE                  ; ALU.sv                                 ; --            ; --          ; tb_procesador     ;
-; EDA_TEST_BENCH_FILE                  ; ALUcontrol.sv                          ; --            ; --          ; tb_procesador     ;
-; EDA_TEST_BENCH_FILE                  ; control.sv                             ; --            ; --          ; tb_procesador     ;
-; EDA_TEST_BENCH_FILE                  ; Imm_Gen.sv                             ; --            ; --          ; tb_procesador     ;
-; EDA_TEST_BENCH_FILE                  ; sumador.sv                             ; --            ; --          ; tb_procesador     ;
-; EDA_TEST_BENCH_FILE                  ; REGBANK.sv                             ; --            ; --          ; tb_procesador     ;
-; EDA_TEST_BENCH_FILE                  ; mux_4to1.sv                            ; --            ; --          ; tb_procesador     ;
-; EDA_TEST_BENCH_FILE                  ; mux_2to1.sv                            ; --            ; --          ; tb_procesador     ;
-; EDA_TEST_BENCH_FILE                  ; myFibo.hex                             ; --            ; --          ; tb_procesador     ;
-; EDA_TEST_BENCH_FILE                  ; Inicializacion_RAM.hex                 ; --            ; --          ; tb_procesador     ;
-; EDA_TEST_BENCH_FILE                  ; algoritmo_ordenamiento.hex             ; --            ; --          ; tb_procesador     ;
-; EDA_TEST_BENCH_FILE                  ; PC.sv                                  ; --            ; --          ; tb_procesador     ;
-; EDA_TEST_BENCH_FILE                  ; aROM.sv                                ; --            ; --          ; tb_procesador     ;
-; EDA_TEST_BENCH_FILE                  ; RAM.sv                                 ; --            ; --          ; tb_procesador     ;
-; EDA_TEST_BENCH_FILE                  ; core.sv                                ; --            ; --          ; tb_procesador     ;
-; EDA_TEST_BENCH_FILE                  ; tb_procesador.sv                       ; --            ; --          ; tb_procesador     ;
-; EDA_TEST_BENCH_MODULE_NAME           ; tb_procesador_cob                      ; --            ; --          ; tb_procesador_cob ;
-; EDA_TEST_BENCH_MODULE_NAME           ; tb_procesador                          ; --            ; --          ; tb_procesador     ;
-; EDA_TEST_BENCH_NAME                  ; tb_procesador                          ; --            ; --          ; eda_simulation    ;
-; EDA_TEST_BENCH_NAME                  ; tb_procesador_cob                      ; --            ; --          ; eda_simulation    ;
-; EDA_TIME_SCALE                       ; 1 ps                                   ; --            ; --          ; eda_simulation    ;
-; MAX_CORE_JUNCTION_TEMP               ; 85                                     ; --            ; --          ; --                ;
-; MIN_CORE_JUNCTION_TEMP               ; 0                                      ; --            ; --          ; --                ;
-; NOMINAL_CORE_SUPPLY_VOLTAGE          ; 1.2V                                   ; --            ; --          ; --                ;
-; PARTITION_COLOR                      ; -- (Not supported for targeted family) ; --            ; top         ; Top               ;
-; PARTITION_FITTER_PRESERVATION_LEVEL  ; -- (Not supported for targeted family) ; --            ; top         ; Top               ;
-; PARTITION_NETLIST_TYPE               ; -- (Not supported for targeted family) ; --            ; top         ; Top               ;
-; POWER_BOARD_THERMAL_MODEL            ; None (CONSERVATIVE)                    ; --            ; --          ; --                ;
-; POWER_PRESET_COOLING_SOLUTION        ; 23 MM HEAT SINK WITH 200 LFPM AIRFLOW  ; --            ; --          ; --                ;
-; PROJECT_OUTPUT_DIRECTORY             ; output_files                           ; --            ; --          ; --                ;
-; TOP_LEVEL_ENTITY                     ; top                                    ; procesador    ; --          ; --                ;
-+--------------------------------------+----------------------------------------+---------------+-------------+-------------------+
++-----------------------------------------------------------------------------------------------------------------------------+
+; Flow Non-Default Global Settings                                                                                            ;
++-------------------------------------+----------------------------------------+---------------+-------------+----------------+
+; Assignment Name                     ; Value                                  ; Default Value ; Entity Name ; Section Id     ;
++-------------------------------------+----------------------------------------+---------------+-------------+----------------+
+; COMPILER_SIGNATURE_ID               ; 27214213803089.170309979625832         ; --            ; --          ; --             ;
+; EDA_OUTPUT_DATA_FORMAT              ; Systemverilog Hdl                      ; --            ; --          ; eda_simulation ;
+; EDA_SIMULATION_TOOL                 ; QuestaSim (SystemVerilog)              ; <None>        ; --          ; --             ;
+; EDA_TIME_SCALE                      ; 1 ps                                   ; --            ; --          ; eda_simulation ;
+; MAX_CORE_JUNCTION_TEMP              ; 85                                     ; --            ; --          ; --             ;
+; MIN_CORE_JUNCTION_TEMP              ; 0                                      ; --            ; --          ; --             ;
+; NOMINAL_CORE_SUPPLY_VOLTAGE         ; 1.2V                                   ; --            ; --          ; --             ;
+; PARTITION_COLOR                     ; -- (Not supported for targeted family) ; --            ; top         ; Top            ;
+; PARTITION_FITTER_PRESERVATION_LEVEL ; -- (Not supported for targeted family) ; --            ; top         ; Top            ;
+; PARTITION_NETLIST_TYPE              ; -- (Not supported for targeted family) ; --            ; top         ; Top            ;
+; PROJECT_OUTPUT_DIRECTORY            ; output_files                           ; --            ; --          ; --             ;
+; TOP_LEVEL_ENTITY                    ; top                                    ; procesador    ; --          ; --             ;
++-------------------------------------+----------------------------------------+---------------+-------------+----------------+
 
 
 +--------------------------------------------------------------------------------------------------------------------------+
@@ -136,8 +95,8 @@ refer to the applicable agreement for further details.
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
 ; Module Name          ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
-; Analysis & Synthesis ; 00:00:10     ; 1.0                     ; 4731 MB             ; 00:00:08                           ;
-; Total                ; 00:00:10     ; --                      ; --                  ; 00:00:08                           ;
+; Analysis & Synthesis ; 00:00:09     ; 1.0                     ; 4740 MB             ; 00:00:07                           ;
+; Total                ; 00:00:09     ; --                      ; --                  ; 00:00:07                           ;
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
 
 

@@ -1,5 +1,5 @@
 Analysis & Synthesis report for procesador
-Wed Dec 20 19:54:56 2023
+Wed Dec 20 20:16:45 2023
 Quartus Prime Version 17.1.0 Build 590 10/25/2017 SJ Lite Edition
 
 
@@ -61,7 +61,7 @@ refer to the applicable agreement for further details.
 +----------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                     ;
 +------------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Wed Dec 20 19:54:56 2023       ;
+; Analysis & Synthesis Status        ; Successful - Wed Dec 20 20:16:45 2023       ;
 ; Quartus Prime Version              ; 17.1.0 Build 590 10/25/2017 SJ Lite Edition ;
 ; Revision Name                      ; procesador                                  ;
 ; Top-level Entity Name              ; top                                         ;
@@ -191,17 +191,17 @@ refer to the applicable agreement for further details.
 ; RAM.sv                           ; yes             ; User SystemVerilog HDL File                 ; C:/Users/itsep/OneDrive/Documentos/GitHub/Microprocesador-ISDIGI/RAM.sv                 ;         ;
 ; PC.sv                            ; yes             ; User SystemVerilog HDL File                 ; C:/Users/itsep/OneDrive/Documentos/GitHub/Microprocesador-ISDIGI/PC.sv                  ;         ;
 ; mux_2to1.sv                      ; yes             ; User SystemVerilog HDL File                 ; C:/Users/itsep/OneDrive/Documentos/GitHub/Microprocesador-ISDIGI/mux_2to1.sv            ;         ;
+; mem_wb.sv                        ; yes             ; User SystemVerilog HDL File                 ; C:/Users/itsep/OneDrive/Documentos/GitHub/Microprocesador-ISDIGI/mem_wb.sv              ;         ;
 ; Imm_Gen.sv                       ; yes             ; User SystemVerilog HDL File                 ; C:/Users/itsep/OneDrive/Documentos/GitHub/Microprocesador-ISDIGI/Imm_Gen.sv             ;         ;
+; if_id.sv                         ; yes             ; User SystemVerilog HDL File                 ; C:/Users/itsep/OneDrive/Documentos/GitHub/Microprocesador-ISDIGI/if_id.sv               ;         ;
+; id_ex.sv                         ; yes             ; User SystemVerilog HDL File                 ; C:/Users/itsep/OneDrive/Documentos/GitHub/Microprocesador-ISDIGI/id_ex.sv               ;         ;
+; ex_mem.sv                        ; yes             ; User SystemVerilog HDL File                 ; C:/Users/itsep/OneDrive/Documentos/GitHub/Microprocesador-ISDIGI/ex_mem.sv              ;         ;
 ; core.sv                          ; yes             ; User SystemVerilog HDL File                 ; C:/Users/itsep/OneDrive/Documentos/GitHub/Microprocesador-ISDIGI/core.sv                ;         ;
 ; control.sv                       ; yes             ; User SystemVerilog HDL File                 ; C:/Users/itsep/OneDrive/Documentos/GitHub/Microprocesador-ISDIGI/control.sv             ;         ;
 ; aROM.sv                          ; yes             ; User SystemVerilog HDL File                 ; C:/Users/itsep/OneDrive/Documentos/GitHub/Microprocesador-ISDIGI/aROM.sv                ;         ;
 ; ALUcontrol.sv                    ; yes             ; User SystemVerilog HDL File                 ; C:/Users/itsep/OneDrive/Documentos/GitHub/Microprocesador-ISDIGI/ALUcontrol.sv          ;         ;
 ; ALU.sv                           ; yes             ; User SystemVerilog HDL File                 ; C:/Users/itsep/OneDrive/Documentos/GitHub/Microprocesador-ISDIGI/ALU.sv                 ;         ;
-; if_id.sv                         ; yes             ; User SystemVerilog HDL File                 ; C:/Users/itsep/OneDrive/Documentos/GitHub/Microprocesador-ISDIGI/if_id.sv               ;         ;
-; id_ex.sv                         ; yes             ; User SystemVerilog HDL File                 ; C:/Users/itsep/OneDrive/Documentos/GitHub/Microprocesador-ISDIGI/id_ex.sv               ;         ;
-; ex_mem.sv                        ; yes             ; User SystemVerilog HDL File                 ; C:/Users/itsep/OneDrive/Documentos/GitHub/Microprocesador-ISDIGI/ex_mem.sv              ;         ;
-; mem_wb.sv                        ; yes             ; User SystemVerilog HDL File                 ; C:/Users/itsep/OneDrive/Documentos/GitHub/Microprocesador-ISDIGI/mem_wb.sv              ;         ;
-; fibonaccinop.hex                 ; yes             ; Auto-Found Hexadecimal (Intel-Format) File  ; C:/Users/itsep/OneDrive/Documentos/GitHub/Microprocesador-ISDIGI/fibonaccinop.hex       ;         ;
+; myfibo.hex                       ; yes             ; Auto-Found Hexadecimal (Intel-Format) File  ; C:/Users/itsep/OneDrive/Documentos/GitHub/Microprocesador-ISDIGI/myfibo.hex             ;         ;
 ; inicializacion_ram.hex           ; yes             ; Auto-Found Hexadecimal (Intel-Format) File  ; C:/Users/itsep/OneDrive/Documentos/GitHub/Microprocesador-ISDIGI/inicializacion_ram.hex ;         ;
 +----------------------------------+-----------------+---------------------------------------------+-----------------------------------------------------------------------------------------+---------+
 
@@ -475,7 +475,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 17.1.0 Build 590 10/25/2017 SJ Lite Edition
-    Info: Processing started: Wed Dec 20 19:54:46 2023
+    Info: Processing started: Wed Dec 20 20:16:36 2023
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off procesador -c procesador
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 8 of the 8 processors detected
@@ -483,40 +483,46 @@ Info (12021): Found 1 design units, including 1 entities, in source file top.sv
     Info (12023): Found entity 1: top File: C:/Users/itsep/OneDrive/Documentos/GitHub/Microprocesador-ISDIGI/top.sv Line: 25
 Info (12021): Found 1 design units, including 1 entities, in source file sumador.sv
     Info (12023): Found entity 1: sumador File: C:/Users/itsep/OneDrive/Documentos/GitHub/Microprocesador-ISDIGI/sumador.sv Line: 25
+Info (12021): Found 1 design units, including 1 entities, in source file regbank_tb.sv
+    Info (12023): Found entity 1: REGBANK_tb File: C:/Users/itsep/OneDrive/Documentos/GitHub/Microprocesador-ISDIGI/REGBANK_tb.sv Line: 27
 Info (12021): Found 1 design units, including 1 entities, in source file regbank.sv
     Info (12023): Found entity 1: REGBANK File: C:/Users/itsep/OneDrive/Documentos/GitHub/Microprocesador-ISDIGI/REGBANK.sv Line: 25
+Info (12021): Found 1 design units, including 1 entities, in source file ram_tb.sv
+    Info (12023): Found entity 1: RAM_tb File: C:/Users/itsep/OneDrive/Documentos/GitHub/Microprocesador-ISDIGI/RAM_tb.sv Line: 26
 Info (12021): Found 1 design units, including 1 entities, in source file ram.sv
     Info (12023): Found entity 1: RAM File: C:/Users/itsep/OneDrive/Documentos/GitHub/Microprocesador-ISDIGI/RAM.sv Line: 25
 Info (12021): Found 1 design units, including 1 entities, in source file pc.sv
     Info (12023): Found entity 1: PC File: C:/Users/itsep/OneDrive/Documentos/GitHub/Microprocesador-ISDIGI/PC.sv Line: 25
+Info (12021): Found 1 design units, including 1 entities, in source file mux_3to1.sv
+    Info (12023): Found entity 1: mux_3to1 File: C:/Users/itsep/OneDrive/Documentos/GitHub/Microprocesador-ISDIGI/mux_3to1.sv Line: 25
 Info (12021): Found 1 design units, including 1 entities, in source file mux_2to1.sv
     Info (12023): Found entity 1: mux_2to1 File: C:/Users/itsep/OneDrive/Documentos/GitHub/Microprocesador-ISDIGI/mux_2to1.sv Line: 25
+Info (12021): Found 1 design units, including 1 entities, in source file mem_wb.sv
+    Info (12023): Found entity 1: mem_wb File: C:/Users/itsep/OneDrive/Documentos/GitHub/Microprocesador-ISDIGI/mem_wb.sv Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file imm_gen.sv
     Info (12023): Found entity 1: Imm_Gen File: C:/Users/itsep/OneDrive/Documentos/GitHub/Microprocesador-ISDIGI/Imm_Gen.sv Line: 25
-Info (12021): Found 1 design units, including 1 entities, in source file core.sv
-    Info (12023): Found entity 1: core File: C:/Users/itsep/OneDrive/Documentos/GitHub/Microprocesador-ISDIGI/core.sv Line: 38
-Warning (10238): Verilog Module Declaration warning at control.sv(25): ignored anonymous port(s) indicated by duplicate or dangling comma(s) in the port list for module "control" File: C:/Users/itsep/OneDrive/Documentos/GitHub/Microprocesador-ISDIGI/control.sv Line: 25
-Info (12021): Found 1 design units, including 1 entities, in source file control.sv
-    Info (12023): Found entity 1: control File: C:/Users/itsep/OneDrive/Documentos/GitHub/Microprocesador-ISDIGI/control.sv Line: 25
-Info (12021): Found 1 design units, including 1 entities, in source file arom.sv
-    Info (12023): Found entity 1: aROM File: C:/Users/itsep/OneDrive/Documentos/GitHub/Microprocesador-ISDIGI/aROM.sv Line: 25
-Info (12021): Found 1 design units, including 1 entities, in source file alucontrol.sv
-    Info (12023): Found entity 1: ALUcontrol File: C:/Users/itsep/OneDrive/Documentos/GitHub/Microprocesador-ISDIGI/ALUcontrol.sv Line: 25
-Info (12021): Found 1 design units, including 1 entities, in source file alu.sv
-    Info (12023): Found entity 1: ALU File: C:/Users/itsep/OneDrive/Documentos/GitHub/Microprocesador-ISDIGI/ALU.sv Line: 25
 Info (12021): Found 1 design units, including 1 entities, in source file if_id.sv
     Info (12023): Found entity 1: if_id File: C:/Users/itsep/OneDrive/Documentos/GitHub/Microprocesador-ISDIGI/if_id.sv Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file id_ex.sv
     Info (12023): Found entity 1: id_ex File: C:/Users/itsep/OneDrive/Documentos/GitHub/Microprocesador-ISDIGI/id_ex.sv Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file ex_mem.sv
     Info (12023): Found entity 1: ex_mem File: C:/Users/itsep/OneDrive/Documentos/GitHub/Microprocesador-ISDIGI/ex_mem.sv Line: 1
-Info (12021): Found 1 design units, including 1 entities, in source file mem_wb.sv
-    Info (12023): Found entity 1: mem_wb File: C:/Users/itsep/OneDrive/Documentos/GitHub/Microprocesador-ISDIGI/mem_wb.sv Line: 1
-Info (12021): Found 1 design units, including 1 entities, in source file mux_3to1.sv
-    Info (12023): Found entity 1: mux_3to1 File: C:/Users/itsep/OneDrive/Documentos/GitHub/Microprocesador-ISDIGI/mux_3to1.sv Line: 25
+Info (12021): Found 1 design units, including 1 entities, in source file core.sv
+    Info (12023): Found entity 1: core File: C:/Users/itsep/OneDrive/Documentos/GitHub/Microprocesador-ISDIGI/core.sv Line: 38
+Warning (10238): Verilog Module Declaration warning at control.sv(25): ignored anonymous port(s) indicated by duplicate or dangling comma(s) in the port list for module "control" File: C:/Users/itsep/OneDrive/Documentos/GitHub/Microprocesador-ISDIGI/control.sv Line: 25
+Info (12021): Found 1 design units, including 1 entities, in source file control.sv
+    Info (12023): Found entity 1: control File: C:/Users/itsep/OneDrive/Documentos/GitHub/Microprocesador-ISDIGI/control.sv Line: 25
+Info (12021): Found 1 design units, including 1 entities, in source file arom_tb.sv
+    Info (12023): Found entity 1: ROM_tb File: C:/Users/itsep/OneDrive/Documentos/GitHub/Microprocesador-ISDIGI/aROM_tb.sv Line: 26
+Info (12021): Found 1 design units, including 1 entities, in source file arom.sv
+    Info (12023): Found entity 1: aROM File: C:/Users/itsep/OneDrive/Documentos/GitHub/Microprocesador-ISDIGI/aROM.sv Line: 25
+Info (12021): Found 1 design units, including 1 entities, in source file alucontrol.sv
+    Info (12023): Found entity 1: ALUcontrol File: C:/Users/itsep/OneDrive/Documentos/GitHub/Microprocesador-ISDIGI/ALUcontrol.sv Line: 25
+Info (12021): Found 1 design units, including 1 entities, in source file alu.sv
+    Info (12023): Found entity 1: ALU File: C:/Users/itsep/OneDrive/Documentos/GitHub/Microprocesador-ISDIGI/ALU.sv Line: 25
 Info (12127): Elaborating entity "top" for the top level hierarchy
 Info (12128): Elaborating entity "aROM" for hierarchy "aROM:aROM_inst" File: C:/Users/itsep/OneDrive/Documentos/GitHub/Microprocesador-ISDIGI/top.sv Line: 39
-Warning (10850): Verilog HDL warning at aROM.sv(38): number of words (90) in memory file does not match the number of elements in the address range [0:1023] File: C:/Users/itsep/OneDrive/Documentos/GitHub/Microprocesador-ISDIGI/aROM.sv Line: 38
+Warning (10850): Verilog HDL warning at aROM.sv(38): number of words (28) in memory file does not match the number of elements in the address range [0:1023] File: C:/Users/itsep/OneDrive/Documentos/GitHub/Microprocesador-ISDIGI/aROM.sv Line: 38
 Warning (10030): Net "mem.data_a" at aROM.sv(33) has no driver or initial value, using a default initial value '0' File: C:/Users/itsep/OneDrive/Documentos/GitHub/Microprocesador-ISDIGI/aROM.sv Line: 33
 Warning (10030): Net "mem.waddr_a" at aROM.sv(33) has no driver or initial value, using a default initial value '0' File: C:/Users/itsep/OneDrive/Documentos/GitHub/Microprocesador-ISDIGI/aROM.sv Line: 33
 Warning (10030): Net "mem.we_a" at aROM.sv(33) has no driver or initial value, using a default initial value '0' File: C:/Users/itsep/OneDrive/Documentos/GitHub/Microprocesador-ISDIGI/aROM.sv Line: 33
@@ -546,11 +552,11 @@ Warning (21074): Design contains 2 input pin(s) that do not drive logic
 Info (21057): Implemented 2 device resources after synthesis - the final resource count might be different
     Info (21058): Implemented 2 input pins
     Info (21059): Implemented 0 output pins
-Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 13 warnings
-    Info: Peak virtual memory: 4746 megabytes
-    Info: Processing ended: Wed Dec 20 19:54:56 2023
-    Info: Elapsed time: 00:00:10
-    Info: Total CPU time (on all processors): 00:00:08
+Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 12 warnings
+    Info: Peak virtual memory: 4755 megabytes
+    Info: Processing ended: Wed Dec 20 20:16:45 2023
+    Info: Elapsed time: 00:00:09
+    Info: Total CPU time (on all processors): 00:00:07
 
 
 +------------------------------------------+
