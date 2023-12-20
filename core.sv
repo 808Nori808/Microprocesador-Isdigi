@@ -130,8 +130,8 @@ REGBANK REGBANK_inst
 	.READREG_1(idata_ID[19:15]) ,			// TICK
 	.READREG_2(idata_ID[24:20]) ,	
 	.WRITE_REG(wrin_WB),	
-	.WRITE_DATA(write_data_reg) ,	
-	.read_data1(read_data1_ID) ,	
+	.WRITE_DATA(write_data_reg),	
+	.read_data1(read_data1_ID),	
 	.read_data2(read_data2_ID) 	
 );
 
@@ -275,12 +275,12 @@ assign iaddr = PC_IF[11:2];
 
 assign entrada_alu_control_ID = {idata_ID[30],idata_ID[14:12]};
 
-assign wrin_ID = idata_ID[11:7];
+assign wrin_ID = idata_ID[11:7];	
 
-assign ddata_w = read_data2_MEM;
+assign ddata_w = read_data2_MEM; //WRITE DATA RAM
 
-assign daddr = alu_resultado_MEM;
+assign daddr = alu_resultado_MEM;	//Direccion Adress
 
-assign salida_ram_MEM = ddata_r;
-			
+assign salida_ram_MEM = ddata_r; //DATA RAM.
+
 endmodule
