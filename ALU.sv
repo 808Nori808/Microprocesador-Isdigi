@@ -24,7 +24,7 @@
 
 module ALU (X, Y, RESULTADO, ZERO, CONTROL);
 
-input logic signed [31:0] X, Y;
+input logic [31:0] X, Y;
 
 input logic [3:0] CONTROL;
 
