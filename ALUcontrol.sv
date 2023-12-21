@@ -51,7 +51,7 @@ begin
 				end			
 		
 		4'b0001: salida_ALUcontrol=4'b0000; //SW //S-FORMAT 
-		4'b0011: salida_ALUcontrol=4'b0000; //LUI //U-FORMAT 
+		4'b0011: salida_ALUcontrol=4'b1100; //LUI //U-FORMAT 
 		
 		4'b0111: salida_ALUcontrol=4'b0000; //AUIPC //U-FORMAT 
 		
@@ -61,10 +61,6 @@ begin
 					3'b000: salida_ALUcontrol=4'b1111; //BEQ 
 					3'b001: salida_ALUcontrol=4'b0011; //BNE 
 					3'b100: salida_ALUcontrol= 4'b0100;//BLT <--- NUEVA
-					3'b110: salida_ALUcontrol=4'b0100; //BLTU <--- NUEVA
-					3'b101: salida_ALUcontrol=4'b1011; //BGE <--- NUEVA
-					3'b111: salida_ALUcontrol=4'b1011; //BGEU <--- NUEVA
-					
 					default: salida_ALUcontrol=4'b0000;
 				endcase
 				end
@@ -85,7 +81,6 @@ begin
 					default: salida_ALUcontrol=4'b0000;		
 				endcase
 				end
-		 4'b0010: salida_ALUcontrol=4'b0000; // JAL JALR
 		default: salida_ALUcontrol = 4'b0000;
 					
 	endcase	

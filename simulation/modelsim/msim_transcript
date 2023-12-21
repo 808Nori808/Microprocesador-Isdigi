@@ -28,7 +28,7 @@
 # Modifying modelsim.ini
 # vlog -vlog01compat -work altera_ver {c:/intelfpga_lite/17.1/quartus/eda/sim_lib/altera_primitives.v}
 # QuestaSim-64 vlog 2020.2 Compiler 2020.04 Apr 19 2020
-# Start time: 00:19:38 on Dec 21,2023
+# Start time: 10:46:05 on Dec 21,2023
 # vlog -reportprogress 300 -vlog01compat -work altera_ver c:/intelfpga_lite/17.1/quartus/eda/sim_lib/altera_primitives.v 
 # -- Compiling module global
 # -- Compiling module carry
@@ -110,7 +110,7 @@
 # 	alt_iobuf_diff
 # 	alt_bidir_diff
 # 	alt_bidir_buf
-# End time: 00:19:38 on Dec 21,2023, Elapsed time: 0:00:00
+# End time: 10:46:05 on Dec 21,2023, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # 
 # vlib verilog_libs/lpm_ver
@@ -122,7 +122,7 @@
 # Modifying modelsim.ini
 # vlog -vlog01compat -work lpm_ver {c:/intelfpga_lite/17.1/quartus/eda/sim_lib/220model.v}
 # QuestaSim-64 vlog 2020.2 Compiler 2020.04 Apr 19 2020
-# Start time: 00:19:38 on Dec 21,2023
+# Start time: 10:46:06 on Dec 21,2023
 # vlog -reportprogress 300 -vlog01compat -work lpm_ver c:/intelfpga_lite/17.1/quartus/eda/sim_lib/220model.v 
 # -- Compiling module LPM_MEMORY_INITIALIZATION
 # -- Compiling module LPM_HINT_EVALUATION
@@ -186,7 +186,7 @@
 # 	lpm_inpad
 # 	lpm_outpad
 # 	lpm_bipad
-# End time: 00:19:38 on Dec 21,2023, Elapsed time: 0:00:00
+# End time: 10:46:06 on Dec 21,2023, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # 
 # vlib verilog_libs/sgate_ver
@@ -198,7 +198,7 @@
 # Modifying modelsim.ini
 # vlog -vlog01compat -work sgate_ver {c:/intelfpga_lite/17.1/quartus/eda/sim_lib/sgate.v}
 # QuestaSim-64 vlog 2020.2 Compiler 2020.04 Apr 19 2020
-# Start time: 00:19:39 on Dec 21,2023
+# Start time: 10:46:06 on Dec 21,2023
 # vlog -reportprogress 300 -vlog01compat -work sgate_ver c:/intelfpga_lite/17.1/quartus/eda/sim_lib/sgate.v 
 # -- Compiling module oper_add
 # -- Compiling module oper_addsub
@@ -240,7 +240,7 @@
 # 	oper_decoder
 # 	oper_bus_mux
 # 	oper_latch
-# End time: 00:19:39 on Dec 21,2023, Elapsed time: 0:00:00
+# End time: 10:46:06 on Dec 21,2023, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # 
 # vlib verilog_libs/altera_mf_ver
@@ -252,7 +252,7 @@
 # Modifying modelsim.ini
 # vlog -vlog01compat -work altera_mf_ver {c:/intelfpga_lite/17.1/quartus/eda/sim_lib/altera_mf.v}
 # QuestaSim-64 vlog 2020.2 Compiler 2020.04 Apr 19 2020
-# Start time: 00:19:39 on Dec 21,2023
+# Start time: 10:46:06 on Dec 21,2023
 # vlog -reportprogress 300 -vlog01compat -work altera_mf_ver c:/intelfpga_lite/17.1/quartus/eda/sim_lib/altera_mf.v 
 # -- Compiling module lcell
 # -- Compiling module ALTERA_MF_MEMORY_INITIALIZATION
@@ -382,7 +382,7 @@
 # 	alt_fault_injection
 # 	sld_virtual_jtag_basic
 # 	altsource_probe
-# End time: 00:19:39 on Dec 21,2023, Elapsed time: 0:00:00
+# End time: 10:46:07 on Dec 21,2023, Elapsed time: 0:00:01
 # Errors: 0, Warnings: 0
 # 
 # vlib verilog_libs/altera_lnsim_ver
@@ -394,7 +394,7 @@
 # Modifying modelsim.ini
 # vlog -sv -work altera_lnsim_ver {c:/intelfpga_lite/17.1/quartus/eda/sim_lib/altera_lnsim.sv}
 # QuestaSim-64 vlog 2020.2 Compiler 2020.04 Apr 19 2020
-# Start time: 00:19:40 on Dec 21,2023
+# Start time: 10:46:07 on Dec 21,2023
 # vlog -reportprogress 300 -sv -work altera_lnsim_ver c:/intelfpga_lite/17.1/quartus/eda/sim_lib/altera_lnsim.sv 
 # -- Compiling package altera_lnsim_functions
 # -- Compiling package altera_generic_pll_functions
@@ -477,7 +477,7 @@
 # 	altera_iopll
 # 	fourteennm_altera_iopll
 # 	fourteennm_simple_iopll
-# End time: 00:19:40 on Dec 21,2023, Elapsed time: 0:00:00
+# End time: 10:46:08 on Dec 21,2023, Elapsed time: 0:00:01
 # Errors: 0, Warnings: 0
 # 
 # vlib verilog_libs/cycloneive_ver
@@ -489,7 +489,7 @@
 # Modifying modelsim.ini
 # vlog -vlog01compat -work cycloneive_ver {c:/intelfpga_lite/17.1/quartus/eda/sim_lib/cycloneive_atoms.v}
 # QuestaSim-64 vlog 2020.2 Compiler 2020.04 Apr 19 2020
-# Start time: 00:19:40 on Dec 21,2023
+# Start time: 10:46:08 on Dec 21,2023
 # vlog -reportprogress 300 -vlog01compat -work cycloneive_ver c:/intelfpga_lite/17.1/quartus/eda/sim_lib/cycloneive_atoms.v 
 # -- Compiling UDP CYCLONEIVE_PRIM_DFFE
 # -- Compiling UDP CYCLONEIVE_PRIM_DFFEAS
@@ -567,7 +567,7 @@
 # 	cycloneive_jtag
 # 	cycloneive_crcblock
 # 	cycloneive_oscillator
-# End time: 00:19:40 on Dec 21,2023, Elapsed time: 0:00:00
+# End time: 10:46:08 on Dec 21,2023, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # 
 # if {[file exists rtl_work]} {
@@ -581,341 +581,341 @@
 # 
 # vlog -sv -work work +incdir+C:/Users/itsep/OneDrive/Documentos/GitHub/Microprocesador-ISDIGI {C:/Users/itsep/OneDrive/Documentos/GitHub/Microprocesador-ISDIGI/top.sv}
 # QuestaSim-64 vlog 2020.2 Compiler 2020.04 Apr 19 2020
-# Start time: 00:19:41 on Dec 21,2023
+# Start time: 10:46:08 on Dec 21,2023
 # vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/itsep/OneDrive/Documentos/GitHub/Microprocesador-ISDIGI" C:/Users/itsep/OneDrive/Documentos/GitHub/Microprocesador-ISDIGI/top.sv 
 # -- Compiling module top
 # 
 # Top level modules:
 # 	top
-# End time: 00:19:41 on Dec 21,2023, Elapsed time: 0:00:00
+# End time: 10:46:08 on Dec 21,2023, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -sv -work work +incdir+C:/Users/itsep/OneDrive/Documentos/GitHub/Microprocesador-ISDIGI {C:/Users/itsep/OneDrive/Documentos/GitHub/Microprocesador-ISDIGI/sumador.sv}
 # QuestaSim-64 vlog 2020.2 Compiler 2020.04 Apr 19 2020
-# Start time: 00:19:41 on Dec 21,2023
+# Start time: 10:46:08 on Dec 21,2023
 # vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/itsep/OneDrive/Documentos/GitHub/Microprocesador-ISDIGI" C:/Users/itsep/OneDrive/Documentos/GitHub/Microprocesador-ISDIGI/sumador.sv 
 # -- Compiling module sumador
 # 
 # Top level modules:
 # 	sumador
-# End time: 00:19:41 on Dec 21,2023, Elapsed time: 0:00:00
+# End time: 10:46:09 on Dec 21,2023, Elapsed time: 0:00:01
 # Errors: 0, Warnings: 0
 # vlog -sv -work work +incdir+C:/Users/itsep/OneDrive/Documentos/GitHub/Microprocesador-ISDIGI {C:/Users/itsep/OneDrive/Documentos/GitHub/Microprocesador-ISDIGI/REGBANK.sv}
 # QuestaSim-64 vlog 2020.2 Compiler 2020.04 Apr 19 2020
-# Start time: 00:19:41 on Dec 21,2023
+# Start time: 10:46:09 on Dec 21,2023
 # vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/itsep/OneDrive/Documentos/GitHub/Microprocesador-ISDIGI" C:/Users/itsep/OneDrive/Documentos/GitHub/Microprocesador-ISDIGI/REGBANK.sv 
 # -- Compiling module REGBANK
 # 
 # Top level modules:
 # 	REGBANK
-# End time: 00:19:41 on Dec 21,2023, Elapsed time: 0:00:00
+# End time: 10:46:09 on Dec 21,2023, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -sv -work work +incdir+C:/Users/itsep/OneDrive/Documentos/GitHub/Microprocesador-ISDIGI {C:/Users/itsep/OneDrive/Documentos/GitHub/Microprocesador-ISDIGI/PC.sv}
 # QuestaSim-64 vlog 2020.2 Compiler 2020.04 Apr 19 2020
-# Start time: 00:19:41 on Dec 21,2023
+# Start time: 10:46:09 on Dec 21,2023
 # vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/itsep/OneDrive/Documentos/GitHub/Microprocesador-ISDIGI" C:/Users/itsep/OneDrive/Documentos/GitHub/Microprocesador-ISDIGI/PC.sv 
 # -- Compiling module PC
 # 
 # Top level modules:
 # 	PC
-# End time: 00:19:41 on Dec 21,2023, Elapsed time: 0:00:00
+# End time: 10:46:09 on Dec 21,2023, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -sv -work work +incdir+C:/Users/itsep/OneDrive/Documentos/GitHub/Microprocesador-ISDIGI {C:/Users/itsep/OneDrive/Documentos/GitHub/Microprocesador-ISDIGI/mux_2to1.sv}
 # QuestaSim-64 vlog 2020.2 Compiler 2020.04 Apr 19 2020
-# Start time: 00:19:41 on Dec 21,2023
+# Start time: 10:46:09 on Dec 21,2023
 # vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/itsep/OneDrive/Documentos/GitHub/Microprocesador-ISDIGI" C:/Users/itsep/OneDrive/Documentos/GitHub/Microprocesador-ISDIGI/mux_2to1.sv 
 # -- Compiling module mux_2to1
 # 
 # Top level modules:
 # 	mux_2to1
-# End time: 00:19:41 on Dec 21,2023, Elapsed time: 0:00:00
+# End time: 10:46:09 on Dec 21,2023, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -sv -work work +incdir+C:/Users/itsep/OneDrive/Documentos/GitHub/Microprocesador-ISDIGI {C:/Users/itsep/OneDrive/Documentos/GitHub/Microprocesador-ISDIGI/mem_wb.sv}
 # QuestaSim-64 vlog 2020.2 Compiler 2020.04 Apr 19 2020
-# Start time: 00:19:41 on Dec 21,2023
+# Start time: 10:46:09 on Dec 21,2023
 # vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/itsep/OneDrive/Documentos/GitHub/Microprocesador-ISDIGI" C:/Users/itsep/OneDrive/Documentos/GitHub/Microprocesador-ISDIGI/mem_wb.sv 
 # -- Compiling module mem_wb
 # 
 # Top level modules:
 # 	mem_wb
-# End time: 00:19:41 on Dec 21,2023, Elapsed time: 0:00:00
+# End time: 10:46:09 on Dec 21,2023, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -sv -work work +incdir+C:/Users/itsep/OneDrive/Documentos/GitHub/Microprocesador-ISDIGI {C:/Users/itsep/OneDrive/Documentos/GitHub/Microprocesador-ISDIGI/Imm_Gen.sv}
 # QuestaSim-64 vlog 2020.2 Compiler 2020.04 Apr 19 2020
-# Start time: 00:19:41 on Dec 21,2023
+# Start time: 10:46:09 on Dec 21,2023
 # vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/itsep/OneDrive/Documentos/GitHub/Microprocesador-ISDIGI" C:/Users/itsep/OneDrive/Documentos/GitHub/Microprocesador-ISDIGI/Imm_Gen.sv 
 # -- Compiling module Imm_Gen
 # 
 # Top level modules:
 # 	Imm_Gen
-# End time: 00:19:41 on Dec 21,2023, Elapsed time: 0:00:00
+# End time: 10:46:09 on Dec 21,2023, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -sv -work work +incdir+C:/Users/itsep/OneDrive/Documentos/GitHub/Microprocesador-ISDIGI {C:/Users/itsep/OneDrive/Documentos/GitHub/Microprocesador-ISDIGI/if_id.sv}
 # QuestaSim-64 vlog 2020.2 Compiler 2020.04 Apr 19 2020
-# Start time: 00:19:41 on Dec 21,2023
+# Start time: 10:46:09 on Dec 21,2023
 # vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/itsep/OneDrive/Documentos/GitHub/Microprocesador-ISDIGI" C:/Users/itsep/OneDrive/Documentos/GitHub/Microprocesador-ISDIGI/if_id.sv 
 # -- Compiling module if_id
 # 
 # Top level modules:
 # 	if_id
-# End time: 00:19:41 on Dec 21,2023, Elapsed time: 0:00:00
+# End time: 10:46:09 on Dec 21,2023, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -sv -work work +incdir+C:/Users/itsep/OneDrive/Documentos/GitHub/Microprocesador-ISDIGI {C:/Users/itsep/OneDrive/Documentos/GitHub/Microprocesador-ISDIGI/id_ex.sv}
 # QuestaSim-64 vlog 2020.2 Compiler 2020.04 Apr 19 2020
-# Start time: 00:19:41 on Dec 21,2023
+# Start time: 10:46:09 on Dec 21,2023
 # vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/itsep/OneDrive/Documentos/GitHub/Microprocesador-ISDIGI" C:/Users/itsep/OneDrive/Documentos/GitHub/Microprocesador-ISDIGI/id_ex.sv 
 # -- Compiling module id_ex
 # 
 # Top level modules:
 # 	id_ex
-# End time: 00:19:41 on Dec 21,2023, Elapsed time: 0:00:00
+# End time: 10:46:09 on Dec 21,2023, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -sv -work work +incdir+C:/Users/itsep/OneDrive/Documentos/GitHub/Microprocesador-ISDIGI {C:/Users/itsep/OneDrive/Documentos/GitHub/Microprocesador-ISDIGI/ex_mem.sv}
 # QuestaSim-64 vlog 2020.2 Compiler 2020.04 Apr 19 2020
-# Start time: 00:19:41 on Dec 21,2023
+# Start time: 10:46:09 on Dec 21,2023
 # vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/itsep/OneDrive/Documentos/GitHub/Microprocesador-ISDIGI" C:/Users/itsep/OneDrive/Documentos/GitHub/Microprocesador-ISDIGI/ex_mem.sv 
 # -- Compiling module ex_mem
 # 
 # Top level modules:
 # 	ex_mem
-# End time: 00:19:41 on Dec 21,2023, Elapsed time: 0:00:00
+# End time: 10:46:09 on Dec 21,2023, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -sv -work work +incdir+C:/Users/itsep/OneDrive/Documentos/GitHub/Microprocesador-ISDIGI {C:/Users/itsep/OneDrive/Documentos/GitHub/Microprocesador-ISDIGI/core.sv}
 # QuestaSim-64 vlog 2020.2 Compiler 2020.04 Apr 19 2020
-# Start time: 00:19:41 on Dec 21,2023
+# Start time: 10:46:09 on Dec 21,2023
 # vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/itsep/OneDrive/Documentos/GitHub/Microprocesador-ISDIGI" C:/Users/itsep/OneDrive/Documentos/GitHub/Microprocesador-ISDIGI/core.sv 
 # -- Compiling module core
 # 
 # Top level modules:
 # 	core
-# End time: 00:19:41 on Dec 21,2023, Elapsed time: 0:00:00
+# End time: 10:46:09 on Dec 21,2023, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -sv -work work +incdir+C:/Users/itsep/OneDrive/Documentos/GitHub/Microprocesador-ISDIGI {C:/Users/itsep/OneDrive/Documentos/GitHub/Microprocesador-ISDIGI/control.sv}
 # QuestaSim-64 vlog 2020.2 Compiler 2020.04 Apr 19 2020
-# Start time: 00:19:41 on Dec 21,2023
+# Start time: 10:46:09 on Dec 21,2023
 # vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/itsep/OneDrive/Documentos/GitHub/Microprocesador-ISDIGI" C:/Users/itsep/OneDrive/Documentos/GitHub/Microprocesador-ISDIGI/control.sv 
 # -- Compiling module control
 # 
 # Top level modules:
 # 	control
-# End time: 00:19:42 on Dec 21,2023, Elapsed time: 0:00:01
+# End time: 10:46:09 on Dec 21,2023, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -sv -work work +incdir+C:/Users/itsep/OneDrive/Documentos/GitHub/Microprocesador-ISDIGI {C:/Users/itsep/OneDrive/Documentos/GitHub/Microprocesador-ISDIGI/ALUcontrol.sv}
 # QuestaSim-64 vlog 2020.2 Compiler 2020.04 Apr 19 2020
-# Start time: 00:19:42 on Dec 21,2023
+# Start time: 10:46:09 on Dec 21,2023
 # vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/itsep/OneDrive/Documentos/GitHub/Microprocesador-ISDIGI" C:/Users/itsep/OneDrive/Documentos/GitHub/Microprocesador-ISDIGI/ALUcontrol.sv 
 # -- Compiling module ALUcontrol
 # 
 # Top level modules:
 # 	ALUcontrol
-# End time: 00:19:42 on Dec 21,2023, Elapsed time: 0:00:00
+# End time: 10:46:09 on Dec 21,2023, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -sv -work work +incdir+C:/Users/itsep/OneDrive/Documentos/GitHub/Microprocesador-ISDIGI {C:/Users/itsep/OneDrive/Documentos/GitHub/Microprocesador-ISDIGI/ALU.sv}
 # QuestaSim-64 vlog 2020.2 Compiler 2020.04 Apr 19 2020
-# Start time: 00:19:42 on Dec 21,2023
+# Start time: 10:46:09 on Dec 21,2023
 # vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/itsep/OneDrive/Documentos/GitHub/Microprocesador-ISDIGI" C:/Users/itsep/OneDrive/Documentos/GitHub/Microprocesador-ISDIGI/ALU.sv 
 # -- Compiling module ALU
 # 
 # Top level modules:
 # 	ALU
-# End time: 00:19:42 on Dec 21,2023, Elapsed time: 0:00:00
+# End time: 10:46:10 on Dec 21,2023, Elapsed time: 0:00:01
 # Errors: 0, Warnings: 0
 # vlog -sv -work work +incdir+C:/Users/itsep/OneDrive/Documentos/GitHub/Microprocesador-ISDIGI {C:/Users/itsep/OneDrive/Documentos/GitHub/Microprocesador-ISDIGI/RAM.sv}
 # QuestaSim-64 vlog 2020.2 Compiler 2020.04 Apr 19 2020
-# Start time: 00:19:42 on Dec 21,2023
+# Start time: 10:46:10 on Dec 21,2023
 # vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/itsep/OneDrive/Documentos/GitHub/Microprocesador-ISDIGI" C:/Users/itsep/OneDrive/Documentos/GitHub/Microprocesador-ISDIGI/RAM.sv 
 # -- Compiling module RAM
 # 
 # Top level modules:
 # 	RAM
-# End time: 00:19:42 on Dec 21,2023, Elapsed time: 0:00:00
+# End time: 10:46:10 on Dec 21,2023, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -sv -work work +incdir+C:/Users/itsep/OneDrive/Documentos/GitHub/Microprocesador-ISDIGI {C:/Users/itsep/OneDrive/Documentos/GitHub/Microprocesador-ISDIGI/aROM.sv}
 # QuestaSim-64 vlog 2020.2 Compiler 2020.04 Apr 19 2020
-# Start time: 00:19:42 on Dec 21,2023
+# Start time: 10:46:10 on Dec 21,2023
 # vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/itsep/OneDrive/Documentos/GitHub/Microprocesador-ISDIGI" C:/Users/itsep/OneDrive/Documentos/GitHub/Microprocesador-ISDIGI/aROM.sv 
 # -- Compiling module aROM
 # 
 # Top level modules:
 # 	aROM
-# End time: 00:19:42 on Dec 21,2023, Elapsed time: 0:00:00
+# End time: 10:46:10 on Dec 21,2023, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # 
 # vlog -sv -work work +incdir+C:/Users/itsep/OneDrive/Documentos/GitHub/Microprocesador-ISDIGI {C:/Users/itsep/OneDrive/Documentos/GitHub/Microprocesador-ISDIGI/tb_procesador.sv}
 # QuestaSim-64 vlog 2020.2 Compiler 2020.04 Apr 19 2020
-# Start time: 00:19:42 on Dec 21,2023
+# Start time: 10:46:10 on Dec 21,2023
 # vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/itsep/OneDrive/Documentos/GitHub/Microprocesador-ISDIGI" C:/Users/itsep/OneDrive/Documentos/GitHub/Microprocesador-ISDIGI/tb_procesador.sv 
 # -- Compiling module tb_procesador
 # 
 # Top level modules:
 # 	tb_procesador
-# End time: 00:19:42 on Dec 21,2023, Elapsed time: 0:00:00
+# End time: 10:46:10 on Dec 21,2023, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -sv -work work +incdir+C:/Users/itsep/OneDrive/Documentos/GitHub/Microprocesador-ISDIGI {C:/Users/itsep/OneDrive/Documentos/GitHub/Microprocesador-ISDIGI/REGBANK.sv}
 # QuestaSim-64 vlog 2020.2 Compiler 2020.04 Apr 19 2020
-# Start time: 00:19:42 on Dec 21,2023
+# Start time: 10:46:10 on Dec 21,2023
 # vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/itsep/OneDrive/Documentos/GitHub/Microprocesador-ISDIGI" C:/Users/itsep/OneDrive/Documentos/GitHub/Microprocesador-ISDIGI/REGBANK.sv 
 # -- Compiling module REGBANK
 # 
 # Top level modules:
 # 	REGBANK
-# End time: 00:19:42 on Dec 21,2023, Elapsed time: 0:00:00
+# End time: 10:46:10 on Dec 21,2023, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -sv -work work +incdir+C:/Users/itsep/OneDrive/Documentos/GitHub/Microprocesador-ISDIGI {C:/Users/itsep/OneDrive/Documentos/GitHub/Microprocesador-ISDIGI/RAM.sv}
 # QuestaSim-64 vlog 2020.2 Compiler 2020.04 Apr 19 2020
-# Start time: 00:19:42 on Dec 21,2023
+# Start time: 10:46:10 on Dec 21,2023
 # vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/itsep/OneDrive/Documentos/GitHub/Microprocesador-ISDIGI" C:/Users/itsep/OneDrive/Documentos/GitHub/Microprocesador-ISDIGI/RAM.sv 
 # -- Compiling module RAM
 # 
 # Top level modules:
 # 	RAM
-# End time: 00:19:42 on Dec 21,2023, Elapsed time: 0:00:00
+# End time: 10:46:10 on Dec 21,2023, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -sv -work work +incdir+C:/Users/itsep/OneDrive/Documentos/GitHub/Microprocesador-ISDIGI {C:/Users/itsep/OneDrive/Documentos/GitHub/Microprocesador-ISDIGI/aROM.sv}
 # QuestaSim-64 vlog 2020.2 Compiler 2020.04 Apr 19 2020
-# Start time: 00:19:42 on Dec 21,2023
+# Start time: 10:46:10 on Dec 21,2023
 # vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/itsep/OneDrive/Documentos/GitHub/Microprocesador-ISDIGI" C:/Users/itsep/OneDrive/Documentos/GitHub/Microprocesador-ISDIGI/aROM.sv 
 # -- Compiling module aROM
 # 
 # Top level modules:
 # 	aROM
-# End time: 00:19:42 on Dec 21,2023, Elapsed time: 0:00:00
+# End time: 10:46:10 on Dec 21,2023, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -sv -work work +incdir+C:/Users/itsep/OneDrive/Documentos/GitHub/Microprocesador-ISDIGI {C:/Users/itsep/OneDrive/Documentos/GitHub/Microprocesador-ISDIGI/ALU.sv}
 # QuestaSim-64 vlog 2020.2 Compiler 2020.04 Apr 19 2020
-# Start time: 00:19:42 on Dec 21,2023
+# Start time: 10:46:10 on Dec 21,2023
 # vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/itsep/OneDrive/Documentos/GitHub/Microprocesador-ISDIGI" C:/Users/itsep/OneDrive/Documentos/GitHub/Microprocesador-ISDIGI/ALU.sv 
 # -- Compiling module ALU
 # 
 # Top level modules:
 # 	ALU
-# End time: 00:19:42 on Dec 21,2023, Elapsed time: 0:00:00
+# End time: 10:46:10 on Dec 21,2023, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -sv -work work +incdir+C:/Users/itsep/OneDrive/Documentos/GitHub/Microprocesador-ISDIGI {C:/Users/itsep/OneDrive/Documentos/GitHub/Microprocesador-ISDIGI/ALUcontrol.sv}
 # QuestaSim-64 vlog 2020.2 Compiler 2020.04 Apr 19 2020
-# Start time: 00:19:42 on Dec 21,2023
+# Start time: 10:46:10 on Dec 21,2023
 # vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/itsep/OneDrive/Documentos/GitHub/Microprocesador-ISDIGI" C:/Users/itsep/OneDrive/Documentos/GitHub/Microprocesador-ISDIGI/ALUcontrol.sv 
 # -- Compiling module ALUcontrol
 # 
 # Top level modules:
 # 	ALUcontrol
-# End time: 00:19:42 on Dec 21,2023, Elapsed time: 0:00:00
+# End time: 10:46:10 on Dec 21,2023, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -sv -work work +incdir+C:/Users/itsep/OneDrive/Documentos/GitHub/Microprocesador-ISDIGI {C:/Users/itsep/OneDrive/Documentos/GitHub/Microprocesador-ISDIGI/control.sv}
 # QuestaSim-64 vlog 2020.2 Compiler 2020.04 Apr 19 2020
-# Start time: 00:19:42 on Dec 21,2023
+# Start time: 10:46:10 on Dec 21,2023
 # vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/itsep/OneDrive/Documentos/GitHub/Microprocesador-ISDIGI" C:/Users/itsep/OneDrive/Documentos/GitHub/Microprocesador-ISDIGI/control.sv 
 # -- Compiling module control
 # 
 # Top level modules:
 # 	control
-# End time: 00:19:42 on Dec 21,2023, Elapsed time: 0:00:00
+# End time: 10:46:10 on Dec 21,2023, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -sv -work work +incdir+C:/Users/itsep/OneDrive/Documentos/GitHub/Microprocesador-ISDIGI {C:/Users/itsep/OneDrive/Documentos/GitHub/Microprocesador-ISDIGI/core.sv}
 # QuestaSim-64 vlog 2020.2 Compiler 2020.04 Apr 19 2020
-# Start time: 00:19:42 on Dec 21,2023
+# Start time: 10:46:10 on Dec 21,2023
 # vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/itsep/OneDrive/Documentos/GitHub/Microprocesador-ISDIGI" C:/Users/itsep/OneDrive/Documentos/GitHub/Microprocesador-ISDIGI/core.sv 
 # -- Compiling module core
 # 
 # Top level modules:
 # 	core
-# End time: 00:19:42 on Dec 21,2023, Elapsed time: 0:00:00
+# End time: 10:46:10 on Dec 21,2023, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -sv -work work +incdir+C:/Users/itsep/OneDrive/Documentos/GitHub/Microprocesador-ISDIGI {C:/Users/itsep/OneDrive/Documentos/GitHub/Microprocesador-ISDIGI/ex_mem.sv}
 # QuestaSim-64 vlog 2020.2 Compiler 2020.04 Apr 19 2020
-# Start time: 00:19:42 on Dec 21,2023
+# Start time: 10:46:10 on Dec 21,2023
 # vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/itsep/OneDrive/Documentos/GitHub/Microprocesador-ISDIGI" C:/Users/itsep/OneDrive/Documentos/GitHub/Microprocesador-ISDIGI/ex_mem.sv 
 # -- Compiling module ex_mem
 # 
 # Top level modules:
 # 	ex_mem
-# End time: 00:19:43 on Dec 21,2023, Elapsed time: 0:00:01
+# End time: 10:46:11 on Dec 21,2023, Elapsed time: 0:00:01
 # Errors: 0, Warnings: 0
 # vlog -sv -work work +incdir+C:/Users/itsep/OneDrive/Documentos/GitHub/Microprocesador-ISDIGI {C:/Users/itsep/OneDrive/Documentos/GitHub/Microprocesador-ISDIGI/id_ex.sv}
 # QuestaSim-64 vlog 2020.2 Compiler 2020.04 Apr 19 2020
-# Start time: 00:19:43 on Dec 21,2023
+# Start time: 10:46:11 on Dec 21,2023
 # vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/itsep/OneDrive/Documentos/GitHub/Microprocesador-ISDIGI" C:/Users/itsep/OneDrive/Documentos/GitHub/Microprocesador-ISDIGI/id_ex.sv 
 # -- Compiling module id_ex
 # 
 # Top level modules:
 # 	id_ex
-# End time: 00:19:43 on Dec 21,2023, Elapsed time: 0:00:00
+# End time: 10:46:11 on Dec 21,2023, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -sv -work work +incdir+C:/Users/itsep/OneDrive/Documentos/GitHub/Microprocesador-ISDIGI {C:/Users/itsep/OneDrive/Documentos/GitHub/Microprocesador-ISDIGI/if_id.sv}
 # QuestaSim-64 vlog 2020.2 Compiler 2020.04 Apr 19 2020
-# Start time: 00:19:43 on Dec 21,2023
+# Start time: 10:46:11 on Dec 21,2023
 # vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/itsep/OneDrive/Documentos/GitHub/Microprocesador-ISDIGI" C:/Users/itsep/OneDrive/Documentos/GitHub/Microprocesador-ISDIGI/if_id.sv 
 # -- Compiling module if_id
 # 
 # Top level modules:
 # 	if_id
-# End time: 00:19:43 on Dec 21,2023, Elapsed time: 0:00:00
+# End time: 10:46:11 on Dec 21,2023, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -sv -work work +incdir+C:/Users/itsep/OneDrive/Documentos/GitHub/Microprocesador-ISDIGI {C:/Users/itsep/OneDrive/Documentos/GitHub/Microprocesador-ISDIGI/Imm_Gen.sv}
 # QuestaSim-64 vlog 2020.2 Compiler 2020.04 Apr 19 2020
-# Start time: 00:19:43 on Dec 21,2023
+# Start time: 10:46:11 on Dec 21,2023
 # vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/itsep/OneDrive/Documentos/GitHub/Microprocesador-ISDIGI" C:/Users/itsep/OneDrive/Documentos/GitHub/Microprocesador-ISDIGI/Imm_Gen.sv 
 # -- Compiling module Imm_Gen
 # 
 # Top level modules:
 # 	Imm_Gen
-# End time: 00:19:43 on Dec 21,2023, Elapsed time: 0:00:00
+# End time: 10:46:11 on Dec 21,2023, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -sv -work work +incdir+C:/Users/itsep/OneDrive/Documentos/GitHub/Microprocesador-ISDIGI {C:/Users/itsep/OneDrive/Documentos/GitHub/Microprocesador-ISDIGI/mem_wb.sv}
 # QuestaSim-64 vlog 2020.2 Compiler 2020.04 Apr 19 2020
-# Start time: 00:19:43 on Dec 21,2023
+# Start time: 10:46:11 on Dec 21,2023
 # vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/itsep/OneDrive/Documentos/GitHub/Microprocesador-ISDIGI" C:/Users/itsep/OneDrive/Documentos/GitHub/Microprocesador-ISDIGI/mem_wb.sv 
 # -- Compiling module mem_wb
 # 
 # Top level modules:
 # 	mem_wb
-# End time: 00:19:43 on Dec 21,2023, Elapsed time: 0:00:00
+# End time: 10:46:11 on Dec 21,2023, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -sv -work work +incdir+C:/Users/itsep/OneDrive/Documentos/GitHub/Microprocesador-ISDIGI {C:/Users/itsep/OneDrive/Documentos/GitHub/Microprocesador-ISDIGI/mux_2to1.sv}
 # QuestaSim-64 vlog 2020.2 Compiler 2020.04 Apr 19 2020
-# Start time: 00:19:43 on Dec 21,2023
+# Start time: 10:46:11 on Dec 21,2023
 # vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/itsep/OneDrive/Documentos/GitHub/Microprocesador-ISDIGI" C:/Users/itsep/OneDrive/Documentos/GitHub/Microprocesador-ISDIGI/mux_2to1.sv 
 # -- Compiling module mux_2to1
 # 
 # Top level modules:
 # 	mux_2to1
-# End time: 00:19:43 on Dec 21,2023, Elapsed time: 0:00:00
+# End time: 10:46:11 on Dec 21,2023, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -sv -work work +incdir+C:/Users/itsep/OneDrive/Documentos/GitHub/Microprocesador-ISDIGI {C:/Users/itsep/OneDrive/Documentos/GitHub/Microprocesador-ISDIGI/PC.sv}
 # QuestaSim-64 vlog 2020.2 Compiler 2020.04 Apr 19 2020
-# Start time: 00:19:43 on Dec 21,2023
+# Start time: 10:46:11 on Dec 21,2023
 # vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/itsep/OneDrive/Documentos/GitHub/Microprocesador-ISDIGI" C:/Users/itsep/OneDrive/Documentos/GitHub/Microprocesador-ISDIGI/PC.sv 
 # -- Compiling module PC
 # 
 # Top level modules:
 # 	PC
-# End time: 00:19:43 on Dec 21,2023, Elapsed time: 0:00:00
+# End time: 10:46:11 on Dec 21,2023, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -sv -work work +incdir+C:/Users/itsep/OneDrive/Documentos/GitHub/Microprocesador-ISDIGI {C:/Users/itsep/OneDrive/Documentos/GitHub/Microprocesador-ISDIGI/sumador.sv}
 # QuestaSim-64 vlog 2020.2 Compiler 2020.04 Apr 19 2020
-# Start time: 00:19:43 on Dec 21,2023
+# Start time: 10:46:11 on Dec 21,2023
 # vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/itsep/OneDrive/Documentos/GitHub/Microprocesador-ISDIGI" C:/Users/itsep/OneDrive/Documentos/GitHub/Microprocesador-ISDIGI/sumador.sv 
 # -- Compiling module sumador
 # 
 # Top level modules:
 # 	sumador
-# End time: 00:19:43 on Dec 21,2023, Elapsed time: 0:00:00
+# End time: 10:46:11 on Dec 21,2023, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -sv -work work +incdir+C:/Users/itsep/OneDrive/Documentos/GitHub/Microprocesador-ISDIGI {C:/Users/itsep/OneDrive/Documentos/GitHub/Microprocesador-ISDIGI/mux_3to1.sv}
 # QuestaSim-64 vlog 2020.2 Compiler 2020.04 Apr 19 2020
-# Start time: 00:19:43 on Dec 21,2023
+# Start time: 10:46:11 on Dec 21,2023
 # vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/itsep/OneDrive/Documentos/GitHub/Microprocesador-ISDIGI" C:/Users/itsep/OneDrive/Documentos/GitHub/Microprocesador-ISDIGI/mux_3to1.sv 
 # -- Compiling module mux_3to1
 # 
 # Top level modules:
 # 	mux_3to1
-# End time: 00:19:43 on Dec 21,2023, Elapsed time: 0:00:00
+# End time: 10:46:11 on Dec 21,2023, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # 
 # vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cycloneive_ver -L rtl_work -L work -voptargs="+acc"  tb_procesador
 # vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cycloneive_ver -L rtl_work -L work -voptargs=""+acc"" tb_procesador 
-# Start time: 00:19:43 on Dec 21,2023
+# Start time: 10:46:11 on Dec 21,2023
 # ** Note: (vsim-3812) Design is being optimized...
-# ** Warning: C:/Users/itsep/OneDrive/Documentos/GitHub/Microprocesador-ISDIGI/core.sv(138): (vopt-2685) [TFMPC] - Too few port connections for 'control_inst'.  Expected 10, found 8.
+# ** Warning: C:/Users/itsep/OneDrive/Documentos/GitHub/Microprocesador-ISDIGI/core.sv(138): (vopt-2685) [TFMPC] - Too few port connections for 'control_inst'.  Expected 9, found 8.
 # ** Warning: C:/Users/itsep/OneDrive/Documentos/GitHub/Microprocesador-ISDIGI/core.sv(138): (vopt-2718) [TFMPC] - Missing connection for port 'AuipcLui'.
 # ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=2.
 # Loading sv_std.std
@@ -945,5 +945,15 @@
 # ** Note: $stop    : C:/Users/itsep/OneDrive/Documentos/GitHub/Microprocesador-ISDIGI/tb_procesador.sv(87)
 #    Time: 1400 ns  Iteration: 1  Instance: /tb_procesador
 # Break in Module tb_procesador at C:/Users/itsep/OneDrive/Documentos/GitHub/Microprocesador-ISDIGI/tb_procesador.sv line 87
-# End time: 00:22:49 on Dec 21,2023, Elapsed time: 0:03:06
+# A time value could not be extracted from the current line
+# A time value could not be extracted from the current line
+add wave -position insertpoint  \
+sim:/tb_procesador/core_inst/REGBANK_inst/mem
+add wave -position insertpoint  \
+sim:/tb_procesador/core_inst/REGBANK_inst/mem
+add wave -position insertpoint  \
+sim:/tb_procesador/core_inst/REGBANK_inst/mem
+add wave -position insertpoint  \
+sim:/tb_procesador/core_inst/REGBANK_inst/mem
+# End time: 10:49:52 on Dec 21,2023, Elapsed time: 0:03:41
 # Errors: 0, Warnings: 2
