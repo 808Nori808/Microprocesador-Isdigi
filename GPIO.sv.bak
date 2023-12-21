@@ -1,0 +1,40 @@
+module GPIO(mem1_ena,clock,mem1_dout,DOUT);
+
+input clock;
+input[20:0] mem1_dout;
+input mem1_ena;                       /////
+output logic [20:0] DOUT;
+
+logic[20:0] cablesalida;
+
+
+hex7segm centenas
+(
+	.hex_digit(mem1_dout[11:8]),
+	.salida7seg(cablesalida[20:14])
+);
+
+hex7segm decenas
+(
+	.hex_digit(mem1_dout[7:4]),
+	.saldia7seg(cablesalida[13:7])
+);
+				
+
+hex7segm unidades
+(
+	.hex_digit(mem1_dout[3:0]),
+	.salida7seg(cablesalida[6:0])
+);
+				
+					
+
+always@(posedge clock)
+begin
+   if(mem1_ena)
+       
+          DOUT = cablesalida;
+   else
+         DOUT = DOUT;
+end
+endmodule 

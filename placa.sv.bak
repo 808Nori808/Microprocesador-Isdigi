@@ -1,0 +1,22 @@
+module placa (CLK,RESET_N,DOUT);
+
+input CLK, RESET_N;
+output logic [20:0] DOUt;
+
+// SEÑALES ROM
+
+logic [9:0] iaddr;
+logic [31:0] idata;
+ 
+// CABLES PARA CONECTAR LA RAM AL MEMORY CONTROLLER
+logic [31:0] mem0_dw,mem0_dr;
+logic [9:0] daadr;
+logic d_rw_ram;
+
+//SEÑALES GPIO
+
+logic [20:0] mem1_dout;
+logic enaGPIO;
+
+//CABLES PARA CONECTAR EL CORE AL MEMORY CONTROLLER
+logic 
