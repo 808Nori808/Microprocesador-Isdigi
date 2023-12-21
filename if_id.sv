@@ -2,8 +2,8 @@ module if_id(CLK,RESET_N, PC_IF,PC_ID,idata_IF, idata_ID);
 
 parameter size = 32;
 
-input CLK, RESET_N;
-input [size-1:0] PC_IF, idata_IF;
+input logic CLK, RESET_N;
+input logic  [size-1:0] PC_IF, idata_IF;
 								//idata
 output logic [size-1:0] PC_ID, idata_ID;
 

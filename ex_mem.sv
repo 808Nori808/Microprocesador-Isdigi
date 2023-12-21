@@ -1,9 +1,9 @@
 module ex_mem #(parameter size = 32)
 (
-input CLK, RESET_N,
-input [size-1:0] alu_resultado_EX, sum_resultado_EX, read_data2_EX,
-input [4:0] wrin_EX,
-input Branch_EX, MemRead_EX, MemtoReg_EX, MemWrite_EX, RegWrite_EX, ZERO_EX,
+input logic CLK, RESET_N,
+input logic [size-1:0] alu_resultado_EX, sum_resultado_EX, read_data2_EX,
+input logic [4:0] wrin_EX,
+input logic Branch_EX, MemRead_EX, MemtoReg_EX, MemWrite_EX, RegWrite_EX, ZERO_EX,
 output logic [size-1:0] alu_resultado_MEM, sum_resultado_MEM, read_data2_MEM,
 output logic [4:0] wrin_MEM,
 output logic Branch_MEM, MemRead_MEM, MemtoReg_MEM, MemWrite_MEM, RegWrite_MEM, ZERO_MEM

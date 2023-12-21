@@ -24,7 +24,7 @@
 
 module ALU (X, Y, RESULTADO, ZERO, CONTROL);
 
-input logic [31:0] X, Y;
+input logic signed [31:0] X, Y;
 
 input logic [3:0] CONTROL;
 
@@ -32,6 +32,9 @@ output logic [31:0] RESULTADO;
 
 output logic ZERO;
 
+integer y ;
+
+initial y = Y; 
 
 always_comb
 begin
@@ -46,7 +49,7 @@ case (CONTROL)
 	4'b1001: RESULTADO = (X ^ Y); // XOR XORI
 	4'b1000: RESULTADO = X << Y; // SLL SLLI
 	4'b1010: RESULTADO = X >> Y; // SRL SRLI
-	4'b1110: RESULTADO = (X[31])? ({32{1'b1}} | (X >> Y)) : ({32{1'b0}} | (X >> Y)); // SRA
+	4'b1110: RESULTADO = (X[31]) ? ((X[31:0])) : X >> Y; // SRA
 	4'b1011: RESULTADO = (X >= Y) ? 0 : 1; //BGE
 	4'b1111: RESULTADO = X == Y; //BEQ
 	4'b0011: RESULTADO = ~(X!=Y)? 0:1; //BNE

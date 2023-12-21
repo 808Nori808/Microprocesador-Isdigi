@@ -31,7 +31,7 @@ parameter T = 50;
 parameter data_size = 1024, address_size = 32;
 logic CLK, RESET_N;
 logic [address_size-1:0] ddata_w, ddata_r, daddr, idata, iaddr;
-logic d_rw, MemRead, MemWrite;
+logic MemRead, MemWrite;
 
 aROM aROM_inst
 (
@@ -59,7 +59,7 @@ core core_inst
     .ddata_w(ddata_w) ,
     .daddr(daddr) ,
     .MemRead(MemRead) ,
-    .MemWrite(MemWrite)
+    .MemWrite(MemWrite) 
 );
 
 ////////////////////////////////////
@@ -83,7 +83,7 @@ endtask
     begin
 		CLK = 0;
 		reset();
-        repeat (25) @(negedge CLK);
+        repeat (500) @(negedge CLK);
         $stop;
     end
 endmodule

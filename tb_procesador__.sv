@@ -24,7 +24,7 @@
 
 `timescale 1ns/100ps
 
-module tb_procesador();
+module tb_procesador__();
 
 parameter T = 50;
 

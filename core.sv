@@ -38,11 +38,11 @@
 module core 
 #(parameter data_size = 1024, parameter address_size = 32)
 (
-    input CLK, RESET_N,
-	input [address_size-1:0] idata, ddata_r,
+    input logic CLK, RESET_N,
+	input logic [address_size-1:0] idata, ddata_r,
 
-    output [address_size-1:0] ddata_w, daddr, iaddr, 
-	output MemRead, MemWrite // Deciden que operación se realiza
+    output logic [address_size-1:0] ddata_w, daddr, iaddr, 
+	output logic MemRead, MemWrite // Deciden que operación se realiza
 
 );
 logic [address_size-1:0] write_data_reg;
@@ -57,8 +57,9 @@ logic [address_size-1:0] imm_ID, imm_EX;
 logic [3:0] ALU_control;
 
 logic [address_size-1:0] ALU_x, ALU_y;
-logic [1:0] ForwardA, ForwardB;
-logic PCSrc, PCWrite, HZRDcontrol;
+// logic [1:0] ForwardA, ForwardB;
+logic PCSrc;
+//  PCWrite, HZRDcontrol;
 logic Branch_ID, Branch_EX, Branch_MEM;
 logic MemtoReg_ID, MemtoReg_EX, MemtoReg_MEM, MemtoReg_WB;
 logic MemRead_ID, MemRead_EX, MemRead_MEM;
@@ -82,6 +83,8 @@ logic [3:0] entrada_alu_control_ID, entrada_alu_control_EX;
 logic [address_size-1:0] salida_ram_MEM, salida_ram_WB;
 
 logic [address_size-1:0] alu_resultado_EX, alu_resultado_MEM, alu_resultado_WB;
+
+logic [1:0] AuipcLui_ID, AuipcLui_EX;  
 
 assign MemRead = MemRead_MEM;
 assign MemWrite = MemWrite_MEM;
@@ -144,7 +147,8 @@ control control_inst
 	.ALUOp(ALUOp_ID) ,	
 	.MemWrite(MemWrite_ID) ,	
 	.ALUSrc(ALUSrc_ID) ,	
-	.RegWrite(RegWrite_ID) 
+	.RegWrite(RegWrite_ID), 
+	.AuipcLui(AuipcLui_ID)
 );
 
 Imm_Gen Imm_Gen_inst
@@ -182,7 +186,9 @@ id_ex id_ex_inst
 	.MemtoReg_EX(MemtoReg_EX) ,
 	.MemWrite_EX(MemWrite_EX) ,
 	.RegWrite_EX(RegWrite_EX) ,
-	.ALUSrc_EX(ALUSrc_EX)
+	.ALUSrc_EX(ALUSrc_EX),
+	.AuipcLui_ID(AuipcLui_ID),
+	.AuipcLui_EX(AuipcLui_EX)
 );
 
 mux_2to1 mux_2to1_inst1	//MULTIPLEXOR DE ANTES DE LA ALU
@@ -203,7 +209,7 @@ ALUcontrol ALUcontrol_inst
 
 ALU ALU_inst
 (
-	.X(read_data1_EX) ,	
+	.X(ALU_x) ,	
 	.Y(ALU_y) ,	
 	.RESULTADO(alu_resultado_EX) ,	
 	.ZERO(ZERO_EX),	
@@ -225,6 +231,15 @@ sumador sumador_inst2
 	.result(sum_resultado_EX) 	
 );
 
+
+mux_3to1 mux_3to1_inst1
+(
+	.select(AuipcLui_EX) ,	
+	.dato1(PC_EX) , 	
+	.dato2(32'd0) ,	
+	.dato3(read_data1_EX) ,	
+	.salida(ALU_x) 	
+);
 
 
 ex_mem ex_mem_inst
@@ -271,7 +286,7 @@ mem_wb mem_wb_inst
 
 assign PCSrc = Branch_MEM & ZERO_MEM;  //BRANCH
 
-assign iaddr = PC_IF[11:2];
+assign iaddr = PC_IF;
 
 assign entrada_alu_control_ID = {idata_ID[30],idata_ID[14:12]};
 

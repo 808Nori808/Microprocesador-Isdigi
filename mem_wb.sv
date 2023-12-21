@@ -1,9 +1,9 @@
 module mem_wb #(parameter size = 32)
 (
-input CLK, RESET_N,
-input [size-1:0] salida_ram_MEM, alu_resultado_MEM,
-input [4:0] wrin_MEM,
-input RegWrite_MEM, MemtoReg_MEM,
+input logic CLK, RESET_N,
+input logic [size-1:0] salida_ram_MEM, alu_resultado_MEM,
+input logic [4:0] wrin_MEM,
+input logic RegWrite_MEM, MemtoReg_MEM,
 output logic [size-1:0] salida_ram_WB, alu_resultado_WB,
 output logic [4:0] wrin_WB,
 output logic RegWrite_WB, MemtoReg_WB
