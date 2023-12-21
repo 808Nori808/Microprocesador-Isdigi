@@ -37,7 +37,6 @@ logic signed [31:0] X_sig, Y_sig;
 assign X_sig = X;
 assign Y_sig = Y; 
 
-
 always_comb
 begin
 case (CONTROL)
@@ -51,7 +50,7 @@ case (CONTROL)
 	4'b1001: RESULTADO = (X ^ Y); // XOR XORI
 	4'b1000: RESULTADO = X << Y; // SLL SLLI
 	4'b1010: RESULTADO = X >> Y; // SRL SRLI
-	4'b1110: RESULTADO = X_sig >> Y_sig; // SRA, SRAI 
+	4'b1110: RESULTADO = $signed(X) >>> Y[4:0]; // SRA, SRAI 
 	4'b1011: RESULTADO = (X >= Y) ? 0 : 1; //BGE
 	4'b1111: RESULTADO = X == Y; //BEQ
 	4'b0011: RESULTADO = ~(X!=Y)? 0:1; //BNE
