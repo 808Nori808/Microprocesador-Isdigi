@@ -39,9 +39,9 @@ module diseno2
 #(parameter data_size = 1024, parameter address_size = 32)
 (
     input CLK, RESET_N,
-	input logic [address_size-1:0] idata, ddata_r,
-    output logic [address_size-1:0] ddata_w, daddr, iaddr,
-	output loigc MemRead, MemWrite
+	input  [address_size-1:0] idata, ddata_r,
+    output [address_size-1:0] ddata_w, daddr, iaddr,
+	output logic MemRead, MemWrite
 );
 
     logic [address_size-1:0] read_data1, write_data_reg;
@@ -62,6 +62,26 @@ module diseno2
 
     logic [address_size-1:0] out_mux;
 
+	logic [address_size-1:0] idata_logic, ddata_r_logic;
+    logic [address_size-1:0] ddata_w_logic, daddr_logic, iaddr_logic;
+
+
+    always_ff @( posedge CLK or negedge RESET_N ) begin 
+    if(RESET_N) begin
+        idata_logic <= 0;
+        ddata_r_logic <= 0;
+        ddata_w_logic <= 0;
+        daddr_logic <= 0;
+        iaddr_logic <= 0; 
+    end else begin
+        idata_logic <= idata;
+        ddata_r_logic <= ddata_r;
+        ddata_w_logic <= ddata_w;
+        daddr_logic <= daddr;
+        iaddr_logic <= iaddr; 
+    end end
+
+
 
 
 // always_ff @( posedge CLK or negedge RESET_N ) begin 
@@ -76,11 +96,11 @@ module diseno2
 // --------------- IF/ID ---------------------------
 always_ff @( posedge CLK or negedge RESET_N ) begin 
     if(~RESET_N) begin
-        iaddr <= 0;
-        idata <= 0;
+        iaddr_logic <= 0;
+        idata_logic <= 0;
     end else begin
-        iaddr <= iaddr;
-        idata <= idata; 
+        iaddr_logic <= iaddr_logic;
+        idata_logic <= idata_logic; 
     end end
 // -------------------------------------------------
 
@@ -103,12 +123,12 @@ always_ff @( posedge CLK or negedge RESET_N ) begin
         ALUSrc <= 0;
         //-------------
 
-        iaddr <= 0;
+        iaddr_logic <= 0;
         read_data1 <= 0;
-        ddata_w <= 0;
+        ddata_w_logic <= 0;
         imm <= 0;
-        {idata[30] , idata[14:12]} <= 0;
-        idata[11:7] <= 0;
+        {idata_logic[30] , idata_logic[14:12]} <= 0;
+        idata_logic[11:7] <= 0;
     end else begin
         //---- WB -----
         RegWrite <= RegWrite;
@@ -126,12 +146,12 @@ always_ff @( posedge CLK or negedge RESET_N ) begin
         ALUSrc <= ALUSrc;
         //-------------
 
-        iaddr <= iaddr; 
+        iaddr_logic <= iaddr_logic; 
         read_data1 <= read_data1;
-        ddata_w <= ddata_w;
+        ddata_w_logic <= ddata_w_logic;
         imm <= imm;
-        {idata[30] , idata[14:12]} <= {idata[30] , idata[14:12]};
-        idata[11:7] <= idata[11:7];
+        {idata_logic[30] , idata_logic[14:12]} <= {idata_logic[30] , idata_logic[14:12]};
+        idata_logic[11:7] <= idata_logic[11:7];
     end end
 // -------------------------------------------------
 
@@ -151,9 +171,9 @@ always_ff @( posedge CLK or negedge RESET_N ) begin
 
         sum2 <= 0;   
         zero <= 0;
-        daddr <= 0;   
-        ddata_w <= 0;
-        idata[11:7] <= 0;
+        daddr_logic <= 0;   
+        ddata_w_logic <= 0;
+        idata_logic[11:7] <= 0;
     end else begin
         //---- WB -----
         RegWrite <= RegWrite;
@@ -168,9 +188,9 @@ always_ff @( posedge CLK or negedge RESET_N ) begin
 
         sum2 <= sum2; 
         zero <= zero;
-        daddr <= daddr;  
-        ddata_w <= ddata_w;
-        idata[11:7] <= idata[11:7];
+        daddr_logic <= daddr_logic;  
+        ddata_w_logic <= ddata_w_logic;
+        idata_logic[11:7] <= idata_logic[11:7];
     end end
 // ------------------------------------------------
 
@@ -183,18 +203,18 @@ always_ff @( posedge CLK or negedge RESET_N ) begin
         MemtoReg <= 0;
         //-------------
 
-        ddata_r <= 0;
-        daddr[11:2] <= 0;
-        idata[11:7] <= 0;
+        ddata_r_logic <= 0;
+        daddr_logic[11:2] <= 0;
+        idata_logic[11:7] <= 0;
     end else begin
         //---- WB -----
         RegWrite <= RegWrite;
         MemtoReg <= MemtoReg;
         //-------------
-        
-        ddata_r <= ddata_r;
-        daddr[11:2] <= daddr[11:2];
-        idata[11:7] <= idata[11:7];
+
+        ddata_r_logic <= ddata_r_logic;
+        daddr_logic[11:2] <= daddr_logic[11:2];
+        idata_logic[11:7] <= idata_logic[11:7];
 
     end end
 // ------------------------------------------------
