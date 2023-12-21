@@ -49,7 +49,7 @@ RAM RAM_inst
 	.salida(ddata_r) 
 );
 
-core core_inst
+diseno2 core_inst
 (
     .CLK(CLK) ,
     .RESET_N(RESET_N) ,

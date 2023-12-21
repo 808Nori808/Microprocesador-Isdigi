@@ -51,7 +51,7 @@ case (CONTROL)
 	4'b1001: RESULTADO = (X ^ Y); // XOR XORI
 	4'b1000: RESULTADO = X << Y; // SLL SLLI
 	4'b1010: RESULTADO = X >> Y; // SRL SRLI
-	4'b1110: RESULTADO = (X[31]) ? ((X[31:0])) : X >> Y; // SRA, SRAI 
+	4'b1110: RESULTADO = X_sig >> Y_sig; // SRA, SRAI 
 	4'b1011: RESULTADO = (X >= Y) ? 0 : 1; //BGE
 	4'b1111: RESULTADO = X == Y; //BEQ
 	4'b0011: RESULTADO = ~(X!=Y)? 0:1; //BNE
