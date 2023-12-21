@@ -32,9 +32,11 @@ output logic [31:0] RESULTADO;
 
 output logic ZERO;
 
-integer y ;
+logic signed [31:0] X_sig, Y_sig;
 
-initial y = Y; 
+assign X_sig = X;
+assign Y_sig = Y; 
+
 
 always_comb
 begin
@@ -42,14 +44,14 @@ case (CONTROL)
 	4'b0000: RESULTADO = X + Y;  // ADD ADDI AUIPC LW SW 
 	4'b1100: RESULTADO = Y; //LUI
 	4'b0111: RESULTADO = X - Y;  // SUB
-	4'b0100: RESULTADO = (X < Y) ? 0 : 1; // SLT SLTI STLU BLTU  BLT
-	4'b1101: RESULTADO = (X>Y)? 0:1; //SLTIU (ES LA INSTRUCCIÓN SLTU CON SIGNO)
+	4'b0100: RESULTADO = (X_sig < Y_sig) ? 1 : 0; // SLT SLTI STLU BLTU  BLT
+	4'b1101: RESULTADO = (X < Y)? 1:0; //SLTIU 
 	4'b0010: RESULTADO = (X & Y); // AND ANDI
 	4'b0001: RESULTADO = (X | Y); // OR ORI
 	4'b1001: RESULTADO = (X ^ Y); // XOR XORI
 	4'b1000: RESULTADO = X << Y; // SLL SLLI
 	4'b1010: RESULTADO = X >> Y; // SRL SRLI
-	4'b1110: RESULTADO = (X[31]) ? ((X[31:0])) : X >> Y; // SRA
+	4'b1110: RESULTADO = (X[31]) ? ((X[31:0])) : X >> Y; // SRA, SRAI 
 	4'b1011: RESULTADO = (X >= Y) ? 0 : 1; //BGE
 	4'b1111: RESULTADO = X == Y; //BEQ
 	4'b0011: RESULTADO = ~(X!=Y)? 0:1; //BNE
