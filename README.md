@@ -1,2 +1,0 @@
-# Microprocesador ISDIGI
- ISDIGI
