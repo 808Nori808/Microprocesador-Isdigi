@@ -53,7 +53,7 @@ case (CONTROL)
 	4'b1110: RESULTADO = $signed(X) >>> Y[4:0]; // SRA, SRAI 
 	4'b1011: RESULTADO = (X >= Y) ? 1 : 0; //BGE
 	4'b1111: RESULTADO = X == Y; //BEQ
-	4'b0011: RESULTADO = ~(X!=Y)? 1:0; //BNE
+	4'b0011: RESULTADO = (X!=Y)? 1:0; //BNE
 	default: RESULTADO = 0; // Caso por defecto
 endcase
 end

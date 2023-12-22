@@ -1,9 +1,5 @@
-.data 
-valor: .word 12
-
 .text
-la x9,valor #Cargamos la dirección de memoria inicial para ir guardando los valores de la serie de Fibonacci
-lw x1,0(x9) #Cargamos el valor del número de iteraciones almacenado en memoria
+addi x1,x0,12
 
 # Reinicio de los registros y calculo del primer valor
 addi x3,x0,0 #Registro para almacenamiento de 1 de los valores a sumar en Fibonacci	
@@ -63,9 +59,6 @@ sumar:
 	add x5,x3,x4
     addi x7,x7,1
     addi x9,x9,4
-    NOP
-    NOP
-    sw x5,0(x9)
     bne x7,x1,resetea
     NOP
     NOP

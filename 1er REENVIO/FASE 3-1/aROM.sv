@@ -35,7 +35,7 @@ logic [tam_salida-1:0] mem[tam_entrada-1:0] ;
 assign dsalida = mem[address];
  
 initial
-    $readmemh("fibonacci_nop_def.hex", mem);
+    $readmemh("FIBONOP_Dump.hex", mem);
  
 
 endmodule 
